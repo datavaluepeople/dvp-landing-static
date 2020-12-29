@@ -1,0 +1,8 @@
+# Custom fonts
+@font-face {
+    font-family: 'camptonbold_demo';
+    src: url('../fonts/rene_bieder_-_campton_book_bold-webfont.woff2') format('woff2'),
+         url('../fonts/rene_bieder_-_campton_book_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
