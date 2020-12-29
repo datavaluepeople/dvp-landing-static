@@ -51,6 +51,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('sass'),
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // trackingId: `ADD YOUR TRACKING ID HERE`,
