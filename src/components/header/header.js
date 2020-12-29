@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Logo from '../logo/logo';
 import headerStyles from './header.module.scss';
 
 const Header = ({isHome}) => {
@@ -10,7 +11,7 @@ const Header = ({isHome}) => {
         isHome ? headerStyles.dark : headerStyles.light
       }
     >
-      <h1>Logo {isHome ? 'dark' : 'light'}</h1>
+      <Logo isHome={isHome}/>
       <div>Menu</div>
       <div>Sidebase</div>
     </header>
