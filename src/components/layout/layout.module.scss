@@ -1,0 +1,9 @@
+@import '../../styles/colors.scss';
+
+.dark {
+  composes: dark from '../../styles/global.scss';
+}
+
+.light {
+  /* place holder */
+}
