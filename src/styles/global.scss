@@ -1,2 +1,6 @@
 @import './fonts.scss';
 @import './base_values.scss';
+
+html {
+  font-size: $base-font-size;
+}
