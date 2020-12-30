@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import sideBarStyles from './side-bar.module.scss';
+
 const SideBar = ({isHome}) => {
   return (
-    <div>
+    <div className={sideBarStyles.container}>
       <span>Chat With Us</span>
       <p>
         We are a group of data-driven people.

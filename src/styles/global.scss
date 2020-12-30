@@ -2,12 +2,18 @@
 @import './base_values.scss';
 @import './colors.scss';
 
+.dark {
+  background-color: $dvp-dark;
+  color: $dvp-white;
+}
+
+.light {
+  background-color: $dvp-white;
+  color: $dvp-dark;
+}
+
 html {
   font-size: $base-font-size;
   color: $dvp-dark;
 }
 
-.dark {
-  background-color: $dvp-dark;
-  color: $dvp-white;
-}

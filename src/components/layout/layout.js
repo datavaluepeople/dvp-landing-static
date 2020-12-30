@@ -8,9 +8,14 @@ const Layout = ({location, children}) => {
   const rootPath = `${__PATH_PREFIX__}/`;
 
   const isHome = (location.pathname === rootPath);
+  if (isHome) {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
 
   return (
-    <div>
+    <div className={layoutStyles.container}>
       <Header isHome={isHome}/>
       <main
         className={
