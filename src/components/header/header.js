@@ -7,12 +7,12 @@ import headerStyles from './header.module.scss';
 
 const Header = ({isHome}) => {
   return (
-    <header
-      className={
-        isHome ? headerStyles.dark : headerStyles.light
-      }
-    >
-      <div>
+    <header>
+      <div
+        className={
+          isHome ? headerStyles.dark : headerStyles.light
+        }
+      >
         <Logo isHome={isHome}/>
         <div>Menu</div>
       </div>
