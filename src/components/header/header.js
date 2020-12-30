@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../logo/logo';
+import SideBar from '../side-bar/side-bar';
 import headerStyles from './header.module.scss';
 
 const Header = ({isHome}) => {
@@ -11,9 +12,11 @@ const Header = ({isHome}) => {
         isHome ? headerStyles.dark : headerStyles.light
       }
     >
-      <Logo isHome={isHome}/>
-      <div>Menu</div>
-      <div>Sidebase</div>
+      <div>
+        <Logo isHome={isHome}/>
+        <div>Menu</div>
+      </div>
+      <SideBar isHome={isHome}/>
     </header>
   );
 };
