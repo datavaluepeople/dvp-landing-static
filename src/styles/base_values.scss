@@ -1,0 +1,9 @@
+/* Base values */
+$base-font-size: 20px;
+$base-line-height: 1.666;
+
+
+:export {
+  baseFontSize: $base-font-size;
+  baseLineHeight: $base-line-height;
+}

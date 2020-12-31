@@ -1,0 +1,13 @@
+@import './fonts.scss';
+@import './base_values.scss';
+@import './colors.scss';
+
+html {
+  font-size: $base-font-size;
+  color: $dvp-dark;
+}
+
+.dark {
+  background-color: $dvp-dark;
+  color: $dvp-white;
+}
