@@ -11,3 +11,14 @@
 .container {
   width: 66%;
 }
+
+.backgroundFixPanal {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  /* Width will be gotten from the parent */
+  width: 100%;
+  background-color: $dvp-dark;
+}

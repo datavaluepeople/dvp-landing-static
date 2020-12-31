@@ -6,17 +6,20 @@ import layoutStyles from './layout.module.scss';
 
 const Layout = ({location, children}) => {
   const rootPath = `${__PATH_PREFIX__}/`;
+  let backgroundFixPanal;
 
   const isHome = (location.pathname === rootPath);
+
   if (isHome) {
-    document.body.classList.add('dark');
-  } else {
-    document.body.classList.remove('dark');
+    // Panel needed if the content of main is smaller then
+    // height of the screen
+    backgroundFixPanal = <div className={layoutStyles.backgroundFixPanal}/>;
   }
 
   return (
     <div className={layoutStyles.container}>
       <Header isHome={isHome}/>
+      {backgroundFixPanal}
       <main
         className={
           isHome ? layoutStyles.dark : layoutStyles.light
