@@ -1,3 +1,4 @@
+@import '../../styles/base_values.scss';
 @import '../../styles/colors.scss';
 
 .dark {
@@ -9,7 +10,7 @@
 }
 
 .container {
-  width: 66%;
+  width: $content-width;
 }
 
 .backgroundFixPanal {

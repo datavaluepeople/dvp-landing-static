@@ -1,9 +1,11 @@
+@import '../../styles/base_values.scss';
+
 .container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  width: 33%;
+  width: $side-bar-width;
   height: 100%;
   composes: light from '../../styles/global.scss';
 }
