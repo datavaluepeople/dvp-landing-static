@@ -6,8 +6,16 @@ import SideBar from '../side-bar/side-bar';
 import headerStyles from './header.module.scss';
 
 const Header = ({isHome, isOpen, toggleMenuOpen}) => {
+  let headerContainerClass;
+  if (isOpen) {
+    headerContainerClass = headerStyles.containerMenuOpen;
+  } else {
+    headerContainerClass = headerStyles.containerMenuClosed;
+  }
   return (
-    <header>
+    <header
+      className={headerContainerClass}
+    >
       <div
         className={
           isHome ? headerStyles.dark : headerStyles.light
