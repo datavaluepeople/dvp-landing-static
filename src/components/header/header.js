@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../logo/logo';
+import Burger from '../burger/burger';
 import SideBar from '../side-bar/side-bar';
 import headerStyles from './header.module.scss';
 
@@ -22,9 +23,10 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
         }
       >
         <Logo isHome={isHome}/>
-        <div onClick={() => toggleMenuOpen()}>
-          {isOpen ? 'Close' : 'Menu' }
-        </div>
+        <Burger
+          isHome={isHome}
+          toggleMenuOpen={toggleMenuOpen}
+        ></Burger>
       </div>
       <SideBar
         isHome={isHome}
