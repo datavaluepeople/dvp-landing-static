@@ -15,7 +15,11 @@ const Logo = ({isHome}) => {
     <div
       className={logoStyles.logo}
     >
-      <img alt="datavaluepeople logo" src={logo}/>
+      <img
+        className={logoStyles.img}
+        alt="datavaluepeople logo"
+        src={logo}
+      />
     </div>
 
   );

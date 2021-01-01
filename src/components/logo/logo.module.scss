@@ -1,3 +1,21 @@
+@import '../../styles/breakpoints.scss';
+
 .logo {
-  /* place holder */
+  display: inline-block;
+  height: 3rem;
+  margin: 1.5rem;
+
+  @include md {
+    height: 5rem;
+    margin: 2.5rem;
+  }
+
+  @include lg {
+    height: 5rem;
+    margin: 3rem 4rem;
+  }
+}
+
+.img {
+  height: 100%;
 }
