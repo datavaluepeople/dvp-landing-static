@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 import Header from '../header/header.js';
 import layoutStyles from './layout.module.scss';
 
+import useMenuOpen from '../../hooks/use-menu-open.js';
+
 const Layout = ({location, children}) => {
+  const {isOpen, toggleMenuOpen} = useMenuOpen();
   const rootPath = `${__PATH_PREFIX__}/`;
   let backgroundFixPanal;
 
@@ -18,12 +21,19 @@ const Layout = ({location, children}) => {
 
   return (
     <div className={layoutStyles.container}>
-      <Header isHome={isHome}/>
+      <Header
+        className={layoutStyles.header}
+        isHome={isHome}
+        isOpen={isOpen}
+        toggleMenuOpen={toggleMenuOpen}
+      />
       {backgroundFixPanal}
       <main
-        className={
-          isHome ? layoutStyles.dark : layoutStyles.light
-        }
+        className={`
+          ${layoutStyles.main}
+          ${isHome ? layoutStyles.dark : layoutStyles.light}
+          ${isOpen ? layoutStyles.mainHide : layoutStyles.mainShow}
+        `}
       >
         {children}
       </main>

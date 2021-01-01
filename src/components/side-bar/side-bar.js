@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 
 import sideBarStyles from './side-bar.module.scss';
 
-const SideBar = ({isHome}) => {
+
+const SideBar = ({isHome, isOpen}) => {
   return (
-    <div className={sideBarStyles.container}>
+    <div className={`
+        ${sideBarStyles.container}
+        ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
+      `}>
       <span>Chat With Us</span>
       <p>
         We are a group of data-driven people.
@@ -34,5 +38,6 @@ export default SideBar;
 
 SideBar.propTypes = {
   isHome: PropTypes.boolean,
+  isOpen: PropTypes.boolean,
 };
 

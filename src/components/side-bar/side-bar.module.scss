@@ -17,3 +17,14 @@
     width: $side-bar-width;
   }
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+  @include lg {
+    display: block;
+  }
+}

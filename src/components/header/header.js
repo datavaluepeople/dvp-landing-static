@@ -5,7 +5,7 @@ import Logo from '../logo/logo';
 import SideBar from '../side-bar/side-bar';
 import headerStyles from './header.module.scss';
 
-const Header = ({isHome}) => {
+const Header = ({isHome, isOpen, toggleMenuOpen}) => {
   return (
     <header>
       <div
@@ -14,9 +14,14 @@ const Header = ({isHome}) => {
         }
       >
         <Logo isHome={isHome}/>
-        <div>Menu</div>
+        <div onClick={() => toggleMenuOpen()}>
+          {isOpen ? 'Close' : 'Menu' }
+        </div>
       </div>
-      <SideBar isHome={isHome}/>
+      <SideBar
+        isHome={isHome}
+        isOpen={isOpen}
+      />
     </header>
   );
 };
@@ -25,4 +30,6 @@ export default Header;
 
 Header.propTypes = {
   isHome: PropTypes.boolean,
+  isOpen: PropTypes.boolean,
+  toggleMenuOpen: PropTypes.function,
 };
