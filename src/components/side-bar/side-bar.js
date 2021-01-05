@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import sideBarStyles from './side-bar.module.scss';
 
+import ChatWithUs from '../chat-with-us/chat-with-us.js';
 
 const SideBar = ({isHome, isOpen}) => {
   return (
@@ -10,7 +11,7 @@ const SideBar = ({isHome, isOpen}) => {
         ${sideBarStyles.container}
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
       `}>
-      <span>Chat With Us</span>
+      <ChatWithUs />
       <p>
         We are a group of data-driven people.
         Through applied machine learning, building automated systems,
