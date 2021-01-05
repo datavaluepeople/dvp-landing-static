@@ -1,4 +1,5 @@
 @import '../../styles/base_values.scss';
+@import '../../styles/colors.scss';
 @import '../../styles/breakpoints.scss';
 @import '../../styles/shared/header.scss';
 
@@ -19,6 +20,7 @@
     top: 0;
     right: 0;
     width: $side-bar-width;
+    height: 100%;
   }
 }
 
@@ -34,5 +36,63 @@
   @include lg {
     right: 0;
     display: block;
+  }
+}
+
+$a-line-height: 2.4rem;
+$a-font-size: 1.7rem;
+
+.footer {
+  position: absolute;
+  bottom: $sidebar-left-margin-lg - ($a-line-height /2);
+  width: 100%;
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    width: 100%;
+    padding: 0 $sidebar-right-margin-sm 0 $sidebar-left-margin-sm;
+    @include md {
+      padding: 0 $sidebar-right-margin-md 0 $sidebar-left-margin-md;
+    }
+    @include lg {
+      padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
+    }
+  }
+
+  nav a {
+    color: $dvp-grey;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-family: 'camptonbold_demo';
+    font-size: $a-font-size;
+    line-height: $a-line-height;
+
+    &:hover {
+      color: $dvp-dark;
+    }
+  }
+}
+
+$arrow-height: $a-font-size * (3 / 4);
+.arrow {
+  float: right;
+  font-size: $arrow-height;
+}
+
+.builderfooter {
+  @include lg {
+    display: none;
   }
 }
