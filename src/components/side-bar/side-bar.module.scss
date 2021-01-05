@@ -1,17 +1,21 @@
 @import '../../styles/base_values.scss';
 @import '../../styles/breakpoints.scss';
+@import '../../styles/shared/header.scss';
 
-.parentContainer {
-
-  @include lg {
-    position: unset;
-  }
-}
 .container {
   composes: light from '../../styles/global.scss';
+  position: absolute;
+  height: calc(100% - #{$nav-bar-height-sm});
+  top: $nav-bar-height-sm;
+  width: 100%;
+  z-index: 10;
+
+  @include md {
+    height: calc(100% - #{$nav-bar-height-md});
+    top: $nav-bar-height-md;
+  }
 
   @include lg {
-    position: absolute;
     top: 0;
     right: 0;
     width: $side-bar-width;
@@ -19,13 +23,16 @@
 }
 
 .show {
-  display: block;
-  flex: 1 1 auto;
+  right: 0;
+  transition: right 0.3s;
 }
 
 .hide {
-  display: none;
+  right: 100%;
+  transition: right 0.2s;
+
   @include lg {
+    right: 0;
     display: block;
   }
 }

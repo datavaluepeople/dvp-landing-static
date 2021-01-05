@@ -10,17 +10,9 @@
 }
 
 .containerMenuClosed {
-  position: unset;
+  /* place holder */
 }
 
 .containerMenuOpen {
-  position: absolute;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-
-  @include lg {
-    position: unset;
-    display: block;
-  }
+  /* place holder */
 }

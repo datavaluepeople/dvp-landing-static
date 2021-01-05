@@ -1,18 +1,19 @@
 @import '../../styles/breakpoints.scss';
 @import '../../styles/base_values.scss';
+@import '../../styles/shared/header.scss';
 
 .logo {
   display: inline-block;
-  height: 3rem;
+  height: $logo-height-sm;
   margin: $margin-sm-v $margin-sm-h;
 
   @include md {
-    height: 5rem;
+    height: $logo-height-md;
     margin: $margin-md-v $margin-md-h;
   }
 
   @include lg {
-    height: 5rem;
+    height: $logo-height-lg;
     margin: $margin-lg-v $margin-lg-h;
   }
 }

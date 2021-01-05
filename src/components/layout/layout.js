@@ -32,7 +32,6 @@ const Layout = ({location, children}) => {
         className={`
           ${layoutStyles.main}
           ${isHome ? layoutStyles.dark : layoutStyles.light}
-          ${isOpen ? layoutStyles.mainHide : layoutStyles.mainShow}
         `}
       >
         {children}

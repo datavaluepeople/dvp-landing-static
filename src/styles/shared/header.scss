@@ -1,0 +1,10 @@
+/* Sharing the height of the nav bar */
+@import '../../styles/base_values.scss';
+
+$logo-height-sm: 3rem;
+$logo-height-md: 5rem;
+$logo-height-lg: 5rem;
+
+$nav-bar-height-sm: ($margin-sm-v * 2) + $logo-height-sm;
+$nav-bar-height-md: ($margin-md-v * 2) + $logo-height-md;
+$nav-bar-height-lg: ($margin-lg-v * 2) + $logo-height-lg;

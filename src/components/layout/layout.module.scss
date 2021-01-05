@@ -16,17 +16,6 @@
   }
 }
 
-.mainShow {
-  display: block;
-}
-
-.mainHide {
-  display: none;
-  @include lg {
-    display: block;
-  }
-}
-
 .backgroundFixPanal {
   position: absolute;
   z-index: -1;
