@@ -25,6 +25,7 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
         <Logo isHome={isHome}/>
         <Burger
           isHome={isHome}
+          isOpen={isOpen}
           toggleMenuOpen={toggleMenuOpen}
         ></Burger>
       </div>

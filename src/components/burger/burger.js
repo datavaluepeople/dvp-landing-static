@@ -8,12 +8,13 @@ import PropTypes from 'prop-types';
 
 import burgerStyles from './burger.module.scss';
 
-const Burger = ({isHome, toggleMenuOpen}) => {
+const Burger = ({isHome, isOpen, toggleMenuOpen}) => {
   return (
     <button
       className={`
         ${burgerStyles.burger}
         ${isHome ? burgerStyles.light : burgerStyles.dark}
+        ${isOpen ? burgerStyles.cross : ''}
       `}
       onClick={() => toggleMenuOpen()}
     >
@@ -28,5 +29,6 @@ export default Burger;
 
 Burger.propTypes = {
   isHome: PropTypes.boolean,
+  isOpen: PropTypes.boolean,
   toggleMenuOpen: PropTypes.function,
 };
