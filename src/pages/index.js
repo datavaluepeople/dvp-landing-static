@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
+import BuilderFooter from '../components/builder-footer/builder-footer.js';
 
 const LandingPageIndex = ({location}) => {
   return (
@@ -13,6 +14,7 @@ const LandingPageIndex = ({location}) => {
         <br/>
         We build data-driven systems with <i>measurable</i> value delivered.
       </h1>
+      <BuilderFooter HomePage={true}/>
     </Layout>
   );
 };
