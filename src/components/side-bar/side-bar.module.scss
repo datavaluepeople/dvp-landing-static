@@ -44,8 +44,15 @@ $a-font-size: 1.7rem;
 
 .footer {
   position: absolute;
-  bottom: $sidebar-left-margin-lg - ($a-line-height /2);
   width: 100%;
+  bottom: 0;
+  @include lg {
+    bottom: $sidebar-left-margin-lg - ($a-line-height /2);
+  }
+
+  @include xlg {
+    bottom: $sidebar-left-margin-xlg - ($a-line-height / 2);
+  }
 
   nav {
     margin: 0;
@@ -67,6 +74,10 @@ $a-font-size: 1.7rem;
     }
     @include lg {
       padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
+    }
+
+    @include xlg {
+      padding: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
     }
   }
 

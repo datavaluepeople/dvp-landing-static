@@ -23,6 +23,11 @@
     margin-right: $sidebar-right-margin-lg;
   }
 
+  @include xlg {
+    margin: $margin-lg-v $margin-lg-h;
+    margin-right: $sidebar-right-margin-xlg;
+  }
+
   b {
     font-family: 'camptonbold_demo';
     font-size: 0.7rem;
