@@ -1,0 +1,25 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared/header.scss';
+
+.sideBarElement {
+
+  font-size: 0.6rem;
+  color: $dvp-grey-half;
+  font-weight: 600;
+
+  a {
+    color: $dvp-dark;
+  }
+
+  padding: 4rem $sidebar-right-margin-sm 0.5rem $sidebar-left-margin-sm;
+
+  @include md {
+    padding: 5rem $sidebar-right-margin-md 1rem $sidebar-left-margin-md;
+  }
+
+  @include lg {
+    display: none;
+  }
+}

@@ -6,6 +6,7 @@ import sideBarStyles from './side-bar.module.scss';
 
 import ChatWithUs from '../chat-with-us/chat-with-us.js';
 import WhoWeAre from '../who-we-are/who-we-are.js';
+import BuilderFooter from '../builder-footer/builder-footer.js';
 
 const SideBar = ({isHome, isOpen}) => {
   return (
@@ -38,9 +39,7 @@ const SideBar = ({isHome, isOpen}) => {
             </li>
           </ul>
         </nav>
-        <div className={sideBarStyles.builderfooter}>
-          <span>2019® - design by <a href="http://www.mybitdesign.com" target="_blank">www.mybitdesign.com</a></span>
-        </div>
+        <BuilderFooter HomePage={false}/>
       </div>
     </div>
   );
