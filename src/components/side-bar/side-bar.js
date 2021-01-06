@@ -39,7 +39,7 @@ const SideBar = ({isHome, isOpen}) => {
           </ul>
         </nav>
         <div className={sideBarStyles.builderfooter}>
-          <span>2019® - design by www.mybitdesign.com</span>
+          <span>2019® - design by <a href="http://www.mybitdesign.com" target="_blank">www.mybitdesign.com</a></span>
         </div>
       </div>
     </div>
