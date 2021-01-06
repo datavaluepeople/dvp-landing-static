@@ -30,3 +30,15 @@
     width: $content-width;
   }
 }
+
+.main {
+  margin: $margin-sm-v $margin-sm-h;
+
+  @include md {
+    margin: 0 $margin-md-h $margin-md-v;
+  }
+
+  @include lg {
+    margin: 0 $margin-lg-h $margin-lg-v;
+  }
+}
