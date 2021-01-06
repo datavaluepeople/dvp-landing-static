@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'gatsby';
 
 import Logo from '../logo/logo';
 import Burger from '../burger/burger';
@@ -22,7 +23,9 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
           isHome ? headerStyles.dark : headerStyles.light
         }
       >
-        <Logo isHome={isHome}/>
+        <Link to="/">
+          <Logo isHome={isHome}/>
+        </Link>
         <Burger
           isHome={isHome}
           isOpen={isOpen}
