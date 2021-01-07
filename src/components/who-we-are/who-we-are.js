@@ -30,5 +30,5 @@ const WhoWeAre = ({HomePage}) => {
 export default WhoWeAre;
 
 WhoWeAre.propTypes = {
-  HomePage: PropTypes.boolean,
+  HomePage: PropTypes.bool,
 };

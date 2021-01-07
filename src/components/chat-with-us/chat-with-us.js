@@ -24,5 +24,5 @@ const ChatWithUs = ({isHome}) => {
 export default ChatWithUs;
 
 ChatWithUs.propTypes = {
-  isHome: PropTypes.boolean,
+  isHome: PropTypes.bool,
 };

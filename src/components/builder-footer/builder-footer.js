@@ -22,6 +22,6 @@ const BuilderFooter = ({SideBarAndIsHome, HomePage}) => {
 export default BuilderFooter;
 
 BuilderFooter.propTypes = {
-  SideBarAndIsHome: PropTypes.boolean,
-  HomePage: PropTypes.boolean,
+  SideBarAndIsHome: PropTypes.bool,
+  HomePage: PropTypes.bool,
 };

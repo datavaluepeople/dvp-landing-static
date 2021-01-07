@@ -37,10 +37,10 @@ const TrackRecordSection = (
 export default TrackRecordSection;
 
 TrackRecordSection.propTypes = {
-  iconFile: PropTypes.String,
-  title: PropTypes.String,
-  paragraph: PropTypes.String,
-  previousClientText: PropTypes.String,
-  previousClientLink: PropTypes.String,
-  valueDelivered: PropTypes.String,
+  iconFile: PropTypes.string,
+  title: PropTypes.string,
+  paragraph: PropTypes.string,
+  previousClientText: PropTypes.string,
+  previousClientLink: PropTypes.string,
+  valueDelivered: PropTypes.string,
 };

@@ -31,5 +31,5 @@ const Logo = ({isHome}) => {
 export default Logo;
 
 Logo.propTypes = {
-  isHome: PropTypes.boolean,
+  isHome: PropTypes.bool,
 };

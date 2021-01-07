@@ -43,7 +43,7 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
 export default Header;
 
 Header.propTypes = {
-  isHome: PropTypes.boolean,
-  isOpen: PropTypes.boolean,
+  isHome: PropTypes.bool,
+  isOpen: PropTypes.bool,
   toggleMenuOpen: PropTypes.function,
 };

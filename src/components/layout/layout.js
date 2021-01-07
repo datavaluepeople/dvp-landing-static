@@ -48,7 +48,7 @@ export default Layout;
 
 
 Layout.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.arrayOf(PropTypes.element),
   location: PropTypes.object,
 };
 

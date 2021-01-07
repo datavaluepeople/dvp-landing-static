@@ -49,7 +49,7 @@ const SideBar = ({isHome, isOpen}) => {
 export default SideBar;
 
 SideBar.propTypes = {
-  isHome: PropTypes.boolean,
-  isOpen: PropTypes.boolean,
+  isHome: PropTypes.bool,
+  isOpen: PropTypes.bool,
 };
 

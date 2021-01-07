@@ -49,13 +49,13 @@ TrackRecordPage.propTypes = {
     allTrackRecordSectionsJson: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
         node: PropTypes.shape({
-          id: PropTypes.String,
-          iconFile: PropTypes.String,
-          title: PropTypes.String,
-          paragraph: PropTypes.String,
-          previousClientText: PropTypes.String,
-          previousClientLink: PropTypes.String,
-          valueDelivered: PropTypes.String,
+          id: PropTypes.string,
+          iconFile: PropTypes.string,
+          title: PropTypes.string,
+          paragraph: PropTypes.string,
+          previousClientText: PropTypes.string,
+          previousClientLink: PropTypes.string,
+          valueDelivered: PropTypes.string,
         }),
       })),
     }),
