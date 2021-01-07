@@ -2,8 +2,20 @@
   padding-right: 0.4rem;
 }
  
+$track-record-margin-bottom: 1.6rem;
+
 .title {
   font-size: 1.6rem;
   line-height: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: $track-record-margin-bottom;
+}
+
+.container {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  p {
+    margin-bottom: $track-record-margin-bottom;
+  }
 }

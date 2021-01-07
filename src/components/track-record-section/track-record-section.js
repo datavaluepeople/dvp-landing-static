@@ -21,11 +21,15 @@ const TrackRecordSection = (
           alt={`${title} icon`}
           src={`/track-record/${iconFile}`}
         />
-          {title}
+        {title}
       </h2>
       <p>{paragraph}</p>
-      <span>Previous client: {previousClientText}; {previousClientLink}</span>
-      <span>Value delivered: {valueDelivered}</span>
+      <p>
+        <b>Previous client:</b> {previousClientText};&nbsp;
+        <a href={previousClientLink}>{previousClientLink}</a>
+        <br/>
+        <b>Value delivered:</b> {valueDelivered}
+      </p>
     </div>
   );
 };
