@@ -12,12 +12,20 @@ const LandingPageIndex = ({location}) => {
   return (
     <Layout location={location}>
       <SEO title="We build bespoke state-of-the-art data-driven systems"/>
-      <h1 className={indexStyles.title}>
-        Are you getting returns from your data &amp; analytics?
-        <br/>
-        We build data-driven systems with <i>measurable</i> value delivered.
-      </h1>
-      <WhoWeAre HomePage={true}/>
+
+      <div className={indexStyles.container}>
+        <div className={indexStyles.waveImgContainer}>
+          <img alt='Wave Background' src='/img/wave-white/wave.png'/>
+        </div>
+        <div className={indexStyles.textContainer}>
+          <h1 className={indexStyles.title}>
+            Are you getting returns from your data &amp; analytics?
+            <br/>
+            We build data-driven systems with <i>measurable</i> value delivered.
+          </h1>
+          <WhoWeAre HomePage={true}/>
+        </div>
+      </div>
       <BuilderFooter HomePage={true}/>
     </Layout>
   );

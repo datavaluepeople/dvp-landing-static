@@ -2,6 +2,43 @@
 @import '../styles/breakpoints.scss';
 @import '../styles/colors.scss';
 
+.container {
+  position: relative;
+}
+
+.textContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.waveImgContainer {
+  position: absolute;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  top: 7rem;
+  left: -8rem;
+  width: 57rem;
+  height: 20rem;
+
+  @include md {
+    top: 3rem;
+    left: -8%;
+    width: 120%;
+    height: auto;
+  }
+
+  @include lg {
+    top: 10rem;
+    left: -10%;
+    width: 130%;
+    height: auto;
+  }
+}
+
 .title {
   font-size: 1.5rem;
   line-height: 1.8rem;
