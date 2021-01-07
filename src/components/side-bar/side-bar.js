@@ -13,6 +13,7 @@ const SideBar = ({isHome, isOpen}) => {
     <div className={`
         ${sideBarStyles.container}
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
+        ${isHome ? sideBarStyles.home : ''}
       `}>
       <ChatWithUs />
       <WhoWeAre HomePage={false}/>

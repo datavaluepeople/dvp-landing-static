@@ -20,7 +20,11 @@ const Layout = ({location, children}) => {
   }
 
   return (
-    <div className={layoutStyles.container}>
+    <div className={`
+      ${layoutStyles.container}
+      ${isHome? layoutStyles.containerHome : '' }
+      `}
+    >
       <Header
         className={layoutStyles.header}
         isHome={isHome}
@@ -30,7 +34,7 @@ const Layout = ({location, children}) => {
       {backgroundFixPanal}
       <main
         className={`
-          ${layoutStyles.main}
+          ${isHome ? layoutStyles.mainHome : layoutStyles.main}
           ${isHome ? layoutStyles.dark : layoutStyles.light}
         `}
       >

@@ -13,7 +13,10 @@ const Logo = ({isHome}) => {
 
   return (
     <div
-      className={logoStyles.logo}
+      className={`
+      ${logoStyles.logo}
+      ${isHome ? logoStyles.home : ''}
+      `}
     >
       <img
         className={logoStyles.img}
