@@ -40,7 +40,7 @@ const SideBar = ({isHome, isOpen}) => {
             </li>
           </ul>
         </nav>
-        <BuilderFooter HomePage={false}/>
+        <BuilderFooter SideBarAndIsHome={isHome } HomePage={false}/>
       </div>
     </div>
   );

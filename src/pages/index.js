@@ -26,7 +26,7 @@ const LandingPageIndex = ({location}) => {
           <WhoWeAre HomePage={true}/>
         </div>
       </div>
-      <BuilderFooter HomePage={true}/>
+      <BuilderFooter SideBarAndIsHome={false} HomePage={true}/>
     </Layout>
   );
 };
