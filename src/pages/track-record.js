@@ -14,7 +14,7 @@ const TrackRecordPage = ({location}) => {
       <h1 className={trackRecordStyles.title}>Track record</h1>
       <div className={trackRecordStyles.content}>
         <TrackRecordSection
-          icon={'icon1'}
+          iconFile='icon1.svg'
           title={'Autonomous Optimisation'}
           paragraph={'Using state-of-the-art reinforcement learning, we make autonomous optimised pricing decisions at scale in near real-time. Our algorithms balance exploiting well performing strategies vs exploring new ones.'}
           previousClientText={'B2C car rental resale company'}

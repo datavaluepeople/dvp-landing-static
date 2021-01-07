@@ -5,7 +5,7 @@ import styles from './track-record-section.module.scss';
 
 const TrackRecordSection = (
     {
-      icon,
+      iconFile,
       title,
       paragraph,
       previousClientText,
@@ -15,7 +15,7 @@ const TrackRecordSection = (
 ) => {
   return (
     <div className={styles.container}>
-      <span>{icon}</span>
+      <img alt={`${title} icon`} src={`/track-record/${iconFile}`}/>
       <h2>{title}</h2>
       <p>{paragraph}</p>
       <span>Previous client: {previousClientText}; {previousClientLink}</span>
@@ -27,7 +27,7 @@ const TrackRecordSection = (
 export default TrackRecordSection;
 
 TrackRecordSection.propTypes = {
-  icon: PropTypes.String,
+  iconFile: PropTypes.String,
   title: PropTypes.String,
   paragraph: PropTypes.String,
   previousClientText: PropTypes.String,
