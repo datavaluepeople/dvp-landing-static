@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import BuilderFooter from '../components/builder-footer/builder-footer.js';
+import WhoWeAre from '../components/who-we-are/who-we-are.js';
 
 import indexStyles from './index.module.scss';
 
@@ -16,6 +17,7 @@ const LandingPageIndex = ({location}) => {
         <br/>
         We build data-driven systems with <i>measurable</i> value delivered.
       </h1>
+      <WhoWeAre HomePage={true}/>
       <BuilderFooter HomePage={true}/>
     </Layout>
   );

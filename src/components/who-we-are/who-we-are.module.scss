@@ -6,6 +6,17 @@
 }
 
 .homePageElement {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+
+    @include md {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+    }
+  }
+  
   @include lg {
     display: none;
   }
