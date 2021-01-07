@@ -15,8 +15,14 @@ const TrackRecordSection = (
 ) => {
   return (
     <div className={styles.container}>
-      <img alt={`${title} icon`} src={`/track-record/${iconFile}`}/>
-      <h2>{title}</h2>
+      <h2 className={styles.title}>
+        <img
+          className={styles.icon}
+          alt={`${title} icon`}
+          src={`/track-record/${iconFile}`}
+        />
+          {title}
+      </h2>
       <p>{paragraph}</p>
       <span>Previous client: {previousClientText}; {previousClientLink}</span>
       <span>Value delivered: {valueDelivered}</span>
