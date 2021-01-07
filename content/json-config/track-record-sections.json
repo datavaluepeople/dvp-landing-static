@@ -6,5 +6,20 @@
       "previousClientText": "B2C car rental resale company",
       "previousClientLink": "www.cartrawler.com",
       "valueDelivered": "double-figure uplift (%) in revenue, sales, & profit on large sections of business traffic."
+  },
+  {
+      "iconFile": "icon2.svg",
+      "title": "Automated Anomaly Detection",
+      "paragraph": "Ingesting hundreds of business-critical data streams, running automated detection algorithms every minute/hour/day, which then trigger alerts of critical issues & behaviour changes directly to business stakeholders.",
+      "previousClientText": "online travel agent",
+      "previousClientLink": "www.loveholidays.com",
+      "valueDelivered": "+€1,000,000s each year in avoided losses due to early detection of issues."
+  },
+  {
+      "iconFile": "icon3.svg",
+      "title": "Advanced Forecasting & Prediction",
+      "paragraph": "Predictive modelling on the likelihood that rail development projects will go over budget. Using predictions for better targeted investigation & monitoring.",
+      "previousClientText": "UK government, Office of Rail & Road",
+      "valueDelivered": "+€1,000,000s each year in avoided losses due to early detection of issues."
   }
 ]

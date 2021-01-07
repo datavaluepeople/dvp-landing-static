@@ -26,7 +26,9 @@ const TrackRecordSection = (
       <p>{paragraph}</p>
       <p>
         <b>Previous client:</b> {previousClientText};&nbsp;
-        <a href={previousClientLink}>{previousClientLink}</a>
+        {previousClientLink &&
+          <a href={previousClientLink}>{previousClientLink}</a>
+        }
         <br/>
         <b>Value delivered:</b> {valueDelivered}
       </p>
