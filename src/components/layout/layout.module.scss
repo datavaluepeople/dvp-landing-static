@@ -50,13 +50,13 @@
 }
 
 .main{
-  margin: $margin-sm-v $margin-sm-h;
+  margin: 0 $margin-sm-v $margin-sm-h;
 
   @include md {
     margin: 0 $margin-md-h $margin-md-v;
   }
 
   @include xlg {
-    margin: 0 $margin-lg-h $margin-lg-v;
+    margin: 0 0 $margin-lg-v $margin-lg-h;
   }
 }
