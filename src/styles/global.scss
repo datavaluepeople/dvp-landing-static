@@ -17,4 +17,11 @@
 html, body {
   font-size: $base-font-size;
   color: $dvp-dark;
+
+  a {
+    color: $dvp-dark;
+    &:hover {
+      color: $dvp-dark;
+    }
+  }
 }
