@@ -1,0 +1,11 @@
+@import '../styles/base_values.scss';
+@import '../styles/breakpoints.scss';
+@import '../styles/colors.scss';
+
+.title {
+  display: none;
+  @include md {
+    display: initial;
+  }
+}
+
