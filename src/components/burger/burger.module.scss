@@ -26,7 +26,7 @@ $burger-size: 1.2rem;
     right: $margin-md-h;
   }
 
-  @include lg{
+  @include xlg{
     top: $margin-lg-v;
     right: $margin-lg-h;
   }
@@ -36,6 +36,7 @@ $burger-size: 1.2rem;
   }
   
   div {
+    background: $dvp-dark;
     width: $burger-size;
     height: 0.2rem;
     transition: all 0.3s linear;
@@ -73,15 +74,13 @@ $burger-size: 1.2rem;
   }
 }
 
-.dark {
-  div {
-    background: $dvp-dark;
-  }
-}
-
-.light {
+.home {
   div {
     background: $dvp-white;
   }
-}
 
+  @include lg{
+    top: $margin-lg-v;
+    right: $margin-lg-h;
+  }
+}

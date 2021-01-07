@@ -13,7 +13,7 @@ const Burger = ({isHome, isOpen, toggleMenuOpen}) => {
     <button
       className={`
         ${burgerStyles.burger}
-        ${isHome ? burgerStyles.light : burgerStyles.dark}
+        ${isHome ? burgerStyles.home : ''}
         ${isOpen ? burgerStyles.cross : ''}
       `}
       onClick={() => toggleMenuOpen()}
