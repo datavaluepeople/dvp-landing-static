@@ -15,7 +15,7 @@ const SideBar = ({isHome, isOpen}) => {
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
         ${isHome ? sideBarStyles.home : ''}
       `}>
-      <ChatWithUs />
+      <ChatWithUs isHome={isHome}/>
       <WhoWeAre HomePage={false}/>
       <div className={sideBarStyles.footer}>
         <nav>
