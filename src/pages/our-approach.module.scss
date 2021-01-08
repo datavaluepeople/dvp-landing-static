@@ -9,3 +9,14 @@
 .content {
   composes: contentContainer from '../styles/shared/content-pages.scss';
 }
+
+.pLarge {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2rem;
+}
+
+.pGrey {
+  font-size: 0.9rem;
+  color: $dvp-grey;
+}

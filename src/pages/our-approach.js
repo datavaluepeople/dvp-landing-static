@@ -12,20 +12,25 @@ const OurApproachPage = ({location}) => {
       <SEO title="Our Approach"/>
       <h1 className={styles.title}>Our approach</h1>
       <div className={styles.content}>
-        <p>
+        <p className={styles.pLarge}>
           Whether your priorities are customer acquisition,
           revenue, reducing costs, or profit;
           we’re not satisfied until we can tell you exactly
           how much value we’ve generated for you.
         </p>
         <h2><mark>Are you our future partner?</mark></h2>
-        <p>Get in touch at <a>everyone@datavaluepeople.com</a></p>
-        <span>
-          For more detailed information on our services,
-          you can view our sales deck here
-        </span>
-
-        <p>Hire us to advise, analyse, and automate.</p>
+        <p className={styles.pLarge}>
+          Get in touch at everyone@datavaluepeople.com
+          <br/>
+          <span className={styles.pGrey}>
+            For more detailed information on our services,
+            you can view our sales
+            deck <a href='/downloads/datavaluepeople-sales-deck.pdf'>here</a>
+          </span>
+        </p>
+        <p className={styles.pLarge}>
+          Hire us to advise, analyse, and automate.
+        </p>
         <h2>The ways we work:</h2>
         <h3>Scoping & Consulting</h3>
         <p>
