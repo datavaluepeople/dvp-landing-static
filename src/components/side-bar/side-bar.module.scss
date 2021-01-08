@@ -5,7 +5,7 @@
 
 .container {
   composes: light from '../../styles/global.scss';
-  position: absolute;
+  position: fixed;
   height: calc(100% - #{$nav-bar-height-sm});
   top: $nav-bar-height-sm;
   width: 100%;
