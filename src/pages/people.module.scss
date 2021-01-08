@@ -1,0 +1,11 @@
+@import '../styles/base_values.scss';
+@import '../styles/breakpoints.scss';
+@import '../styles/colors.scss';
+
+.title {
+  composes: contentTitle from '../styles/shared/content-pages.scss';
+}
+
+.content {
+  composes: contentContainer from '../styles/shared/content-pages.scss';
+}
