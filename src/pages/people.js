@@ -5,6 +5,7 @@ import {graphql} from 'gatsby';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 
+import Person from '../components/person/person';
 import styles from './people.module.scss';
 
 const PeoplePage = ({data, location}) => {
@@ -16,9 +17,10 @@ const PeoplePage = ({data, location}) => {
       <div className={styles.content}>
         {people.map(({key, node}) => {
           return (
-            <div key={node.id}>
-              <h2>{node.fullName}</h2>
-            </div>
+            <Person
+              key={node.id}
+              fullName={node.fullName}
+            />
           );
         })}
       </div>
