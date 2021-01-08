@@ -36,6 +36,17 @@ const TrackRecordPage = ({data, location}) => {
             />
           );
         })}
+        <section className={trackRecordStyles.pastClientSection}>
+          <h2><mark>Past Clients</mark></h2>
+          <img
+            className={trackRecordStyles.clientsImageMobile}
+            src='/track-record/clients_mobile.jpg'
+          />
+          <img
+            className={trackRecordStyles.clientsImageDesktop}
+            src='/track-record/clients_desktop.jpg'
+          />
+        </section>
       </div>
     </Layout>
   );

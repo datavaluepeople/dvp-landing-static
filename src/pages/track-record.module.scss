@@ -20,3 +20,21 @@
     padding-left: 2rem;
   }
 }
+
+.pastClientSection {
+  margin-top: 4rem;
+}
+
+.clientsImageDesktop {
+  display: none;
+  @include md {
+    display: block;
+  }
+}
+
+.clientsImageMobile {
+  display: block;
+  @include md {
+    display: none;
+  }
+}
