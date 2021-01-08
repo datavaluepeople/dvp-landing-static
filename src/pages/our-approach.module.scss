@@ -20,3 +20,27 @@
   font-size: 0.9rem;
   color: $dvp-grey;
 }
+
+.hireUs {
+  composes: pLarge;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.wayWeWork {
+  margin-bottom: 3rem;
+}
+
+.wayWeWorkSection {
+  h3 {
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
