@@ -1,0 +1,9 @@
+- id: dan
+  fullName: Daniel Burkhardt Cerigo
+  title: Founding Data Scientist
+  bio: Physics & Philosophy, Oxford. Consulted for UK Gov Office of Rail & Road. Chairperson for nonprofit orgs. Academically published. Kaggle ML-competition ranked. Built reinforcement-learning pricing optimisation algo operating on millions (£) of revenue.
+  email: dan@datavaluepeople.com
+  linkedIn: dbcerigo
+  github: DBCerigo
+  profilePicture: ../../content/assets/people/dan.jpg
+  profilePictureGif: ../../content/assets/people/dan.gif
