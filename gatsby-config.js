@@ -33,6 +33,7 @@ module.exports = {
         name: `track-record`,
         plugins: [
           `gatsby-transformer-json`,
+          `gatsby-transformer-yaml`,
         ],
       },
     },
