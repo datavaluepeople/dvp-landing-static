@@ -1,0 +1,31 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/breakpoints.scss';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  position: relative;
+
+  margin-right: 1rem;
+
+  @include lg {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    .imgColor {
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+  }
+}
+
+.imgColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
