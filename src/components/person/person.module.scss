@@ -1,5 +1,31 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared/people.scss';
+
 .title {
 }
 
 .container {
+}
+
+.imgContainer {
+  position: relative;
+  width: $person-img-md-width;
+
+  @include xlg {
+    width: $person-img-xlg-width;
+  }
+}
+
+.imgPlaceholder {
+  position: absolute;
+  z-index: 2;
+
+}
+
+.imgReal {
+  position: relative;
+  z-index: 3;
+  width: 100%;
 }

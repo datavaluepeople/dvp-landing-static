@@ -20,6 +20,13 @@ const PeoplePage = ({data, location}) => {
             <Person
               key={node.id}
               fullName={node.fullName}
+              title={node.title}
+              bio={node.bio}
+              email={node.email}
+              linkedIn={node.linkedIn}
+              github={node.github}
+              profilePicture={node.profilePicture}
+              profilePictureGifUrl={node.profilePictureGif.publicURL}
             />
           );
         })}
@@ -52,6 +59,10 @@ PeoplePage.propTypes = {
   }),
 };
 
+/*
+ * The fixed width must be the same as in
+ * ../styles/shared/people.scss
+ */
 export const PeoplePageQuery = graphql`
 query {
   people: allPeopleYaml {
@@ -64,9 +75,14 @@ query {
         id
         linkedIn
         profilePicture {
-          childrenImageSharp {
-            fluid {
-              src
+          md: childrenImageSharp {
+            fixed(width: 250) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+          xlg: childrenImageSharp {
+            fixed(width: 350) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
