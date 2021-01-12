@@ -1,0 +1,14 @@
+@import '../../styles/breakpoints.scss';
+
+$person-img-xlg-max: $screen-xlg-min - 1;
+$person-img-xlg-min: $screen-xlg-min;
+
+$person-img-md-width: 250px;
+$person-img-xlg-width: 350px;
+
+:export {
+  personImgXlgMax: $person-img-xlg-max;
+  personImgXlgMin: $person-img-xlg-min;
+  personImgMdWidth: $person-img-md-width;
+  personImgXlgWidth: $person-img-xlg-width;
+}

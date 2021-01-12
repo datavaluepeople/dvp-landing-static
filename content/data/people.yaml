@@ -1,0 +1,56 @@
+# Generate the gifPlaceHolder by selecting a nice jpg from the gif
+# using this site: https://ezgif.com/gif-to-jpg
+- id: dan
+  fullName: Daniel Burkhardt Cerigo
+  title: Founding Data Scientist
+  bio: Physics & Philosophy, Oxford. Consulted for UK Gov Office of Rail & Road. Chairperson for nonprofit orgs. Academically published. Kaggle ML-competition ranked. Built reinforcement-learning pricing optimisation algo operating on millions (£) of revenue.
+  email: dan@datavaluepeople.com
+  linkedIn: dbcerigo
+  github: DBCerigo
+  gifPlaceHolder: ../../content/assets/people/dan-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/dan.gif
+- id: benjamin
+  fullName: Benjamin Cerigo
+  title: Founding Technical Architect & Engineer
+  bio: Past head of tech at a fin-tech startup. Delivered full-stack projects end-to-end solo. Led teams of developers. Music composition at Falmouth, with awards. Created experimental music installations incorporating robotics.
+  email: benjamin@datavaluepeople.com
+  linkedIn: benjamin-cerigo
+  github: benjamincerigo
+  gifPlaceHolder: ../../content/assets/people/benjamin-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/benjamin.gif
+- id: ali
+  fullName: Ali Teeney
+  title: Data Scientist
+  bio: Mathematics, Oxford, awarded scholarship. Kaggle ML-competition ranked. Developed multiple data value projects from 0 to finish line. Built Markov-chain forecast model for customer-contact to determine optimal staff schedules.
+  email: ali@datavaluepeople.com
+  linkedIn: ali-teeney-87739b103
+  github: ali-tny
+  gifPlaceHolder: ../../content/assets/people/ali-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/ali.gif
+- id: alex
+  fullName: Alex Hawkins-Hooker
+  title: Applied Machine Learning Researcher
+  bio: Physics & Philosophy, Oxford. MSc in AI, Edinburgh. Applies deep learning to biological sequences (DNA and proteins) at research institutions in the UK and Europe.
+  email: alex@datavaluepeople.com
+  linkedIn: alex-hawkins-hooker-75a16564
+  github: alex-hh
+  gifPlaceHolder: ../../content/assets/people/alex-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/alex.gif
+- id: andrew
+  fullName: Andrew Sutjahjo
+  title: Data Scientist
+  bio: Brain & Cognitive Sciences, Amsterdam. Founder of data science volunteering foundation. Consulted for NL National Police. Built search & recommendation systems for marketplaces, media, govt. Realized 20% uplift for marketplace with millions (€) in revenue through optimisation.
+  email: andrew@datavaluepeople.com
+  linkedIn: sutjahjo
+  github: andrewsutjahjo
+  gifPlaceHolder: ../../content/assets/people/andrew-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/andrew.gif
+- id: will
+  fullName: Will Underwood
+  title: Data Engineer
+  bio: Financial Engineering, Manchester. Consulted for several Investment Banks and Financial Service institutions, building data warehouse solutions to support product and strategy development.
+  email: will@datavaluepeople.com
+  linkedIn: will-underwood-01573713
+  github: willunderwood
+  gifPlaceHolder: ../../content/assets/people/will-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/will.gif

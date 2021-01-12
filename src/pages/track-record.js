@@ -13,7 +13,7 @@ import trackRecordStyles from './track-record.module.scss';
 const TrackRecordPage = ({data, location}) => {
   /*
    * To change the track record sections text change
-   * content/json-config/track-record-sections.json
+   * content/data/track-record-sections.json
    * allTrackRecordSectionsJson queries the file
    * Query is at bottom of the page
    */

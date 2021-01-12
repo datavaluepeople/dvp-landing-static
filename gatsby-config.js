@@ -29,10 +29,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/json-config`,
+        path: `${__dirname}/content/data`,
         name: `track-record`,
         plugins: [
           `gatsby-transformer-json`,
+          `gatsby-transformer-yaml`,
         ],
       },
     },
