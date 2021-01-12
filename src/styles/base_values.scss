@@ -2,6 +2,19 @@
 $base-font-size: 20px;
 $base-line-height: 1.666;
 
+/* general positioning values */
+$side-bar-width: 100% * (1/3);
+$content-width: 100% - $side-bar-width;
+
+/* Margin */
+$margin-sm-v: 1.5rem;
+$margin-sm-h: 1.5rem;
+
+$margin-md-v: 2.5rem;
+$margin-md-h: 2.5rem;
+
+$margin-lg-v: 3rem;
+$margin-lg-h: 4rem;
 
 :export {
   baseFontSize: $base-font-size;

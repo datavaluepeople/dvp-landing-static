@@ -1,0 +1,33 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared/header.scss';
+
+.container {
+}
+
+.homePageElement {
+  @include lg {
+    display: none;
+  }
+}
+
+.sideBarElement {
+  display: none;
+  
+  @include lg {
+    display: block;
+    position: absolute;
+    top: $nav-bar-height-lg;
+    margin: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
+  }
+
+  @include xlg {
+    margin: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared/header.scss';
+
+.lineContainer {
+  width: 100%;
+
+}
+
+.container {
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+
+  margin: $margin-sm-v $margin-sm-h;
+
+  @include md {
+    margin: $margin-md-v $margin-md-h;
+  }
+
+  @include lg {
+    margin: $margin-lg-v $margin-lg-h;
+    margin-right: $sidebar-right-margin-lg;
+  }
+
+  @include xlg {
+    margin: $margin-lg-v $margin-lg-h;
+    margin-right: $sidebar-right-margin-xlg;
+  }
+
+  b {
+    font-family: 'camptonbold_demo';
+    font-size: 0.7rem;
+  }
+
+  img {
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+}
+

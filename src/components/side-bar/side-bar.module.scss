@@ -1,0 +1,104 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared/header.scss';
+
+.container {
+  composes: light from '../../styles/global.scss';
+  position: absolute;
+  height: calc(100% - #{$nav-bar-height-sm});
+  top: $nav-bar-height-sm;
+  width: 100%;
+  z-index: 10;
+
+  @include md {
+    height: calc(100% - #{$nav-bar-height-md});
+    top: $nav-bar-height-md;
+  }
+
+  @include lg {
+    top: 0;
+    right: 0;
+    width: $side-bar-width;
+    height: 100%;
+  }
+}
+
+.show {
+  right: 0;
+  transition: right 0.3s;
+}
+
+.hide {
+  right: 100%;
+  transition: right 0.2s;
+
+  @include lg {
+    right: 0;
+    display: block;
+  }
+}
+
+$a-line-height: 2.4rem;
+$a-font-size: 1.7rem;
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  @include lg {
+    bottom: $sidebar-left-margin-lg - ($a-line-height /2);
+  }
+
+  @include xlg {
+    bottom: $sidebar-left-margin-xlg - ($a-line-height / 2);
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    width: 100%;
+    padding: 0 $sidebar-right-margin-sm 0 $sidebar-left-margin-sm;
+    @include md {
+      padding: 0 $sidebar-right-margin-md 0 $sidebar-left-margin-md;
+    }
+    @include lg {
+      padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
+    }
+
+    @include xlg {
+      padding: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
+    }
+  }
+
+  nav a {
+    color: $dvp-grey;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-family: 'camptonbold_demo';
+    font-size: $a-font-size;
+    line-height: $a-line-height;
+
+    &:hover {
+      color: $dvp-dark;
+    }
+  }
+}
+
+$arrow-height: $a-font-size * (3 / 4);
+.arrow {
+  float: right;
+  font-size: $arrow-height;
+}
+

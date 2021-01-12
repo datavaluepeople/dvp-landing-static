@@ -2,8 +2,8 @@ import Typography from 'typography';
 import styles from '../styles/base_values.scss';
 
 const typography = new Typography({
-  baseFontSize: styles.baseFontSize,
-  baseLineHeight: styles.baseLineHeight,
+  baseFontSize: toString(styles.baseFontSize),
+  baseLineHeight: toString(styles.baseLineHeight),
   headerFontFamily: [
     'camptonbold_demo',
     'sans-serif',

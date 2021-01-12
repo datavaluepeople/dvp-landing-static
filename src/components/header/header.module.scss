@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.dark {
+  composes: dark from '../../styles/global.scss';
+}
+
+.light {
+  /* place holder */
+}
+
+.containerMenuClosed {
+  /* place holder */
+}
+
+.containerMenuOpen {
+  /* place holder */
+}

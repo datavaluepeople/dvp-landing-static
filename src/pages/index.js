@@ -1,72 +1,26 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from '../components/layout/layout';
+import SEO from '../components/seo';
+import BuilderFooter from '../components/builder-footer/builder-footer.js';
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-
+const LandingPageIndex = ({location}) => {
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+    <Layout location={location}>
+      <SEO title="We build bespoke state-of-the-art data-driven systems"/>
+      <h1>
+        Are you getting returns from your data &amp; analytics?
+        <br/>
+        We build data-driven systems with <i>measurable</i> value delivered.
+      </h1>
+      <BuilderFooter HomePage={true}/>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default LandingPageIndex;
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`
+LandingPageIndex.propTypes = {
+  location: PropTypes.object,
+};

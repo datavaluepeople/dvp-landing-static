@@ -1,0 +1,32 @@
+@import '../../styles/base_values.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+
+.dark {
+  composes: dark from '../../styles/global.scss';
+}
+
+.light {
+  /* place holder */
+}
+
+.container {
+  @include lg {
+    width: $content-width;
+  }
+}
+
+.backgroundFixPanal {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  /* Width will be gotten from the parent */
+  width: 100%;
+  background-color: $dvp-dark;
+
+  @include lg {
+    width: $content-width;
+  }
+}
