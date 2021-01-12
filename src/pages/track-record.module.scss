@@ -1,0 +1,40 @@
+@import '../styles/base_values.scss';
+@import '../styles/breakpoints.scss';
+@import '../styles/colors.scss';
+
+.title {
+  display: none;
+  @include md {
+    display: initial;
+  }
+}
+
+.content {
+  @include md {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include xlg {
+    padding-top: 3.8rem;
+    padding-left: 2rem;
+  }
+}
+
+.pastClientSection {
+  margin-top: 4rem;
+}
+
+.clientsImageDesktop {
+  display: none;
+  @include md {
+    display: block;
+  }
+}
+
+.clientsImageMobile {
+  display: block;
+  @include md {
+    display: none;
+  }
+}

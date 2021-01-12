@@ -13,7 +13,7 @@ const Burger = ({isHome, isOpen, toggleMenuOpen}) => {
     <button
       className={`
         ${burgerStyles.burger}
-        ${isHome ? burgerStyles.light : burgerStyles.dark}
+        ${isHome ? burgerStyles.home : ''}
         ${isOpen ? burgerStyles.cross : ''}
       `}
       onClick={() => toggleMenuOpen()}
@@ -28,7 +28,7 @@ const Burger = ({isHome, isOpen, toggleMenuOpen}) => {
 export default Burger;
 
 Burger.propTypes = {
-  isHome: PropTypes.boolean,
-  isOpen: PropTypes.boolean,
+  isHome: PropTypes.bool,
+  isOpen: PropTypes.bool,
   toggleMenuOpen: PropTypes.function,
 };

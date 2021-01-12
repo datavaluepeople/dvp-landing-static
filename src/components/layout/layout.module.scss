@@ -11,6 +11,12 @@
 }
 
 .container {
+  @include xlg {
+    width: $content-width;
+  }
+}
+
+.containerHome {
   @include lg {
     width: $content-width;
   }
@@ -31,7 +37,7 @@
   }
 }
 
-.main {
+.mainHome {
   margin: $margin-sm-v $margin-sm-h;
 
   @include md {
@@ -40,5 +46,17 @@
 
   @include lg {
     margin: 0 $margin-lg-h $margin-lg-v;
+  }
+}
+
+.main{
+  margin: 0 $margin-sm-v $margin-sm-h;
+
+  @include md {
+    margin: 0 $margin-md-h $margin-md-v;
+  }
+
+  @include xlg {
+    margin: 0 0 $margin-lg-v $margin-lg-h;
   }
 }

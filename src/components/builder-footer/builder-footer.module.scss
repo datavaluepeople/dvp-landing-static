@@ -18,8 +18,14 @@
     padding: 5rem $sidebar-right-margin-md 1rem $sidebar-left-margin-md;
   }
 
-  @include lg {
+  @include xlg {
     display: none;
+  }
+
+  &.home {
+    @include lg {
+      display: none;
+    }
   }
 }
 

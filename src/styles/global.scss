@@ -14,8 +14,18 @@
   color: $dvp-dark;
 }
 
-html {
+html, body {
   font-size: $base-font-size;
   color: $dvp-dark;
-}
 
+  a {
+    color: $dvp-dark;
+    &:hover {
+      color: $dvp-dark;
+    }
+  }
+
+  mark {
+    background-color: $dvp-yellow;
+  }
+}

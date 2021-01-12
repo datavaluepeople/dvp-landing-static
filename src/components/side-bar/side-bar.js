@@ -13,9 +13,10 @@ const SideBar = ({isHome, isOpen}) => {
     <div className={`
         ${sideBarStyles.container}
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
+        ${isHome ? sideBarStyles.home : ''}
       `}>
-      <ChatWithUs />
-      <WhoWeAre HomePage={false}/>
+      <ChatWithUs isHome={isHome}/>
+      {isHome && <WhoWeAre HomePage={false}/>}
       <div className={sideBarStyles.footer}>
         <nav>
           <ul>
@@ -39,7 +40,7 @@ const SideBar = ({isHome, isOpen}) => {
             </li>
           </ul>
         </nav>
-        <BuilderFooter HomePage={false}/>
+        <BuilderFooter SideBarAndIsHome={isHome } HomePage={false}/>
       </div>
     </div>
   );
@@ -48,7 +49,7 @@ const SideBar = ({isHome, isOpen}) => {
 export default SideBar;
 
 SideBar.propTypes = {
-  isHome: PropTypes.boolean,
-  isOpen: PropTypes.boolean,
+  isHome: PropTypes.bool,
+  isOpen: PropTypes.bool,
 };
 

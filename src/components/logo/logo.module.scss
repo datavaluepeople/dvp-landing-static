@@ -12,11 +12,27 @@
     margin: $margin-md-v $margin-md-h;
   }
 
+  @include xlg {
+    height: $logo-height-lg;
+    margin: $margin-lg-v $margin-lg-h;
+  }
+}
+
+.home {
+  height: $logo-height-sm;
+  margin: $margin-sm-v $margin-sm-h;
+
+  @include md {
+    height: $logo-height-md;
+    margin: $margin-md-v $margin-md-h;
+  }
+
   @include lg {
     height: $logo-height-lg;
     margin: $margin-lg-v $margin-lg-h;
   }
 }
+
 
 .img {
   height: 100%;
