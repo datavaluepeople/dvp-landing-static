@@ -9,3 +9,12 @@
   github: DBCerigo
   gifPlaceHolder: ../../content/assets/people/dan-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/dan.gif
+- id: benjamin
+  fullName: Benjamin Cerigo
+  title: Founding Technical Architect & Engineer
+  bio: Past head of tech at a fin-tech startup. Delivered full-stack projects end-to-end solo. Led teams of developers. Music composition at Falmouth, with awards. Created experimental music installations incorporating robotics.
+  email: benjamin@datavaluepeople.com
+  linkedIn: benjamin-cerigo
+  github: benjamincerigo
+  gifPlaceHolder: ../../content/assets/people/benjamin-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/benjamin.gif
