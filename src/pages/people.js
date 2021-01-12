@@ -9,6 +9,12 @@ import Person from '../components/person/person';
 import styles from './people.module.scss';
 
 const PeoplePage = ({data, location}) => {
+  /*
+   * To change the people
+   * content/data/people.yaml
+   * allPeopleYaml queries the file
+   * Query is at bottom of the page
+   */
   const people = data.people.edges;
   return (
     <Layout location={location}>
