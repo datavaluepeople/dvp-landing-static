@@ -22,16 +22,19 @@ const Person = (
 ) => {
   const maxWidth = sharedPeopleStyles.personImgXlgMax;
   const minWidth = sharedPeopleStyles.personImgXlgMin;
-  const gifPlaceHolderSources = [
-    {
-      ...gifPlaceHolder.md[0].fixed,
-      media: `(max-width: ${maxWidth})`,
-    },
-    {
-      ...gifPlaceHolder.xlg[0].fixed,
-      media: `(min-width: ${minWidth})`,
-    },
-  ];
+  let gifPlaceHolderSources = '';
+  if (gifPlaceHolder) {
+    gifPlaceHolderSources = [
+      {
+        ...gifPlaceHolder.md[0].fixed,
+        media: `(max-width: ${maxWidth})`,
+      },
+      {
+        ...gifPlaceHolder.xlg[0].fixed,
+        media: `(min-width: ${minWidth})`,
+      },
+    ];
+  }
   return (
     <div id={id} className={styles.container}>
       <div className={styles.imgContainer}>
@@ -43,7 +46,7 @@ const Person = (
         />
         <ImageFadeIn
           className={styles.imgReal}
-          src={profilePictureGifUrl}
+          src={profilePictureGifUrl ? profilePictureGifUrl : ''}
         />
       </div>
       <div className={styles.textContainer}>

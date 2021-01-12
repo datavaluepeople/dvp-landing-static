@@ -26,7 +26,9 @@ const PeoplePage = ({data, location}) => {
               linkedIn={node.linkedIn}
               github={node.github}
               gifPlaceHolder={node.gifPlaceHolder}
-              profilePictureGifUrl={node.profilePictureGif.publicURL}
+              profilePictureGifUrl={
+                node.profilePictureGif ? node.profilePictureGif.publicURL : ''
+              }
             />
           );
         })}
