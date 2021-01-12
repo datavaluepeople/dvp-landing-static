@@ -25,7 +25,7 @@ const PeoplePage = ({data, location}) => {
               email={node.email}
               linkedIn={node.linkedIn}
               github={node.github}
-              profilePicture={node.profilePicture}
+              gifPlaceHolder={node.gifPlaceHolder}
               profilePictureGifUrl={node.profilePictureGif.publicURL}
             />
           );
@@ -50,7 +50,7 @@ PeoplePage.propTypes = {
           email: PropTypes.string,
           github: PropTypes.string,
           linkedIn: PropTypes.string,
-          profilePicture: PropTypes.object,
+          gifPlaceHolder: PropTypes.object,
           profilePictureGif: PropTypes.shape({
             publicURL: PropTypes.string,
           }),
@@ -76,7 +76,7 @@ query {
         email
         github
         linkedIn
-        profilePicture {
+        gifPlaceHolder {
           md: childrenImageSharp {
             fixed(width: 250) {
               ...GatsbyImageSharpFixed

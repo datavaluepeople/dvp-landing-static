@@ -1,3 +1,5 @@
+# Generate the gifPlaceHolder by selecting a nice jpg from the gif
+# using this site: https://ezgif.com/gif-to-jpg
 - id: dan
   fullName: Daniel Burkhardt Cerigo
   title: Founding Data Scientist
@@ -5,5 +7,5 @@
   email: dan@datavaluepeople.com
   linkedIn: dbcerigo
   github: DBCerigo
-  profilePicture: ../../content/assets/people/dan.jpg
+  gifPlaceHolder: ../../content/assets/people/dan-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/dan.gif

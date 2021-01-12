@@ -16,19 +16,19 @@ const Person = (
       email,
       github,
       linkedIn,
-      profilePicture,
+      gifPlaceHolder,
       profilePictureGifUrl,
     },
 ) => {
   const maxWidth = sharedPeopleStyles.personImgXlgMax;
   const minWidth = sharedPeopleStyles.personImgXlgMin;
-  const profilePictureSources = [
+  const gifPlaceHolderSources = [
     {
-      ...profilePicture.md[0].fixed,
+      ...gifPlaceHolder.md[0].fixed,
       media: `(max-width: ${maxWidth})`,
     },
     {
-      ...profilePicture.xlg[0].fixed,
+      ...gifPlaceHolder.xlg[0].fixed,
       media: `(min-width: ${minWidth})`,
     },
   ];
@@ -37,7 +37,7 @@ const Person = (
       <div className={styles.imgContainer}>
         <Img
           className={styles.imgPlaceholder}
-          fixed={profilePictureSources}
+          fixed={gifPlaceHolderSources}
           alt='profile picture'
           style={{'position': 'absolute'}}
         />
@@ -89,6 +89,6 @@ Person.propTypes = {
   email: PropTypes.string,
   github: PropTypes.string,
   linkedIn: PropTypes.string,
-  profilePicture: PropTypes.object,
+  gifPlaceHolder: PropTypes.object,
   profilePictureGifUrl: PropTypes.string,
 };
