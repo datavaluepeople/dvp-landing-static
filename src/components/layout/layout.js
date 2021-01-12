@@ -24,6 +24,7 @@ const Layout = ({location, children}) => {
       ${layoutStyles.container}
       ${isHome? layoutStyles.containerHome : '' }
       ${isHome? layoutStyles.dark : '' }
+      ${isOpen? layoutStyles.openSideBar : '' }
       `}
     >
       <Header
