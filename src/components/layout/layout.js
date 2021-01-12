@@ -23,6 +23,7 @@ const Layout = ({location, children}) => {
     <div className={`
       ${layoutStyles.container}
       ${isHome? layoutStyles.containerHome : '' }
+      ${isHome? layoutStyles.dark : '' }
       `}
     >
       <Header
