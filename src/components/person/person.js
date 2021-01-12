@@ -6,12 +6,14 @@ import ImageFadeIn from 'react-image-fade-in';
 import styles from './person.module.scss';
 import sharedPeopleStyles from '../../styles/shared/people.scss';
 
+
 const Person = (
     {
       id,
       bio,
       title,
       fullName,
+      email,
       github,
       linkedIn,
       profilePicture,
@@ -44,8 +46,28 @@ const Person = (
           src={profilePictureGifUrl}
         />
       </div>
-      <div>
+      <div className={styles.textContainer}>
         <h2>{fullName}</h2>
+        <h3>{title}</h3>
+        <p>{bio}</p>
+        <p>{email}</p>
+        <div>
+          <a
+            href={`https://www.linkedin.com/in/${linkedIn}/`}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={`https://github.com/${github}/`}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            GitHub
+          </a>
+        </div>
+
       </div>
     </div>
   );
@@ -58,6 +80,7 @@ Person.propTypes = {
   bio: PropTypes.string,
   title: PropTypes.string,
   fullName: PropTypes.string,
+  email: PropTypes.string,
   github: PropTypes.string,
   linkedIn: PropTypes.string,
   profilePicture: PropTypes.object,

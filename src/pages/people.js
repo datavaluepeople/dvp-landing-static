@@ -47,6 +47,7 @@ PeoplePage.propTypes = {
           bio: PropTypes.string,
           title: PropTypes.string,
           fullName: PropTypes.string,
+          email: PropTypes.string,
           github: PropTypes.string,
           linkedIn: PropTypes.string,
           profilePicture: PropTypes.object,
@@ -68,11 +69,12 @@ query {
   people: allPeopleYaml {
     edges {
       node {
+        id
+        fullName
+        title
         bio
         email
-        fullName
         github
-        id
         linkedIn
         profilePicture {
           md: childrenImageSharp {
