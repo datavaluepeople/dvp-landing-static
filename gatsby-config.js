@@ -5,7 +5,7 @@ module.exports = {
       name: `datavaluepeople`,
       summary: `datavaluepeole`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `datavaluepeople | We build bespoke data-driven systems.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `datavaluepeople`,

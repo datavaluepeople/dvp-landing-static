@@ -4,7 +4,6 @@
 @import '../../styles/shared/header.scss';
 
 .sideBarElement {
-
   font-size: 0.6rem;
   color: $dvp-grey-half;
   font-weight: 600;
@@ -21,5 +20,25 @@
 
   @include lg {
     display: none;
+  }
+}
+
+.homePageElement {
+
+  font-size: 0.6rem;
+  color: $dvp-white-half;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+
+  a {
+    color: $dvp-white;
+  }
+
+  display: none;
+
+  @include lg {
+    padding: $margin-lg-v 0 ($margin-lg-v / 2);
+    display: block;
   }
 }
