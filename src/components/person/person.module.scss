@@ -7,11 +7,79 @@
 }
 
 .container {
+  @include md {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    width: 100%;
+    align-items: stretch;
+    position: relative;
+  }
+}
+
+.column {
+  flex-basis: auto;
+}
+
+$margin-text: 1.2rem;
+.textContainer {
+  margin-top: $margin-text;
+  @include md {
+    margin-top: $margin-text;
+    margin-left: 1rem;
+    composes: column;
+    flex-shrink: 1;
+  }
+
+  h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+    margin-bottom: 0;
+    @include md {
+      margin-bottom: $margin-text / 3;
+    }
+  }
+  h3 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: $margin-text;
+    font-weight: 400;
+    @include md {
+      font-weight: 500;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: $margin-text;
+    line-height: 1.1rem;
+  }
+  b {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: $margin-text;
+  }
+}
+
+.linkContainer {
+  @include md {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: $margin-text;
+  }
 }
 
 .imgContainer {
   position: relative;
   width: $person-img-md-width;
+
+  @include md {
+    flex-shrink: 0;
+    composes: column;
+  }
 
   @include xlg {
     width: $person-img-xlg-width;

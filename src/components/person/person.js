@@ -50,8 +50,8 @@ const Person = (
         <h2>{fullName}</h2>
         <h3>{title}</h3>
         <p>{bio}</p>
-        <p>{email}</p>
-        <div>
+        <p><b className={styles.email}>{email}</b></p>
+        <div className={styles.linkContainer}>
           <a
             href={`https://www.linkedin.com/in/${linkedIn}/`}
             target="_blank"
