@@ -62,6 +62,9 @@ $margin-text: 1.2rem;
     font-weight: 700;
     margin-bottom: $margin-text;
   }
+  img {
+    margin-right: $margin-text / 2;
+  }
 }
 
 .linkContainer {
@@ -70,6 +73,11 @@ $margin-text: 1.2rem;
     bottom: 0;
     margin-bottom: $margin-text;
   }
+
+  @include xlg {
+    position: static;
+  }
+
 }
 
 .imgContainer {

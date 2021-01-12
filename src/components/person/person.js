@@ -57,14 +57,20 @@ const Person = (
             target="_blank"
             rel="noreferrer noopener"
           >
-            LinkedIn
+            <img
+              alt='linkedIn icon'
+              src='/img/icons/linkedin.svg'
+            />
           </a>
           <a
             href={`https://github.com/${github}/`}
             target="_blank"
             rel="noreferrer noopener"
           >
-            GitHub
+            <img
+              alt='github icon'
+              src='/img/icons/github.svg'
+            />
           </a>
         </div>
 
