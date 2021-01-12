@@ -1,0 +1,46 @@
+@import '../styles/base_values.scss';
+@import '../styles/breakpoints.scss';
+@import '../styles/colors.scss';
+
+.title {
+  composes: contentTitle from '../styles/shared/content-pages.scss';
+}
+
+.content {
+  composes: contentContainer from '../styles/shared/content-pages.scss';
+}
+
+.pLarge {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2rem;
+}
+
+.pGrey {
+  font-size: 0.9rem;
+  color: $dvp-grey;
+}
+
+.hireUs {
+  composes: pLarge;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.wayWeWork {
+  margin-bottom: 3rem;
+}
+
+.wayWeWorkSection {
+  h3 {
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
