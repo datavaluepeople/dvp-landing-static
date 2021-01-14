@@ -8,34 +8,48 @@
 
 .textContainer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.waveImgContainer {
+.waveImgContainer{
   position: absolute;
-
-  img {
-    height: 100%;
-    width: 100%;
-  }
+  overflow: hidden;
+  width: 100%;
 
   top: 7rem;
-  left: -8rem;
-  width: 57rem;
-  height: 20rem;
+  left: 0;
 
   @include md {
     top: 3rem;
-    left: -8%;
-    width: 120%;
-    height: auto;
   }
 
   @include lg {
-    top: 10rem;
-    left: -10%;
-    width: 130%;
-    height: auto;
+    top: 15rem;
+  }
+}
+
+$img-sm-v: 57rem;
+$img-sm-h: 20rem;
+.waveImg {
+  content: " ";
+  position: relative;
+  z-index: 1;
+  background: url(/img/wave-white/wave.png) center center no-repeat;
+  background-size: $img-sm-v $img-sm-h;
+  width: $img-sm-v;
+  height: $img-sm-h;
+  margin-left: -8rem;
+
+  @include md {
+    background-size: 100%;
+    width: 100%;
+    height: 40rem;
+    margin-left: 0;
+  }
+
+  @include lg {
+    margin-left: 0;
+    width: 80%;
   }
 }
 

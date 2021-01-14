@@ -10,15 +10,36 @@
   /* place holder */
 }
 
+
 .container {
   @include xlg {
     width: $content-width;
   }
+
+  &.openSideBar {
+    @include xlg {
+      height: auto;
+      overflow: auto;
+    }
+  }
+}
+
+.openSideBar {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
 }
 
 .containerHome {
   @include lg {
     width: $content-width;
+  }
+
+  &.openSideBar {
+    @include lg {
+      height: auto;
+      overflow: auto;
+    }
   }
 }
 
@@ -38,25 +59,25 @@
 }
 
 .mainHome {
-  margin: $margin-sm-v $margin-sm-h;
+  padding: $margin-sm-v $margin-sm-h;
 
   @include md {
-    margin: 0 $margin-md-h $margin-md-v;
+    padding: 0 $margin-md-h $margin-md-v;
   }
 
   @include lg {
-    margin: 0 $margin-lg-h $margin-lg-v;
+    padding: 0 $margin-lg-h $margin-lg-v;
   }
 }
 
 .main{
-  margin: 0 $margin-sm-v $margin-sm-h;
+  padding: 0 $margin-sm-v $margin-sm-h;
 
   @include md {
-    margin: 0 $margin-md-h $margin-md-v;
+    padding: 0 $margin-md-h $margin-md-v;
   }
 
   @include xlg {
-    margin: 0 0 $margin-lg-v $margin-lg-h;
+    padding: 0 0 $margin-lg-v $margin-lg-h;
   }
 }
