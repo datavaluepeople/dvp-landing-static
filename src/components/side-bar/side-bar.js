@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
+import {AnchorLink} from 'gatsby-plugin-anchor-links';
 
 import sideBarStyles from './side-bar.module.scss';
 
@@ -15,7 +16,12 @@ const SideBar = ({isHome, isOpen}) => {
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
         ${isHome ? sideBarStyles.home : ''}
       `}>
-      <ChatWithUs isHome={isHome}/>
+      <AnchorLink
+        className={sideBarStyles.chatLink}
+        to='/our-approach#chat-with-us'
+      >
+        <ChatWithUs isHome={isHome}/>
+      </AnchorLink>
       {isHome && <WhoWeAre HomePage={false}/>}
       <div className={sideBarStyles.footer}>
         <nav>
