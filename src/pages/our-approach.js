@@ -53,7 +53,16 @@ const OurApproachPage = ({location}) => {
             <br/>
             <b>Timeline:</b> Single sprint
           </p>
-          <h3>Proof of Value</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_2'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Proof of Value
+          </h3>
           <p>
             Combining initial proof-of-concept machine learning modelling,
             with evidence based and data led investigation,
@@ -61,7 +70,16 @@ const OurApproachPage = ({location}) => {
             <br/>
             <b>Timeline:</b> Multiple sprints over 1-2 months
           </p>
-          <h3>Automated Data-driven Systems</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_3'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Automated Data-driven Systems
+          </h3>
           <p>
             Full hands-on development,
             in collaboration with internal employees, we build,
