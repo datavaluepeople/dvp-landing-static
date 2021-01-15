@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
+import HypeAnimation from '../components/hype-animation';
 
 import styles from './our-approach.module.scss';
 
 const OurApproachPage = ({location}) => {
+  const approachIconHeight = '40px';
+  const approachIconWidth = '40px';
   return (
     <Layout location={location}>
       <SEO title="Our Approach"/>
@@ -33,7 +36,16 @@ const OurApproachPage = ({location}) => {
             Hire us to advise, analyse, and automate.
           </span>
           <h2 className={styles.wayWeWork}>The ways we work:</h2>
-          <h3>Scoping & Consulting</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_1'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Scoping & Consulting
+          </h3>
           <p>
             On-site analysis of the organisation’s current data
             leverage methods,
