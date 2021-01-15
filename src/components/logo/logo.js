@@ -2,15 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import logoStyles from './logo.module.scss';
+import HypeAnimation from '../../components/hype-animation';
 
 const Logo = ({isHome}) => {
-  let logo;
-  if (isHome) {
-    logo = '/img/logo-full-header-white/datavaluepeople.svg';
-  } else {
-    logo = '/img/logo-full-header-color/datavaluepeople.svg';
-  }
+  const logoSrc = isHome ?
+    '/img/logo-full-header-white/datavaluepeople.svg' :
+    '/img/logo-full-header-color/datavaluepeople.svg';
+  const logoEl = (
+    <img
+      className={logoStyles.img}
+      alt='datavaluepeople logo'
+      src={logoSrc}
+    />
+  );
 
+  const logoAnimation = (
+    <HypeAnimation
+      name={'header_logo'}
+      display='none'
+      className={logoStyles.animationHeader}
+    />
+  );
   return (
     <div
       className={`
@@ -18,11 +30,8 @@ const Logo = ({isHome}) => {
       ${isHome ? logoStyles.home : ''}
       `}
     >
-      <img
-        className={logoStyles.img}
-        alt="datavaluepeople logo"
-        src={logo}
-      />
+      {logoEl}
+      {isHome && logoAnimation}
     </div>
 
   );
