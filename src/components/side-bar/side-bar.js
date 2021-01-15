@@ -9,7 +9,7 @@ import ChatWithUs from '../chat-with-us/chat-with-us.js';
 import WhoWeAre from '../who-we-are/who-we-are.js';
 import BuilderFooter from '../builder-footer/builder-footer.js';
 
-const SideBar = ({isHome, isOpen}) => {
+const SideBar = ({isHome, isOpen, toggleMenuOpen}) => {
   return (
     <div className={`
         ${sideBarStyles.container}
@@ -18,9 +18,14 @@ const SideBar = ({isHome, isOpen}) => {
       `}>
       <AnchorLink
         className={sideBarStyles.chatLink}
+        onAnchorLinkClick={() => {
+          toggleMenuOpen(false);
+        }}
         to='/our-approach#chat-with-us'
       >
-        <ChatWithUs isHome={isHome}/>
+        <ChatWithUs
+          isHome={isHome}
+        />
       </AnchorLink>
       {isHome && <WhoWeAre HomePage={false}/>}
       <div className={sideBarStyles.footer}>
@@ -57,5 +62,6 @@ export default SideBar;
 SideBar.propTypes = {
   isHome: PropTypes.bool,
   isOpen: PropTypes.bool,
+  toggleMenuOpen: PropTypes.function,
 };
 
