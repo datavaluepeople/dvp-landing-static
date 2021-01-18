@@ -30,6 +30,8 @@
 
 $img-sm-v: 57rem;
 $img-sm-h: 20rem;
+$img-size-sm: cover;
+$img-size-lg: contain;
 .waveImg {
   content: " ";
   position: relative;
@@ -39,6 +41,10 @@ $img-sm-h: 20rem;
   width: $img-sm-v;
   height: $img-sm-h;
   margin-left: -8rem;
+  -webkit-background-size: $img-size-sm;
+  -moz-background-size: $img-size-sm;
+  -o-background-size: $img-size-sm;
+  background-size: $img-size-sm;
 
   @include md {
     background-size: 100%;
@@ -47,9 +53,16 @@ $img-sm-h: 20rem;
     margin-left: 0;
   }
 
+
   @include lg {
+    background: url(/img/wave-white/wave@3x.png) center center no-repeat;
+    -webkit-background-size: $img-size-lg;
+    -moz-background-size: $img-size-lg;
+    -o-background-size: $img-size-lg;
+    background-size: $img-size-lg;
     margin-left: 0;
-    width: 80%;
+    width: 110%;
+    height: 53rem;
   }
 }
 

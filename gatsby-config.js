@@ -13,6 +13,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -50,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,

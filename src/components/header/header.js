@@ -35,6 +35,7 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
       <SideBar
         isHome={isHome}
         isOpen={isOpen}
+        toggleMenuOpen={toggleMenuOpen}
       />
     </header>
   );

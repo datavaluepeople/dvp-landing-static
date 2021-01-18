@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
+import HypeAnimation from '../components/hype-animation';
 
 import styles from './our-approach.module.scss';
 
 const OurApproachPage = ({location}) => {
+  const approachIconHeight = '40px';
+  const approachIconWidth = '40px';
   return (
     <Layout location={location}>
       <SEO title="Our Approach"/>
@@ -18,7 +21,7 @@ const OurApproachPage = ({location}) => {
           we’re not satisfied until we can tell you exactly
           how much value we’ve generated for you.
         </p>
-        <h2><mark>Are you our future partner?</mark></h2>
+        <h2 id="chat-with-us"><mark>Are you our future partner?</mark></h2>
         <p className={styles.pLarge}>
           Get in touch at everyone@datavaluepeople.com
           <br/>
@@ -33,7 +36,16 @@ const OurApproachPage = ({location}) => {
             Hire us to advise, analyse, and automate.
           </span>
           <h2 className={styles.wayWeWork}>The ways we work:</h2>
-          <h3>Scoping & Consulting</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_1'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Scoping & Consulting
+          </h3>
           <p>
             On-site analysis of the organisation’s current data
             leverage methods,
@@ -41,7 +53,16 @@ const OurApproachPage = ({location}) => {
             <br/>
             <b>Timeline:</b> Single sprint
           </p>
-          <h3>Proof of Value</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_2'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Proof of Value
+          </h3>
           <p>
             Combining initial proof-of-concept machine learning modelling,
             with evidence based and data led investigation,
@@ -49,7 +70,16 @@ const OurApproachPage = ({location}) => {
             <br/>
             <b>Timeline:</b> Multiple sprints over 1-2 months
           </p>
-          <h3>Automated Data-driven Systems</h3>
+          <h3>
+            <HypeAnimation
+              name={'approach_icon_3'}
+              display='inline'
+              height={approachIconHeight}
+              width={approachIconWidth}
+              className={styles.approachIcons}
+            />
+            Automated Data-driven Systems
+          </h3>
           <p>
             Full hands-on development,
             in collaboration with internal employees, we build,

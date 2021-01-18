@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import whoWeAreStyles from './who-we-are.module.scss';
+import TechonolgyIcons from '../technology-icons/technology-icons';
+
 
 const WhoWeAre = ({HomePage}) => {
   const pageClass = HomePage ?
     whoWeAreStyles.homePageElement :
     whoWeAreStyles.sideBarElement;
+
   return (
     <div
       className={`
@@ -22,7 +25,7 @@ const WhoWeAre = ({HomePage}) => {
         <br/>
         Some technologies we use:
       </p>
-      <div><span>Icons</span></div>
+      <TechonolgyIcons />
     </div>
   );
 };
