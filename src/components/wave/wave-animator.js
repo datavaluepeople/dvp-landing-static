@@ -2,38 +2,11 @@
  * WaveAnimator
  * Loop animator that can be stopped, started and reinitialised
  */
-import wavePathGenerator from './wave-path-generator.js';
+import {drawCurve, clearCanvas} from './wave-draw.js';
 import ClassicalNoise from './classical-noise.js';
 
 const distance = (x1, y1, x2, y2) => {
   return Math.sqrt( (x2-=x1)*x2 + (y2-=y1)*y2 );
-};
-
-const clearCanvas = (viewProps, staticProps) => {
-  viewProps.context.save();
-  if (staticProps.bgColor) {
-    viewProps.context.fillStyle = staticProps.bgColor;
-  }
-  viewProps.context.fillRect(
-      0, 0, viewProps.canvas.width, viewProps.canvas.height);
-  viewProps.context.restore();
-};
-
-const drawCurve = (
-    row, viewProps, staticProps,
-) => {
-  const context = viewProps.context;
-  context.save();
-  context.strokeStyle = staticProps.lineColor;
-  context.lineWidth = staticProps.lineWidth;
-  context.beginPath();
-  const path = wavePathGenerator(
-      row,
-      viewProps,
-      staticProps,
-  );
-  context.stroke(path);
-  context.restore();
 };
 
 /**

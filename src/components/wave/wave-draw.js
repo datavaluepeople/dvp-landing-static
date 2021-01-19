@@ -42,4 +42,31 @@ const wavePathGenerator = (
   return new Path2D(path);
 };
 
-export default wavePathGenerator;
+const clearCanvas = (viewProps, staticProps) => {
+  viewProps.context.save();
+  if (staticProps.bgColor) {
+    viewProps.context.fillStyle = staticProps.bgColor;
+  }
+  viewProps.context.fillRect(
+      0, 0, viewProps.canvas.width, viewProps.canvas.height);
+  viewProps.context.restore();
+};
+
+const drawCurve = (
+    row, viewProps, staticProps,
+) => {
+  const context = viewProps.context;
+  context.save();
+  context.strokeStyle = staticProps.lineColor;
+  context.lineWidth = staticProps.lineWidth;
+  context.beginPath();
+  const path = wavePathGenerator(
+      row,
+      viewProps,
+      staticProps,
+  );
+  context.stroke(path);
+  context.restore();
+};
+
+export {drawCurve, clearCanvas, wavePathGenerator};
