@@ -23,6 +23,7 @@ const staticProps = (width, height) => {
       lineWidth: 1,
       lineColor: colors.dvpWhite,
       bgColor: colors.dvpDark,
+      perspective: 100,
     };
   }
 
@@ -44,6 +45,7 @@ const staticProps = (width, height) => {
       lineWidth: 1,
       lineColor: colors.dvpWhite,
       bgColor: colors.dvpDark,
+      perspective: 100,
     };
   }
 
@@ -64,6 +66,7 @@ const staticProps = (width, height) => {
     lineWidth: 1,
     lineColor: colors.dvpWhite,
     bgColor: colors.dvpDark,
+    perspective: 100,
   };
 };
 
