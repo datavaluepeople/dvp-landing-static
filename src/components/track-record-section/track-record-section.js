@@ -3,30 +3,30 @@ import PropTypes from 'prop-types';
 
 import styles from './track-record-section.module.scss';
 
-const TrackRecordSection = (trackRecordObject) => {
+const TrackRecordSection = ({trackRecord}) => {
+  console.log(trackRecord);
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
         <img
           className={styles.icon}
-          alt={`${trackRecordObject.title} icon`}
-          src={`/track-record/${trackRecordObject.iconFile}`}
+          alt={`${trackRecord.title} icon`}
+          src={`/track-record/${trackRecord.iconFile}`}
         />
-        {trackRecordObject.title}
+        {trackRecord.title}
       </h2>
-      <p>{trackRecordObject.paragraph}</p>
+      <p>{trackRecord.paragraph}</p>
       <p>
-        <b>Previous client:</b> {trackRecordObject.previousClientText};&nbsp;
-        {trackRecordObject.previousClientLink &&
+        <b>Previous client:</b> {trackRecord.previousClientText};&nbsp;
+        {trackRecord.previousClientLink &&
           <a
-            href={trackRecordObject.previousClientLink}
+            href={trackRecord.previousClientLink.text}
           >
-            {trackRecordObject.previousClientLink}
+            {trackRecord.previousClientLink.text}
           </a>
         }
         <br/>
-        Hello
-        <b>Value delivered:</b> {trackRecordObject.valueDelivered}
+        <b>Value delivered:</b> {trackRecord.valueDelivered}
       </p>
     </div>
   );
@@ -35,13 +35,15 @@ const TrackRecordSection = (trackRecordObject) => {
 export default TrackRecordSection;
 
 TrackRecordSection.propTypes = {
-  trackRecordObject: PropTypes.shape({
+  trackRecord: PropTypes.shape({
     id: PropTypes.string,
     iconFile: PropTypes.string,
     title: PropTypes.string,
     paragraph: PropTypes.string,
     previousClientText: PropTypes.string,
-    previousClientLink: PropTypes.string,
+    previousClientLink: PropTypes.shape({
+      text: PropTypes.string,
+    }),
     valueDelivered: PropTypes.string,
   }),
 };

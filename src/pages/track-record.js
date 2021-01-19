@@ -13,11 +13,11 @@ import trackRecordStyles from './track-record.module.scss';
 const TrackRecordPage = ({data, location}) => {
   /*
    * To change the track record sections text change
-   * content/data/track-record-sections.json
-   * allTrackRecordSectionsJson queries the file
+   * content/data/track-record-sections.yaml
+   * allTrackRecordSectionsYaml queries the file
    * Query is at bottom of the page
    */
-  const sections = data.allTrackRecordSectionsJson.edges;
+  const sections = data.allTrackRecordSectionsYaml.edges;
   return (
     <Layout location={location}>
       <SEO title="Track Record"/>
@@ -52,7 +52,7 @@ export default TrackRecordPage;
 TrackRecordPage.propTypes = {
   location: PropTypes.object,
   data: PropTypes.shape({
-    allTrackRecordSectionsJson: PropTypes.shape({
+    allTrackRecordSectionsYaml: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
         node: PropTypes.shape({
           id: PropTypes.string,
@@ -60,7 +60,9 @@ TrackRecordPage.propTypes = {
           title: PropTypes.string,
           paragraph: PropTypes.string,
           previousClientText: PropTypes.string,
-          previousClientLink: PropTypes.string,
+          previousClientLink: PropTypes.shape({
+            text: PropTypes.string,
+          }),
           valueDelivered: PropTypes.string,
         }),
       })),
@@ -70,13 +72,15 @@ TrackRecordPage.propTypes = {
 
 export const query = graphql`
 query {
-  allTrackRecordSectionsJson {
+  allTrackRecordSectionsYaml {
     edges {
       node {
         id
         iconFile
         paragraph
-        previousClientLink
+        previousClientLink {
+          text
+        }
         previousClientText
         title
         valueDelivered
