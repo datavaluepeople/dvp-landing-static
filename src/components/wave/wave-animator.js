@@ -1,3 +1,7 @@
+/*
+ * WaveAnimator
+ * Loop animator that can be stopped, started and reinitialised
+ */
 import wavePathGenerator from './wave-path-generator.js';
 
 // Perlin noise function creted by Banksean
