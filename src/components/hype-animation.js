@@ -10,18 +10,27 @@
  * This is from the forum:
  * https://forums.tumult.com/t/hype-in-react-or-as-react-component/5172/4
  */
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Iframe from 'react-iframe';
 
-const HypeAnimation = ({name, display, width, height, className}) => {
+const HypeAnimation = (
+    {name, display, width, height, className, classNameTransition = ''},
+) => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Iframe
       url={`/animation-iframes/${name}/${name}.html`}
       display={display}
       width={width}
       height={height}
-      className={className}
+      onLoad={() => {
+        setLoaded(true);
+      }}
+      className={`
+        ${className}
+        ${loaded ? classNameTransition : ''}
+      `}
     />
   );
 };
@@ -34,4 +43,5 @@ HypeAnimation.propTypes = {
   width: PropTypes.string,
   height: PropTypes.string,
   className: PropTypes.string,
+  classNameTransition: PropTypes.string,
 };
