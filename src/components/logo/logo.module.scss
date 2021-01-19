@@ -31,6 +31,10 @@
   @include lg {
     height: $logo-height-lg;
     margin: $margin-lg-v $margin-lg-h;
+
+    .img {
+      opacity: 0;
+    }
   }
 
 }
