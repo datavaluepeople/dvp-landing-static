@@ -4,6 +4,7 @@
  */
 import {drawCurve, clearCanvas} from './wave-draw.js';
 import ClassicalNoise from './classical-noise.js';
+import staticProps from './static-props.js';
 
 const distance = (x1, y1, x2, y2) => {
   return Math.sqrt( (x2-=x1)*x2 + (y2-=y1)*y2 );
@@ -42,7 +43,8 @@ class WaveAnimator {
   * @param {number} width - width of canvas
   * @param {number} height - height
   */
-  reInitViewProps(width, height) {
+  reInitProps(width, height) {
+    this.staticProps = staticProps(width, height);
     const segmentSize = distance(
         0,
         height / 2,
