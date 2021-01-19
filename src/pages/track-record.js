@@ -62,6 +62,7 @@ TrackRecordPage.propTypes = {
           previousClientText: PropTypes.string,
           previousClientLink: PropTypes.shape({
             text: PropTypes.string,
+            href: PropTypes.string,
           }),
           valueDelivered: PropTypes.string,
         }),
@@ -80,6 +81,7 @@ query {
         paragraph
         previousClientLink {
           text
+          href
         }
         previousClientText
         title

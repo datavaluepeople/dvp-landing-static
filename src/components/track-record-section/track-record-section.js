@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styles from './track-record-section.module.scss';
 
 const TrackRecordSection = ({trackRecord}) => {
-  console.log(trackRecord);
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
@@ -20,7 +19,7 @@ const TrackRecordSection = ({trackRecord}) => {
         <b>Previous client:</b> {trackRecord.previousClientText};&nbsp;
         {trackRecord.previousClientLink &&
           <a
-            href={trackRecord.previousClientLink.text}
+            href={trackRecord.previousClientLink.href}
           >
             {trackRecord.previousClientLink.text}
           </a>
@@ -43,6 +42,7 @@ TrackRecordSection.propTypes = {
     previousClientText: PropTypes.string,
     previousClientLink: PropTypes.shape({
       text: PropTypes.string,
+      href: PropTypes.string,
     }),
     valueDelivered: PropTypes.string,
   }),
