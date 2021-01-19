@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import Iframe from 'react-iframe';
 
 const HypeAnimation = (
-    {name, display, width, height, className, classNameTransition = ''},
+    {name, display, width, height, className, classNameTransition = 'hype-onload'},
 ) => {
   const [loaded, setLoaded] = useState(false);
   return (

@@ -1,0 +1,7 @@
+@mixin hype_fade($time: 1s) {
+  opacity: 0;
+  &:global.hype-onload {
+    transition: opacity $time;
+    opacity: 1;
+  }
+}

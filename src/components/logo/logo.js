@@ -21,7 +21,6 @@ const Logo = ({isHome}) => {
       name={'header_logo'}
       display='none'
       className={logoStyles.animationHeader}
-      classNameTransition={logoStyles.animationHeaderOnload}
     />
   );
   return (
