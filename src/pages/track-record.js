@@ -27,12 +27,7 @@ const TrackRecordPage = ({data, location}) => {
           return (
             <TrackRecordSection
               key={node.id}
-              iconFile={node.iconFile}
-              title={node.title}
-              paragraph={node.paragraph}
-              previousClientText={node.previousClientText}
-              previousClientLink={node.previousClientLink}
-              valueDelivered={node.valueDelivered}
+              trackRecord={node}
             />
           );
         })}
