@@ -13,11 +13,19 @@ const Wave = () => {
   const objectRef = useRef();
   const canvasRef = useRef(null);
   const waveAnimator = new WaveAnimator();
+  let lastWidth = 0;
+  let lastHeight = 0;
   waveAnimator.init(canvasRef);
   objectRef.current = waveAnimator;
   const redraw = () => {
-    waveAnimator.reInitProps(window);
-    waveAnimator.startLoop();
+    const newWidth = window.innerWidth;
+    const newHeight = window.height;
+    if (!(newHeight === lastHeight && newWidth === lastWidth)) {
+      lastWidth = newWidth;
+      lastHeight = newHeight;
+      waveAnimator.reInitProps(window);
+      waveAnimator.startLoop();
+    }
   };
 
 
