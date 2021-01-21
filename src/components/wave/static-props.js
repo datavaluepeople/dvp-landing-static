@@ -8,19 +8,19 @@ const staticProps = (window) => {
   const width = window.innerWidth;
   const shared = {
     // Number of curve segments in x
-    segments: 10,
+    segments: 5,
     // Max growth in px of both + and negavtive
     growth: 80,
     // step size for the noise
     // speed
-    step: 0.008,
+    step: 0.005,
     // Number of lines
-    rows: 10,
+    rows: 40,
     // The difference in noise between lines
-    lineDiff: 0.15,
+    lineDiff: 0.095,
     // The difference in segments I think
-    curveDiff: 0.50,
-    lineWidth: 1,
+    curveDiff: 0.30,
+    lineWidth: 0.5,
     lineColor: colors.dvpWhite,
     bgColor: colors.dvpDark,
     // Scaler that will be used to position
@@ -46,21 +46,62 @@ const staticProps = (window) => {
 
   if (width <= breakpoints.screenLGMin) {
     const mdOverride = {
-      segments: 15,
-      step: 0.01,
+      growth: 60,
+      segments: 10,
+      step: 0.005,
+      rows: 40,
       perspectiveOffset: 100,
+      curveDiff: 0.20,
+      heightCalculatorProps: {
+        cal: 'fixed',
+        value: 400,
+      },
+      lineWidth: 0.3,
+      widthCalculatorProps: {
+        cal: 'scaler',
+        value: 1.1,
+      },
     };
     return {...shared, ...mdOverride};
   }
 
-  const lgOverride = {
-    segments: 20,
-    growth: 90,
-    step: 0.01,
-    rows: 20,
-    perspectiveOffset: 100,
+  if (width <= breakpoints.screenXLGMin) {
+    const lgOverride = {
+      segments: 10,
+      growth: 80,
+      step: 0.001,
+      rows: 80,
+      perspectiveOffset: 100,
+      curveDiff: 0.20,
+      heightCalculatorProps: {
+        cal: 'fixed',
+        value: 500,
+      },
+      widthCalculatorProps: {
+        cal: 'scaler',
+        value: 1,
+      },
+    };
+    return {...shared, ...lgOverride};
+  }
+  const xlgOverride = {
+    segments: 10,
+    growth: 80,
+    step: 0.002,
+    rows: 80,
+    perspectiveOffset: 150,
+    curveDiff: 0.20,
+    lineWidth: 0.7,
+    heightCalculatorProps: {
+      cal: 'fixed',
+      value: 650,
+    },
+    widthCalculatorProps: {
+      cal: 'scaler',
+      value: 1,
+    },
   };
-  return {...shared, ...lgOverride};
+  return {...shared, ...xlgOverride};
 };
 
 const calculator = (windowValue, calProps) => {
