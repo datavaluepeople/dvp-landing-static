@@ -20,7 +20,9 @@ const sizeObject = (row, width, height, staticProps) => {
   const xMatrix = [];
   for (let i = 1; i <= staticProps.segments; i++) {
     // Half the width of the segment
-    const x1 = xOffset + Math.round((size * (i-1)) + size / 2);
+    const previsousXPosition = size * (i - 1);
+    const x1Offest = size * staticProps.x1OffsetScaler;
+    const x1 = xOffset + Math.round(previsousXPosition + x1Offest);
     const x2 = xOffset + Math.round(size * i);
 
     xMatrix[i] = [x1, x2];

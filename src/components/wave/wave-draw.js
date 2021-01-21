@@ -14,8 +14,11 @@ const wavePathGenerator = (
     const noise1 = noiseObj.noise(
         noiseStep, row * staticProps.lineDiff, i * staticProps.curveDiff,
     );
+    const xOffsetCurve = staticProps.x1OffsetScaler * i;
     const noise2 = noiseObj.noise(
-        noiseStep, row * staticProps.lineDiff, (i-0.5) * staticProps.curveDiff,
+        noiseStep,
+        row * staticProps.lineDiff,
+        xOffsetCurve * staticProps.curveDiff,
     );
 
     const y1 = Math.round(
