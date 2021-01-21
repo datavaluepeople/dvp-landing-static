@@ -5,7 +5,7 @@
 import {drawCurve, clearCanvas} from './wave-draw.js';
 import ClassicalNoise from './classical-noise.js';
 import staticProps from './static-props.js';
-import segmentSizesCreate from './segment-size.js';
+import sizesCreate from './sizes.js';
 
 /**
 * Represents a WaveAnimator.
@@ -44,13 +44,13 @@ class WaveAnimator {
     this.staticProps = staticProps(width, height);
     const canvas = this.canvasRef.current;
     const noiseObj = new ClassicalNoise();
-    const segmentSizes = segmentSizesCreate(width, height, this.staticProps);
+    const sizes = sizesCreate(width, height, this.staticProps);
     const viewProps = {
       noiseStep: 0,
       canvas: canvas,
       context: canvas.getContext('2d'),
       noiseObj: noiseObj,
-      segmentSizes: segmentSizes,
+      sizes: sizes,
     };
     viewProps.canvas.width = width;
     viewProps.canvas.height = height;

@@ -23,7 +23,9 @@ const staticProps = (width, height) => {
       lineWidth: 1,
       lineColor: colors.dvpWhite,
       bgColor: colors.dvpDark,
-      perspective: 100,
+      // The total xOffset that will be used to create
+      // visual persective.
+      perspectiveOffset: 0,
     };
   }
 
@@ -45,7 +47,9 @@ const staticProps = (width, height) => {
       lineWidth: 1,
       lineColor: colors.dvpWhite,
       bgColor: colors.dvpDark,
-      perspective: 100,
+      // The total xOffset that will be used to create
+      // visual persective.
+      perspectiveOffset: 100,
     };
   }
 
@@ -66,7 +70,9 @@ const staticProps = (width, height) => {
     lineWidth: 1,
     lineColor: colors.dvpWhite,
     bgColor: colors.dvpDark,
-    perspective: 100,
+    // The total xOffset that will be used to create
+    // visual persective.
+    perspectiveOffset: 100,
   };
 };
 
