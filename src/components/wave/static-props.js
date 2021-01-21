@@ -73,6 +73,7 @@ const staticProps = (window) => {
       rows: 80,
       perspectiveOffset: 100,
       curveDiff: 0.20,
+      lineWidth: 0.3,
       heightCalculatorProps: {
         cal: 'fixed',
         value: 500,
@@ -91,7 +92,7 @@ const staticProps = (window) => {
     rows: 80,
     perspectiveOffset: 150,
     curveDiff: 0.20,
-    lineWidth: 0.7,
+    lineWidth: 0.3,
     heightCalculatorProps: {
       cal: 'fixed',
       value: 650,
