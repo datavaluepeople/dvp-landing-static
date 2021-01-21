@@ -4,9 +4,9 @@ const wavePathGenerator = (
     row,
     viewProps,
     staticProps,
+    noiseStep,
 ) => {
   const noiseObj = viewProps.noiseObj;
-  const noiseStep = viewProps.noiseStep;
   const sizeObject = viewProps.sizes[row];
   // As defined https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
   let path = `M${sizeObject.xOffset}, ${sizeObject.yMiddlePoint}`;
@@ -50,7 +50,7 @@ const clearCanvas = (viewProps, staticProps) => {
 };
 
 const drawCurve = (
-    row, viewProps, staticProps,
+    row, viewProps, staticProps, noiseStep,
 ) => {
   const context = viewProps.context;
   context.save();
@@ -61,6 +61,7 @@ const drawCurve = (
       row,
       viewProps,
       staticProps,
+      noiseStep,
   );
   context.stroke(path);
   context.restore();

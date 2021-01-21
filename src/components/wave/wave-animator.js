@@ -25,6 +25,8 @@ class WaveAnimator {
     this.viewProps = {};
     this.stop = true;
     this.currentReference = false;
+    this.noiseStep = 0;
+    this.noiseStepMax = Number.MAX_SAFE_INTEGER;
   }
 
   /**
@@ -49,7 +51,6 @@ class WaveAnimator {
     const noiseObj = new ClassicalNoise();
     const sizes = sizesCreate(width, height, this.staticProps);
     const viewProps = {
-      noiseStep: 0,
       canvas: canvas,
       context: canvas.getContext('2d'),
       noiseObj: noiseObj,
@@ -116,9 +117,14 @@ class WaveAnimator {
           i,
           this.viewProps,
           this.staticProps,
+          this.noiseStep,
       );
     }
-    this.viewProps.noiseStep = this.viewProps.noiseStep + this.staticProps.step;
+    if (this.noiseStep >= this.noiseStepMax) {
+      this.noiseStep = 0;
+    } else {
+      this.noiseStep = this.noiseStep + this.staticProps.step;
+    }
   }
 };
 
