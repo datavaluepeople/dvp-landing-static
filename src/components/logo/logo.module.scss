@@ -1,6 +1,7 @@
 @import '../../styles/breakpoints.scss';
 @import '../../styles/base_values.scss';
 @import '../../styles/shared/header.scss';
+@import '../../styles/shared/hype-animations.scss';
 
 .logo {
   display: inline-block;
@@ -31,6 +32,10 @@
   @include lg {
     height: $logo-height-lg;
     margin: $margin-lg-v $margin-lg-h;
+
+    .img {
+      opacity: 0;
+    }
   }
 
 }
@@ -48,4 +53,6 @@
     /* Have to use important to override the style on element */
     display: block !important;
   }
+  @include hype_fade(0.7s);
 }
+

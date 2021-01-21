@@ -15,7 +15,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -50,
+        offset: 0,
+        duration: 100,
       },
     },
     {
@@ -90,6 +91,13 @@ module.exports = {
         theme_color: `#131f21`,
         display: `minimal-ui`,
         icon: `content/assets/datavaluepeople.png`,
+        icons: [
+          {
+            src: `/favicon/favicon-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,

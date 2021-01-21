@@ -3,34 +3,29 @@ import PropTypes from 'prop-types';
 
 import styles from './track-record-section.module.scss';
 
-const TrackRecordSection = (
-    {
-      iconFile,
-      title,
-      paragraph,
-      previousClientText,
-      previousClientLink,
-      valueDelivered,
-    },
-) => {
+const TrackRecordSection = ({trackRecord}) => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
         <img
           className={styles.icon}
-          alt={`${title} icon`}
-          src={`/track-record/${iconFile}`}
+          alt={`${trackRecord.title} icon`}
+          src={`/track-record/${trackRecord.iconFile}`}
         />
-        {title}
+        {trackRecord.title}
       </h2>
-      <p>{paragraph}</p>
+      <p>{trackRecord.paragraph}</p>
       <p>
-        <b>Previous client:</b> {previousClientText};&nbsp;
-        {previousClientLink &&
-          <a href={previousClientLink}>{previousClientLink}</a>
+        <b>Previous client:</b> {trackRecord.previousClientText};&nbsp;
+        {trackRecord.previousClientLink &&
+          <a
+            href={trackRecord.previousClientLink.href}
+          >
+            {trackRecord.previousClientLink.text}
+          </a>
         }
         <br/>
-        <b>Value delivered:</b> {valueDelivered}
+        <b>Value delivered:</b> {trackRecord.valueDelivered}
       </p>
     </div>
   );
@@ -39,10 +34,16 @@ const TrackRecordSection = (
 export default TrackRecordSection;
 
 TrackRecordSection.propTypes = {
-  iconFile: PropTypes.string,
-  title: PropTypes.string,
-  paragraph: PropTypes.string,
-  previousClientText: PropTypes.string,
-  previousClientLink: PropTypes.string,
-  valueDelivered: PropTypes.string,
+  trackRecord: PropTypes.shape({
+    id: PropTypes.string,
+    iconFile: PropTypes.string,
+    title: PropTypes.string,
+    paragraph: PropTypes.string,
+    previousClientText: PropTypes.string,
+    previousClientLink: PropTypes.shape({
+      text: PropTypes.string,
+      href: PropTypes.string,
+    }),
+    valueDelivered: PropTypes.string,
+  }),
 };

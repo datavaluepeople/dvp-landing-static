@@ -1,6 +1,7 @@
 @import '../styles/base_values.scss';
 @import '../styles/breakpoints.scss';
 @import '../styles/colors.scss';
+@import '../styles/shared/hype-animations.scss';
 
 .title {
   composes: contentTitle from '../styles/shared/content-pages.scss';
@@ -48,4 +49,5 @@
 .approachIcons {
   vertical-align: bottom;
   margin-right: 0.5rem;
+  @include hype_fade;
 }

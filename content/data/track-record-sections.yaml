@@ -1,0 +1,24 @@
+- id: track1
+  iconFile: icon1.svg
+  title: Autonomous Optimisation
+  paragraph: Using state-of-the-art reinforcement learning, we make autonomous optimised pricing decisions at scale in near real-time. Our algorithms balance exploiting well performing strategies vs exploring new ones.
+  valueDelivered: double-figure uplift (%) in revenue, sales, & profit on large sections of business traffic.
+  previousClientText: B2C car rental resale company,
+  previousClientLink:
+    text: www.cartrawler.com
+    href: https://www.cartrawler.com
+- id: track2
+  iconFile: icon2.svg
+  title: Automated Anomaly Detection
+  paragraph: Ingesting hundreds of business-critical data streams, running automated detection algorithms every minute/hour/day, which then trigger alerts of critical issues & behaviour changes directly to business stakeholders.
+  valueDelivered: +€1,000,000s each year in avoided losses due to early detection of issues.
+  previousClientText: online travel agent
+  previousClientLink:
+    text: www.loveholidays.com
+    href: https://www.loveholidays.com
+- id: track3
+  iconFile: icon3.svg
+  title: Advanced Forecasting & Prediction
+  paragraph: Predictive modelling on the likelihood that rail development projects will go over budget. Using predictions for better targeted investigation & monitoring.
+  previousClientText: UK government, Office of Rail & Road
+  valueDelivered: +€1,000,000s each year in avoided losses due to early detection of issues.
