@@ -4,7 +4,9 @@
  */
 import {drawCurve, clearCanvas} from './wave-draw.js';
 import ClassicalNoise from './classical-noise.js';
-import staticProps from './static-props.js';
+import {
+  staticProps, heightCalculator, widthCalculator,
+} from './static-props.js';
 import sizesCreate from './sizes.js';
 
 /**
@@ -37,12 +39,13 @@ class WaveAnimator {
 
   /**
   * Reinit the view props
-  * @param {number} width - width of canvas
-  * @param {number} height - height
+  * @param {object} window - window
   */
-  reInitProps(width, height) {
-    this.staticProps = staticProps(width, height);
+  reInitProps(window) {
+    this.staticProps = staticProps(window);
     const canvas = this.canvasRef.current;
+    const height = heightCalculator(window, this.staticProps);
+    const width = widthCalculator(window, this.staticProps);
     const noiseObj = new ClassicalNoise();
     const sizes = sizesCreate(width, height, this.staticProps);
     const viewProps = {

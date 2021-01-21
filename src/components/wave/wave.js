@@ -9,14 +9,6 @@ import styles from './wave.module.scss';
 
 import WaveAnimator from './wave-animator.js';
 
-const calculateWidth = (window) => {
-  return window.innerWidth;
-};
-
-const calculateHeight = (window) => {
-  return '400';
-};
-
 const Wave = () => {
   const objectRef = useRef();
   const canvasRef = useRef(null);
@@ -24,9 +16,7 @@ const Wave = () => {
   waveAnimator.init(canvasRef);
   objectRef.current = waveAnimator;
   const redraw = () => {
-    const width = calculateWidth(window);
-    const height = calculateHeight(window);
-    waveAnimator.reInitProps(width, height);
+    waveAnimator.reInitProps(window);
     waveAnimator.startLoop();
   };
 

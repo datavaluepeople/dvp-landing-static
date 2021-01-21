@@ -4,7 +4,8 @@
 import colors from '../../styles/colors.scss';
 import breakpoints from '../../styles/breakpoints.scss';
 
-const staticProps = (width, height) => {
+const staticProps = (window) => {
+  const width = window.innerWidth;
   const shared = {
     // Number of curve segments in x
     segments: 10,
@@ -28,6 +29,14 @@ const staticProps = (width, height) => {
     // The total xOffset that will be used to create
     // visual persective.
     perspectiveOffset: 0,
+    heightCalculatorProps: {
+      cal: 'fixed',
+      value: 583,
+    },
+    widthCalculatorProps: {
+      cal: 'scaler',
+      value: 1.0,
+    },
   };
   if (width <= breakpoints.screenMDMin) {
     const smOverride = {
@@ -54,4 +63,19 @@ const staticProps = (width, height) => {
   return {...shared, ...lgOverride};
 };
 
-export default staticProps;
+const calculator = (windowValue, calProps) => {
+  if (calProps.cal === 'fixed') {
+    return calProps.value;
+  }
+  return windowValue * calProps.value;
+};
+
+const heightCalculator = (window, staticProps) => {
+  return calculator(window.height, staticProps.heightCalculatorProps);
+};
+
+const widthCalculator = (window, staticProps) => {
+  return calculator(window.innerWidth, staticProps.widthCalculatorProps);
+};
+
+export {staticProps, heightCalculator, widthCalculator};
