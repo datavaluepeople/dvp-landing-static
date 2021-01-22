@@ -40,8 +40,10 @@ const ClientImages = ({}) => {
           node {
             name
             childImageSharp {
-              gray: fixed(height: 60, grayscale: true){
-                ...GatsbyImageSharpFixed
+              gray: fluid(maxHeight: 80, grayscale: true){
+                ...GatsbyImageSharpFluid
+                presentationWidth
+                presentationHeight
               }
             }
           }
@@ -56,7 +58,14 @@ const ClientImages = ({}) => {
         return (
           <div
             key={node.name}
-            className={styles.imgContainer}
+            style={{
+              maxHeight: node.childImageSharp.gray.presentationHeight,
+              flexBasis: node.childImageSharp.gray.presentationWidth,
+            }}
+            className={`
+              ${styles.imgContainer}
+              img_${node.name}
+            `}
           >
             <a
               href={
@@ -66,11 +75,12 @@ const ClientImages = ({}) => {
               rel='noreferrer noopener'
             >
               <Img
-                className={`
-                  ${styles.imgGray}
-                  ${node.name}
-                `}
-                fixed={node.childImageSharp.gray}
+                style={{
+                  maxHeight: node.childImageSharp.gray.presentationHeight,
+                  flexBasis: node.childImageSharp.gray.presentationWidth,
+                }}
+                fluid={node.childImageSharp.gray}
+                objectFit="contain"
               />
             </a>
           </div>

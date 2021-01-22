@@ -1,17 +1,25 @@
+@import '../../styles/breakpoints.scss';
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 900px;
+  align-items: center;
+  width: 100%;
+
+  @include md {
+    justify-content: flex-start;
+    max-width: 45rem;
+  }
 }
 
 .imgContainer {
-  padding: 1rem;
+  margin: 1rem;
+  max-width: 14rem;
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
-.imgSvg {
-  height: 60px;
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-  color: grey;
+/* Spesific image width setting */
+:global(.img_09_plugify) {
+  max-width: 10rem;
 }
