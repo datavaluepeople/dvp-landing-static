@@ -46,8 +46,10 @@ class WaveAnimator {
   reInitProps(window) {
     this.staticProps = staticProps(window);
     const canvas = this.canvasRef.current;
-    const height = heightCalculator(window, this.staticProps);
-    const width = widthCalculator(window, this.staticProps);
+    const height = heightCalculator(window, canvas, this.staticProps);
+    const width = widthCalculator(window, canvas, this.staticProps);
+    canvas.width = width;
+    canvas.height = height;
     const noiseObj = new ClassicalNoise();
     const sizes = sizesCreate(width, height, this.staticProps);
     const viewProps = {
@@ -56,8 +58,6 @@ class WaveAnimator {
       noiseObj: noiseObj,
       sizes: sizes,
     };
-    viewProps.canvas.width = width;
-    viewProps.canvas.height = height;
     this.viewProps = viewProps;
   }
 
