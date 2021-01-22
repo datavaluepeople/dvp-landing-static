@@ -9,6 +9,7 @@ TrackRecordSection
   from '../components/track-record-section/track-record-section';
 
 import trackRecordStyles from './track-record.module.scss';
+import ClientImages from '../components/client-images/client-images.js';
 
 const TrackRecordPage = ({data, location}) => {
   /*
@@ -33,14 +34,7 @@ const TrackRecordPage = ({data, location}) => {
         })}
         <section className={trackRecordStyles.pastClientSection}>
           <h2><mark>Past Clients</mark></h2>
-          <img
-            className={trackRecordStyles.clientsImageMobile}
-            src='/track-record/clients_mobile.jpg'
-          />
-          <img
-            className={trackRecordStyles.clientsImageDesktop}
-            src='/track-record/clients_desktop.jpg'
-          />
+          <ClientImages />
         </section>
       </div>
     </Layout>
