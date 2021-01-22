@@ -2,11 +2,13 @@
  * Module will automatically generate client icons.
  * To add an icon:
  * - search for the icon on google
- * - find a png that has a transparent background and
- *   is cropped to fit the icon exactly as a square or rectangle
+ * - find a png or jpeg that is cropped to fit the icon exactly
+ *   as a square or rectangle. White or transparent background needed.
  * - add the icon to the `/content/assets/icons/clients/`
  * - give the name of the file the correct numbering, they are order by name
  * - add the link to the `linkNameMap` object in this file
+ * - if you need the image to be smaller you can add a class to
+ *    ./client-images.module.scss. See file for more information.
  */
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
@@ -54,7 +56,6 @@ const ClientImages = ({}) => {
   return (
     <div className={styles.container}>
       {data.clientImages.edges.map(({key, node}) => {
-        console.log(node);
         return (
           <div
             key={node.name}

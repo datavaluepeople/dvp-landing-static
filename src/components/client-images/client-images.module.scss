@@ -19,7 +19,10 @@
   flex-shrink: 1;
 }
 
-/* Spesific image width setting */
+/*
+ * Specific image width setting
+ * use max-width: to make the max image smaller
+ */
 :global(.img_09_plugify) {
   max-width: 10rem;
 }
