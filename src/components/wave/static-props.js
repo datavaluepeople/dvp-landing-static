@@ -15,12 +15,12 @@ const staticProps = (window) => {
     // speed
     step: 0.005,
     // Number of lines
-    rows: 40,
+    rows: 50,
     // The difference in noise between lines
-    lineDiff: 0.095,
+    lineDiff: 0.1,
     // The difference in segments I think
-    curveDiff: 0.30,
-    lineWidth: 0.5,
+    curveDiff: 0.50,
+    lineWidth: 0.3,
     lineColor: colors.dvpWhite,
     bgColor: colors.dvpDark,
     // Scaler that will be used to position
@@ -38,11 +38,11 @@ const staticProps = (window) => {
 
   if (width <= breakpoints.screenLGMin) {
     const mdOverride = {
-      growth: 60,
+      growth: 80,
       segments: 10,
       step: 0.005,
-      rows: 40,
-      perspectiveOffset: 100,
+      rows: 60,
+      perspectiveOffset: 150,
       curveDiff: 0.20,
     };
     return {...shared, ...mdOverride};
