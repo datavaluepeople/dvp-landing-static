@@ -50,12 +50,13 @@ const staticProps = (window) => {
 
   if (width <= breakpoints.screenXLGMin) {
     const lgOverride = {
-      segments: 10,
-      growth: 80,
-      step: 0.001,
-      rows: 80,
-      perspectiveOffset: 100,
-      curveDiff: 0.20,
+      segments: 5,
+      growth: 60,
+      step: 0.002,
+      rows: 70,
+      perspectiveOffset: 120,
+      curveDiff: 0.50,
+      lineDiff: 0.07,
       lineWidth: 0.3,
     };
     return {...shared, ...lgOverride};

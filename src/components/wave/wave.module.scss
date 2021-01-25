@@ -18,9 +18,10 @@
   }
 
   @include lg {
-    top: 40%;
-    height: 45%;
-    width: $content-width + 2%;
+    top: 50%;
+    height: 39%;
+    left: -1%;
+    width: $content-width + 5%;
   }
 
   @include xlg {
