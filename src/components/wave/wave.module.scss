@@ -12,8 +12,9 @@
 
   @include md {
     top: 10rem;
+    left: -1%;
+    width: 102%;
     height: 15rem;
-    width: 94%;
   }
 
   @include lg {

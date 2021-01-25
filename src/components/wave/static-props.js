@@ -38,12 +38,12 @@ const staticProps = (window) => {
 
   if (width <= breakpoints.screenLGMin) {
     const mdOverride = {
-      growth: 80,
-      segments: 10,
-      step: 0.005,
+      segments: 5,
+      growth: 50,
+      step: 0.003,
       rows: 60,
       perspectiveOffset: 150,
-      curveDiff: 0.20,
+      curveDiff: 0.50,
     };
     return {...shared, ...mdOverride};
   }
