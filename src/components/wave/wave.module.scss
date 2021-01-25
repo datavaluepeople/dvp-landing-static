@@ -25,7 +25,10 @@
   }
 
   @include xlg {
-    height: 40%;
+    top: 40%;
+    height: 48%;
+    left: -0.5%;
+    width: $content-width + 1%;
   }
 
   canvas {
