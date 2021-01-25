@@ -4,9 +4,8 @@
  */
 import {drawCurve, clearCanvas} from './wave-draw.js';
 import ClassicalNoise from './classical-noise.js';
-import {
-  staticProps, heightCalculator, widthCalculator,
-} from './static-props.js';
+import staticProps from './static-props.js';
+import getCanvasAndContext from './canvas-context.js';
 import sizesCreate from './sizes.js';
 
 /**
@@ -46,19 +45,23 @@ class WaveAnimator {
   */
   reInitProps(window) {
     this.staticProps = staticProps(window);
-    const canvas = this.canvasRef.current;
-    const height = heightCalculator(window, canvas, this.staticProps);
-    const width = widthCalculator(window, canvas, this.staticProps);
-    canvas.width = width;
-    canvas.height = height;
-    const sizes = sizesCreate(width, height, this.staticProps);
+    const canvasProps = getCanvasAndContext(
+        this.canvasRef,
+        window,
+        staticProps,
+    );
+
+    const sizes = sizesCreate(
+        canvasProps.canvasWidth,
+        canvasProps.canvasHeight,
+        this.staticProps,
+    );
     const viewProps = {
-      canvas: canvas,
-      context: canvas.getContext('2d'),
       noiseObj: this.noiseObj,
       sizes: sizes,
     };
-    this.viewProps = viewProps;
+    this.viewProps = {...viewProps, ...canvasProps};
+    window.dvpViewProps = this.viewProps;
   }
 
   /**

@@ -74,23 +74,4 @@ const staticProps = (window) => {
   return {...shared, ...xlgOverride};
 };
 
-
-/*
- * From blog post
- * https://medium.com/wdstack/fixing-html5-2d-canvas-blur-8ebe27db07da
- */
-const heightCalculator = (window, canvas, staticProps) => {
-  const h = window.getComputedStyle(
-      canvas,
-  ).getPropertyValue('height').slice(0, -2);
-  return h * window.devicePixelRatio;
-};
-
-const widthCalculator = (window, canvas, staticProps) => {
-  const w = window.getComputedStyle(
-      canvas,
-  ).getPropertyValue('width').slice(0, -2);
-  return w * window.devicePixelRatio;
-};
-
-export {staticProps, heightCalculator, widthCalculator};
+export default staticProps;
