@@ -27,6 +27,7 @@ class WaveAnimator {
     this.currentReference = false;
     this.noiseStep = 0;
     this.noiseStepMax = Number.MAX_SAFE_INTEGER;
+    this.noiseObj = new ClassicalNoise();
   }
 
   /**
@@ -50,12 +51,11 @@ class WaveAnimator {
     const width = widthCalculator(window, canvas, this.staticProps);
     canvas.width = width;
     canvas.height = height;
-    const noiseObj = new ClassicalNoise();
     const sizes = sizesCreate(width, height, this.staticProps);
     const viewProps = {
       canvas: canvas,
       context: canvas.getContext('2d'),
-      noiseObj: noiseObj,
+      noiseObj: this.noiseObj,
       sizes: sizes,
     };
     this.viewProps = viewProps;
