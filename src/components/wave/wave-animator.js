@@ -32,11 +32,9 @@ class WaveAnimator {
   /**
   * init
   * @param {canvasRef} canvasRef - The ref to the canvas
-  * @param {string} staticProps - StaticProps
   */
-  init(canvasRef, staticProps) {
+  init(canvasRef) {
     this.canvasRef = canvasRef;
-    this.staticProps = staticProps;
   }
 
   /**
