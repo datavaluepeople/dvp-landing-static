@@ -4,8 +4,19 @@
 import colors from '../../styles/colors.scss';
 import breakpoints from '../../styles/breakpoints.scss';
 
-const staticProps = (window) => {
-  const width = window.innerWidth;
+const staticProps = (canvasProps) => {
+  let strokeProps = {
+    lineWidth: 0.3,
+    lineColor: colors.dvpGreyWave1,
+  };
+
+  if (canvasProps.computedDevicePixelRatio > 1) {
+    strokeProps = {
+      lineWidth: 1,
+      lineColor: colors.dvpGreyWave2,
+    };
+  }
+
   const shared = {
     // Number of curve segments in x
     segments: 5,
@@ -20,8 +31,6 @@ const staticProps = (window) => {
     lineDiff: 0.1,
     // The difference in segments I think
     curveDiff: 0.50,
-    lineWidth: 0.3,
-    lineColor: colors.dvpWhite,
     bgColor: colors.dvpDark,
     // Scaler that will be used to position
     // x1 of the curve
@@ -29,14 +38,15 @@ const staticProps = (window) => {
     // The total xOffset that will be used to create
     // visual persective.
     perspectiveOffset: 0,
+    ...strokeProps,
   };
-  if (width <= breakpoints.screenMDMin) {
+  if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
     const smOverride = {
     };
     return {...shared, ...smOverride};
   }
 
-  if (width <= breakpoints.screenLGMin) {
+  if (canvasProps.windowWidth <= breakpoints.screenLGMin) {
     const mdOverride = {
       segments: 5,
       growth: 50,
@@ -48,7 +58,7 @@ const staticProps = (window) => {
     return {...shared, ...mdOverride};
   }
 
-  if (width <= breakpoints.screenXLGMin) {
+  if (canvasProps.windowWidth <= breakpoints.screenXLGMin) {
     const lgOverride = {
       segments: 5,
       growth: 60,
@@ -57,7 +67,6 @@ const staticProps = (window) => {
       perspectiveOffset: 120,
       curveDiff: 0.50,
       lineDiff: 0.07,
-      lineWidth: 0.3,
     };
     return {...shared, ...lgOverride};
   }
@@ -69,7 +78,6 @@ const staticProps = (window) => {
     perspectiveOffset: 100,
     curveDiff: 0.5,
     lineDiff: 0.07,
-    lineWidth: 0.3,
   };
   return {...shared, ...xlgOverride};
 };

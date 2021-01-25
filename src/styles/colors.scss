@@ -7,7 +7,13 @@ $dvp-red: #f44668;
 $dvp-white-half: rgba(255, 255, 255, 0.5);
 $dvp-white: #ffffff;
 
+$dvp-grey-wave-1: #ffffff;
+$dvp-grey-wave-2: #777777;
+
 :export {
   dvpDark: $dvp-dark;
   dvpWhite: $dvp-white;
+  dvpGrey: $dvp-grey;
+  dvpGreyWave1: $dvp-grey-wave-1;
+  dvpGreyWave2: $dvp-grey-wave-2;
 }

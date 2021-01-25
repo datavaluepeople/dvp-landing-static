@@ -42,12 +42,12 @@ class WaveAnimator {
   * @param {object} window - window
   */
   reInitProps(window) {
-    this.staticProps = staticProps(window);
     const canvasProps = getCanvasAndContext(
         this.canvasRef,
         window,
         staticProps,
     );
+    this.staticProps = staticProps(canvasProps);
 
     const sizes = sizesCreate(
         canvasProps.canvasWidth,
