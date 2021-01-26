@@ -4,7 +4,7 @@
 
 const sizeObject = (row, width, height, staticProps) => {
   const xOffsetRatio = (staticProps.rows + 1 - row ) / staticProps.rows;
-  const xOffset = Math.round(xOffsetRatio * staticProps.perspectiveOffset);
+  const xOffset = (xOffsetRatio * staticProps.perspectiveOffset);
   const total = width - (xOffset * 2);
   const size = total / staticProps.segments;
   //
@@ -22,8 +22,8 @@ const sizeObject = (row, width, height, staticProps) => {
     // Half the width of the segment
     const previsousXPosition = size * (i - 1);
     const x1Offest = size * staticProps.x1OffsetScaler;
-    const x1 = xOffset + Math.round(previsousXPosition + x1Offest);
-    const x2 = xOffset + Math.round(size * i);
+    const x1 = xOffset + (previsousXPosition + x1Offest);
+    const x2 = xOffset + (size * i);
 
     xMatrix[i] = [x1, x2];
   }

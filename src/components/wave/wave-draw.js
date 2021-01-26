@@ -21,12 +21,8 @@ const wavePathGenerator = (
         xOffsetCurve * staticProps.curveDiff,
     );
 
-    const y1 = Math.round(
-        (sizeObject.yMiddlePoint) + (noise1 * staticProps.growth),
-    );
-    let y2 = Math.round(
-        (sizeObject.yMiddlePoint) + (noise2 * staticProps.growth),
-    );
+    const y1 = (sizeObject.yMiddlePoint) + (noise1 * staticProps.growth);
+    let y2 = (sizeObject.yMiddlePoint) + (noise2 * staticProps.growth);
     if (i === staticProps.segments) {
       y2 = sizeObject.yMiddlePoint;
     }
