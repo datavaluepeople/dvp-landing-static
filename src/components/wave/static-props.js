@@ -30,7 +30,7 @@ const staticProps = (canvasProps) => {
     x1OffsetScaler: 0.5,
     // The total xOffset that will be used to create
     // visual persective.
-    perspectiveOffset: 100,
+    perspectiveOffset: 200,
     // Line color, note that color and alpha can make
     // unexpected to changes to line rendering
     lineColor: colors.dvpWave,
