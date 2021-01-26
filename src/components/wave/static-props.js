@@ -5,18 +5,6 @@ import colors from '../../styles/colors.scss';
 import breakpoints from '../../styles/breakpoints.scss';
 
 const staticProps = (canvasProps) => {
-  let strokeProps = {
-    lineWidth: 0.3,
-    lineColor: colors.dvpGreyWave1,
-  };
-
-  if (canvasProps.computedDevicePixelRatio > 1) {
-    strokeProps = {
-      lineWidth: 1,
-      lineColor: colors.dvpGreyWave2,
-    };
-  }
-
   const shared = {
     // Number of curve segments in x
     segments: 5,
@@ -38,7 +26,10 @@ const staticProps = (canvasProps) => {
     // The total xOffset that will be used to create
     // visual persective.
     perspectiveOffset: 0,
-    ...strokeProps,
+    // Line Width should not be below 1 as causes rendering
+    // imperfections
+    lineWidth: 1,
+    lineColor: colors.dvpGreyWave,
   };
   if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
     const smOverride = {
