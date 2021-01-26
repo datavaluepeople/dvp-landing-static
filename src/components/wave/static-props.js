@@ -37,6 +37,31 @@ const staticProps = (canvasProps) => {
     // Background color for the canvas
     bgColor: colors.dvpDark,
   };
+  if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
+    const overrideSM = {
+      step: 0.005,
+      rows: 50,
+      perspectiveOffset: 0,
+    };
+    return {...shared, ...overrideSM};
+  }
+
+  if (canvasProps.windowWidth <= breakpoints.screenLGMin) {
+    const overrideMD = {
+      step: 0.003,
+      rows: 50,
+      perspectiveOffset: 150,
+    };
+    return {...shared, ...overrideMD};
+  }
+
+  if (canvasProps.windowWidth <= breakpoints.screenXLGMin) {
+    const overrideLG = {
+      rows: 65,
+    };
+    return {...shared, ...overrideLG};
+  }
+
   return shared
 };
 
