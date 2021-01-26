@@ -15,14 +15,15 @@ const staticProps = (canvasProps) => {
     step: 0.002,
     // Number of lines
     rows: 50,
+    // Line Width, [1,10]
+    // Value below 1 causes rendering imperfections
+    lineWidth: 1,
     // Variability in waves across y dimension, [0,1]
     // At 1 get fully independent rows (lines)
     lineDiff: 0.1,
     // Variability in waves across x dimension, [0,1]
     // At 0 get "planar" waves
     curveDiff: 0.50,
-    // Background color for the canvas
-    bgColor: colors.dvpDark,
     // Scaler that will be used to position
     // x1 of the curve
     // Using anything but 0.5 gives non-symmetrical waves
@@ -30,12 +31,11 @@ const staticProps = (canvasProps) => {
     // The total xOffset that will be used to create
     // visual persective.
     perspectiveOffset: 0,
-    // Line Width, [1,10]
-    // Value below 1 causes rendering imperfections
-    lineWidth: 1,
     // Line color, note that color and alpha can make
     // unexpected to changes to line rendering
     lineColor: colors.dvpWave,
+    // Background color for the canvas
+    bgColor: colors.dvpDark,
   };
   if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
     const smOverride = {
