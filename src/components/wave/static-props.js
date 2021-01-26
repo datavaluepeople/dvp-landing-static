@@ -29,7 +29,7 @@ const staticProps = (canvasProps) => {
     // Line Width should not be below 1 as causes rendering
     // imperfections
     lineWidth: 1,
-    lineColor: colors.dvpGreyWave,
+    lineColor: colors.dvpWave,
   };
   if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
     const smOverride = {
