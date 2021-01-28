@@ -3,7 +3,7 @@
   title: Autonomous Optimisation
   paragraph: Using state-of-the-art reinforcement learning, we make autonomous optimised pricing decisions at scale in near real-time. Our algorithms balance exploiting well performing strategies vs exploring new ones.
   valueDelivered: double-figure uplift (%) in revenue, sales, & profit on large sections of business traffic.
-  previousClientText: B2C car rental resale company,
+  previousClientText: B2C car rental resale company
   previousClientLink:
     text: www.cartrawler.com
     href: https://www.cartrawler.com
