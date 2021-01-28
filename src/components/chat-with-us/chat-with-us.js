@@ -27,7 +27,7 @@ const ChatWithUs = ({isHome}) => {
         ${isHome ? chatWithUsStyles.home : ''}
         `}
       >
-        <b>Chat With Us</b>
+        <span className={chatWithUsStyles.text}>Chat With Us</span>
         <Img
           alt='Chat With Us'
           fixed={data.chatIcon.childImageSharp.icon}
