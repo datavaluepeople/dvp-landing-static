@@ -5,6 +5,7 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import BuilderFooter from '../components/builder-footer/builder-footer.js';
 import WhoWeAre from '../components/who-we-are/who-we-are.js';
+import Wave from '../components/wave/wave';
 
 import indexStyles from './index.module.scss';
 
@@ -22,9 +23,7 @@ const LandingPageIndex = ({location}) => {
           <WhoWeAre HomePage={true}/>
         </div>
       </div>
-      <div className={indexStyles.waveImgContainer}>
-        <div className={indexStyles.waveImg}></div>
-      </div>
+      <Wave />
       <BuilderFooter SideBarAndIsHome={false} HomePage={true}/>
     </Layout>
   );
