@@ -3,7 +3,7 @@ module.exports = {
     title: `datavaluepeople`,
     author: {
       name: `datavaluepeople`,
-      summary: `datavaluepeole`,
+      summary: `datavaluepeople`,
     },
     description: `datavaluepeople | We build bespoke data-driven systems.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -100,9 +100,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables
-    // Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };
