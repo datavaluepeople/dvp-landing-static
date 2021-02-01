@@ -58,48 +58,49 @@ $a-font-size: 1.7rem;
     bottom: $sidebar-left-margin-xlg - ($a-line-height / 2);
   }
 
-  nav {
-    margin: 0;
-    padding: 0;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navListItem {
+  margin: 0;
+  width: 100%;
+  padding: 0 $sidebar-right-margin-sm 0 $sidebar-left-margin-sm;
+  @include md {
+    padding: 0 $sidebar-right-margin-md 0 $sidebar-left-margin-md;
+  }
+  @include lg {
+    padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
   }
 
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav li {
-    margin: 0;
-    width: 100%;
-    padding: 0 $sidebar-right-margin-sm 0 $sidebar-left-margin-sm;
-    @include md {
-      padding: 0 $sidebar-right-margin-md 0 $sidebar-left-margin-md;
-    }
-    @include lg {
-      padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
-    }
-
-    @include xlg {
-      padding: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
-    }
-  }
-
-  nav a {
-    color: $dvp-grey;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    font-family: 'camptonbold_demo';
-    font-size: $a-font-size;
-    line-height: $a-line-height;
-
-    &:hover {
-      color: $dvp-dark;
-    }
+  @include xlg {
+    padding: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
   }
 }
 
+.navListLink {
+  color: $dvp-grey;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  font-family: 'camptonbold_demo';
+  font-size: $a-font-size;
+  line-height: $a-line-height;
+
+  &:hover {
+    color: $dvp-dark;
+  }
+}
+ 
 $arrow-height: $a-font-size * (3 / 4);
 .arrow {
   float: right;
