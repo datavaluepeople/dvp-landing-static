@@ -50,20 +50,20 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField} = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({node, getNode});
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
-}
+};
 
-const express = require('express')
+const express = require('express');
 exports.onCreateDevServer=({app})=>{
-    app.use(express.static('public'))
-}
+  app.use(express.static('public'));
+};
