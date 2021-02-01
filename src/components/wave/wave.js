@@ -30,7 +30,9 @@ const Wave = () => {
 
 
   useEffect(() => {
-    redraw();
+    setTimeout(() => {
+      redraw();
+    }, 2000);
     window.addEventListener('resize', redraw);
     return () => {
       window.removeEventListener('resize', redraw);
