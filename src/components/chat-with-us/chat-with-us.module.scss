@@ -13,9 +13,11 @@
   justify-content: flex-end;
 
   margin: $margin-sm-v $margin-sm-h;
+  margin-right: $sidebar-right-margin-sm;
 
   @include md {
     margin: $margin-md-v $margin-md-h;
+    margin-right: $sidebar-right-margin-md;
   }
 
   @include xlg {
@@ -23,16 +25,18 @@
     margin-right: $sidebar-right-margin-xlg;
   }
 
-  b {
-    font-family: 'camptonbold_demo';
-    font-size: 0.7rem;
-    text-decoration: none;
-  }
+}
+
+.text {
+  font-family: 'camptonbold_demo';
+  font-size: 0.7rem;
+  text-decoration: none;
 }
 
 .imgContainer {
   margin: 0;
   margin-left: 0.5rem;
+  width: 1.5rem;
 }
 
 .home {

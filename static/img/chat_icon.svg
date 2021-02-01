@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chat_icon@3x</title>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tarck-record" transform="translate(-1330.000000, -55.000000)">
+            <g id="chat_icon" transform="translate(1330.000000, 55.000000)">
+                <path d="M15,30 L3.6,30 L3.6,24.9997826 C3.6,24.8386957 3.5454,24.6834783 3.4458,24.5634783 C1.224,21.8823913 0,18.4858696 0,15 C0,6.72913043 6.729,0 15,0 C23.271,0 30,6.72913043 30,15 C30,23.2715217 23.271,30 15,30 Z" id="Shape" fill="#131F21" fill-rule="nonzero"></path>
+                <g id="Group" transform="translate(5.000000, 12.000000)">
+                    <rect id="Rectangle" fill="#59C9DE" x="0" y="1.1" width="5.25" height="5.25"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#FDD231" transform="translate(9.972311, 3.725000) rotate(45.000000) translate(-9.972311, -3.725000) " x="7.3473106" y="1.1" width="5.25" height="5.25"></rect>
+                    <rect id="Rectangle-Copy" fill="#F44668" x="14.6946212" y="0.575" width="6.3" height="6.3" rx="3.15"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

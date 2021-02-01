@@ -28,22 +28,22 @@ const SideBar = ({isHome, isOpen, toggleMenuOpen}) => {
       </Link>
       {isHome && <WhoWeAre HomePage={false}/>}
       <div className={sideBarStyles.footer}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/track-record/">
+        <nav className={sideBarStyles.nav}>
+          <ul className={sideBarStyles.navList}>
+            <li className={sideBarStyles.navListItem}>
+              <Link to="/track-record/" className={sideBarStyles.navListLink}>
                 <span>Track record</span>
                 <span className={sideBarStyles.arrow}>‣</span>
               </Link>
             </li>
-            <li>
-              <Link to="/people/">
+            <li className={sideBarStyles.navListItem}>
+              <Link to="/people/" className={sideBarStyles.navListLink}>
                 People
                 <span className={sideBarStyles.arrow}>‣</span>
               </Link>
             </li>
-            <li>
-              <Link to="/our-approach/">
+            <li className={sideBarStyles.navListItem}>
+              <Link to="/our-approach/" className={sideBarStyles.navListLink}>
                 Our approach
                 <span className={sideBarStyles.arrow}>‣</span>
               </Link>

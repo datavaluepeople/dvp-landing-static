@@ -8,17 +8,9 @@ const typography = new Typography({
     'camptonbold_demo',
     'sans-serif',
   ],
+  // Since we are using a bold font
+  headerWeight: 'normal',
   bodyFontFamily: ['Raleway', 'serif'],
-  googleFonts: [
-    {
-      name: 'Raleway',
-      styles: [
-        '400',
-        '500',
-        '700',
-      ],
-    },
-  ],
 });
 
 export default typography;

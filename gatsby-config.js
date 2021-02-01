@@ -13,6 +13,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Raleway:400,500,700`,
+        ],
+        display: 'swap',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-anchor-links',
       options: {
         offset: 0,
