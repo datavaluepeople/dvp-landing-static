@@ -80,13 +80,13 @@ module.exports = {
       options: {
         env: {
           production: {
-            policy: [{ userAgent: '*', allow: '/' }]
+            policy: [{userAgent: '*', allow: '/'}],
           },
           staging: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          }
-        }
-      }
+            policy: [{userAgent: '*', disallow: ['/']}],
+          },
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
