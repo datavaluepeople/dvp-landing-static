@@ -14,7 +14,7 @@ const BuilderFooter = ({SideBarAndIsHome, HomePage}) => {
       ${SideBarAndIsHome ? builderFooterStyles.home : ''}
       `}
     >
-      <span>2019® - design by <a href="http://www.mybitdesign.com" target="_blank" rel="noreferrer noopener">www.mybitdesign.com</a></span>
+      <span>2019® - design by <a href="http://www.mybitdesign.com" target="_blank" rel="noreferrer noopener">www.mybitdesign.com</a> - built by <a href="/">datavaluepeople</a></span>
     </div>
   );
 };
