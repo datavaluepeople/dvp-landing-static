@@ -3,10 +3,10 @@ module.exports = {
     title: `datavaluepeople`,
     author: {
       name: `datavaluepeople`,
-      summary: `datavaluepeole`,
+      summary: `datavaluepeople`,
     },
     description: `datavaluepeople | We build bespoke data-driven systems.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://datavaluepeople.com/`,
     social: {
       twitter: `datavaluepeople`,
     },
@@ -26,13 +26,6 @@ module.exports = {
       options: {
         offset: 0,
         duration: 100,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
       },
     },
     {
@@ -75,6 +68,19 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        env: {
+          production: {
+            policy: [{userAgent: '*', allow: '/'}],
+          },
+          staging: {
+            policy: [{userAgent: '*', disallow: ['/']}],
+          },
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -109,9 +115,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables
-    // Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 };
