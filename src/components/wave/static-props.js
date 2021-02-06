@@ -14,7 +14,7 @@ const staticProps = (canvasProps) => {
     // Step size for the noise, effusively speed
     step: 0.002,
     // Number of lines
-    rows: 90,
+    rows: 65,
     // Line Width, [1,10]
     // Value below 1 causes rendering imperfections
     lineWidth: 1,
@@ -30,7 +30,7 @@ const staticProps = (canvasProps) => {
     x1OffsetScaler: 0.5,
     // The total xOffset that will be used to create
     // visual persective.
-    perspectiveOffset: 200,
+    perspectiveOffset: 150,
     // Line color, note that color and alpha can make
     // unexpected to changes to line rendering
     lineColor: colors.dvpWave,
@@ -40,6 +40,7 @@ const staticProps = (canvasProps) => {
   if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
     const overrideSM = {
       step: 0.005,
+      rows: 90,
       rows: 50,
       perspectiveOffset: 0,
     };
@@ -50,7 +51,7 @@ const staticProps = (canvasProps) => {
     const overrideMD = {
       step: 0.003,
       rows: 50,
-      perspectiveOffset: 150,
+      perspectiveOffset: 100,
     };
     return {...shared, ...overrideMD};
   }
@@ -58,11 +59,12 @@ const staticProps = (canvasProps) => {
   if (canvasProps.windowWidth <= breakpoints.screenXLGMin) {
     const overrideLG = {
       rows: 65,
+      perspectiveOffset: 80,
     };
     return {...shared, ...overrideLG};
   }
 
-  return shared
+  return shared;
 };
 
 export default staticProps;
