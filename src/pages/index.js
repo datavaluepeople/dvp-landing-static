@@ -16,9 +16,7 @@ const LandingPageIndex = ({location}) => {
       <div className={indexStyles.container}>
         <div className={indexStyles.textContainer}>
           <h1 className={indexStyles.title}>
-            Are you getting returns from your data &amp; analytics?
-            <br/>
-            We build data-driven systems with <i>measurable</i> value delivered.
+            We build bespoke state-of-the-art machine learning systems that deliver value you can measure.
           </h1>
           <WhoWeAre HomePage={true}/>
         </div>
