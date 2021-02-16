@@ -11,7 +11,7 @@ const March2021Event = ({location}) => {
       <SEO
         title="4th of March 2021 - people giving value through data"
       />
-      <h1>4th of March 2021</h1>
+      <h1>4th of March 2021 - datavaluepeople sessions</h1>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMwHZHdpr7Q4i7n76A8wwgRWT_oQISyuGxNqF4ehb54-tQ7w/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </Layout>
   );
