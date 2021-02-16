@@ -9,7 +9,7 @@ const NotFoundPage = ({location}) => {
     <Layout location={location}>
       <SEO title="404: Not Found" />
       <h1>Not Found</h1>
-      <p>This page does not exists...</p>
+      <p>This page does not exist...</p>
     </Layout>
   );
 };
