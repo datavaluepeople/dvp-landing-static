@@ -4,7 +4,7 @@ steps:
     args: ["ci"]
   - name: node:10.15.1
     entrypoint: npm
-    args: ["install", "gatsby-cli"]
+    args: ["install", "gatsby-cli@2.18.0"]
   - name: node:10.15.1
     entrypoint: "./node_modules/.bin/gatsby"
     args: ["build"]
