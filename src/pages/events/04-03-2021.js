@@ -29,7 +29,7 @@ const March2021Event = ({location}) => {
         09:00 - 09:10 - intro + datavaluepeople who are we and what we do
         <br/>
         <br/>
-        09:10 - 09:30 - An introduction to platforms: the components, the challenges and where to start
+        09:10 - 09:30 - An introduction to AI platforms: the components, the challenges and where to start
         <br/>
           09:30 - 09:40 - Questions/break
         <br/>
