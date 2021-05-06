@@ -20,6 +20,7 @@ const SEO = (
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
@@ -49,12 +50,16 @@ const SEO = (
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           property: `og:image`,
-          content: ogImage,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
         },
         {
           property: `og:image:width`,
