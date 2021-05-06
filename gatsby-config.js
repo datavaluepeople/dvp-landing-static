@@ -1,3 +1,12 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
+
+console.log(`Using environment config: '${activeEnv}'`);
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `datavaluepeople`,
@@ -6,7 +15,7 @@ module.exports = {
       summary: `datavaluepeople`,
     },
     description: `datavaluepeople | We build bespoke data-driven systems.`,
-    siteUrl: `https://datavaluepeople.com/`,
+    siteUrl: process.env.SITE_URL,
     social: {
       twitter: `datavaluepeople`,
     },
