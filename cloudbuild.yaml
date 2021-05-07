@@ -1,4 +1,7 @@
 steps:
+  # Copy the env files here
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "cp", "gs://dvp-landing-static-env/*", "."]
   - name: node:10.15.1
     entrypoint: npm
     args: ["ci"]

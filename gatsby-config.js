@@ -1,3 +1,12 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
+
+console.log(`Using environment config: '${activeEnv}'`);
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `datavaluepeople`,
@@ -6,7 +15,7 @@ module.exports = {
       summary: `datavaluepeople`,
     },
     description: `datavaluepeople | We build bespoke data-driven systems.`,
-    siteUrl: `https://datavaluepeople.com/`,
+    siteUrl: process.env.SITE_URL,
     social: {
       twitter: `datavaluepeople`,
     },
@@ -116,5 +125,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-firebase`,
+      options: {
+        credentials: {
+          apiKey: process.env.FIREBASE_API_KEY,
+          authDomain: process.env.FIREBASE_AUTH_DOMIAN,
+          databaseURL: process.env.FIREBASE_DB_URL,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.FIREBASE_APP_ID,
+          measurementId: process.env.FIREBASE_MESUREMENT_ID,
+        },
+      },
+    },
   ],
 };
