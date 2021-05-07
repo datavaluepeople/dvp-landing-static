@@ -6,6 +6,8 @@ import layoutStyles from './layout.module.scss';
 
 import useMenuOpen from '../../hooks/use-menu-open.js';
 
+import firebase from 'gatsby-plugin-firebase';
+
 const Layout = ({location, children}) => {
   const {isOpen, toggleMenuOpen} = useMenuOpen();
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -18,6 +20,10 @@ const Layout = ({location, children}) => {
     // height of the screen
     backgroundFixPanal = <div className={layoutStyles.backgroundFixPanal}/>;
   }
+
+  React.useEffect(() => {
+    firebase.analytics();
+  }, []);
 
   return (
     <div className={`

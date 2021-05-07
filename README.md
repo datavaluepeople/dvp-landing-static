@@ -18,7 +18,7 @@ Install gatsby: `npm install -g gatsby`
 Currently there are a number of `.env` files which configure the build of different environment.
 The files are not in version control but can be downloaded by:
 ```
-gsutil cp -m gs://dvp-landing-static-env/* .
+gsutil -m cp gs://dvp-landing-static-env/* .
 ```
 
 Once you have node and gatsby installed:
