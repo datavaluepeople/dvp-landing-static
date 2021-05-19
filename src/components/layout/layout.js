@@ -7,13 +7,26 @@ import layoutStyles from './layout.module.scss';
 import useMenuOpen from '../../hooks/use-menu-open.js';
 
 import firebase from 'gatsby-plugin-firebase';
+import {useStaticQuery, graphql} from 'gatsby';
 
 const Layout = ({location, children}) => {
   const {isOpen, toggleMenuOpen} = useMenuOpen();
   const rootPath = `${__PATH_PREFIX__}/`;
+  const {site} = useStaticQuery(
+      graphql`
+      query {
+        site {
+          siteMetadata {
+            hasFirebaseApp
+          }
+        }
+      }
+    `,
+  );
   let backgroundFixPanal;
 
   const isHome = (location.pathname === rootPath);
+  const hasFirebaseApp = site.siteMetadata.hasFirebaseApp;
 
   if (isHome) {
     // Panel needed if the content of main is smaller then
@@ -22,7 +35,9 @@ const Layout = ({location, children}) => {
   }
 
   React.useEffect(() => {
-    firebase.analytics();
+    if (hasFirebaseApp) {
+      firebase.analytics();
+    }
   }, []);
 
   return (
