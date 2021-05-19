@@ -19,6 +19,7 @@ module.exports = {
     social: {
       twitter: `datavaluepeople`,
     },
+    hasFirebaseApp: process.env.HAS_FIREBASE_APP == 'true' ? true : false,
   },
   plugins: [
     {
