@@ -19,6 +19,7 @@ module.exports = {
     social: {
       twitter: `datavaluepeople`,
     },
+    hasFirebaseApp: process.env.HAS_FIREBASE_APP == 'true' ? true : false,
   },
   plugins: [
     {
@@ -85,6 +86,9 @@ module.exports = {
             policy: [{userAgent: '*', allow: '/'}],
           },
           staging: {
+            policy: [{userAgent: '*', disallow: ['/']}],
+          },
+          staging2: {
             policy: [{userAgent: '*', disallow: ['/']}],
           },
         },
