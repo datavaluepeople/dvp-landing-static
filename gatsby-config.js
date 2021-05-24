@@ -88,6 +88,9 @@ module.exports = {
           staging: {
             policy: [{userAgent: '*', disallow: ['/']}],
           },
+          staging2: {
+            policy: [{userAgent: '*', disallow: ['/']}],
+          },
         },
       },
     },
