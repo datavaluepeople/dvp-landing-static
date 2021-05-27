@@ -14,15 +14,9 @@ const May2021Event = ({location}) => {
       <h1>20th of May 2021 - people giving value through data</h1>
       <h2 style={{marginBottom: '3rem'}}>datavaluepeople sessions</h2>
       <p style={{marginBottom: '6rem'}}>
-        Join the talks from members of datavaluepeople!
+        Sorry you missed the session. Stay tuned for the next one!
         <br/>
-        <br/>
-        Google meet link <a
-          href="https://meet.google.com/edi-tocd-uro"
-          rel="noreferrer noopener"
-          target="_blank"
-          dangerouslySetInnerHTML={{__html: `https://meet.google.com/edi-tocd-uro`}}
-        ></a>
+        Drop us an email if you would like to have a chat.
       </p>
       <h3>Session outline (BST):</h3>
       <p>
@@ -58,9 +52,6 @@ const May2021Event = ({location}) => {
         <br/>
         <br/>
       </p>
-      <h3 style={{marginTop: '2rem'}}>
-        Feel free to drop in for the sessions that interest you most.
-      </h3>
       <p>
         datavaluepeople are a select team of highly technical data professionals, who build bespoke end-to-end machine learning systems. We're running a morning of sessions covering some practical methods and strategies for delivering successful data science projects.
       </p>
