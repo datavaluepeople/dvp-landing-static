@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import builderFooterStyles from './builder-footer.module.scss';
+import * as builderFooterStyles from './builder-footer.module.scss';
 
 const BuilderFooter = ({SideBarAndIsHome, HomePage}) => {
   const pageClass = HomePage ?

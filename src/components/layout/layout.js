@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Header from '../header/header.js';
-import layoutStyles from './layout.module.scss';
+import * as layoutStyles from './layout.module.scss';
 
 import useMenuOpen from '../../hooks/use-menu-open.js';
 
@@ -49,7 +49,6 @@ const Layout = ({location, children}) => {
       `}
     >
       <Header
-        className={layoutStyles.header}
         isHome={isHome}
         isOpen={isOpen}
         toggleMenuOpen={toggleMenuOpen}

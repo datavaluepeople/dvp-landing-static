@@ -7,7 +7,7 @@ import BuilderFooter from '../components/builder-footer/builder-footer.js';
 import WhoWeAre from '../components/who-we-are/who-we-are.js';
 import Wave from '../components/wave/wave';
 
-import indexStyles from './index.module.scss';
+import * as indexStyles from './index.module.scss';
 
 const LandingPageIndex = ({location}) => {
   return (

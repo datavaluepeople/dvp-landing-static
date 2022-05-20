@@ -6,7 +6,7 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 
 import Person from '../components/person/person';
-import styles from './people.module.scss';
+import * as styles from './people.module.scss';
 
 const PeoplePage = ({data, location}) => {
   /*

@@ -13,7 +13,7 @@ import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
 
-import styles from './technology-icons.module.scss';
+import * as styles from './technology-icons.module.scss';
 
 const TechonolgyIcons = ({}) => {
   const linkNameMap = {
@@ -65,7 +65,6 @@ const TechonolgyIcons = ({}) => {
               className={styles.imgContainer}
             >
               <Img
-                className={styles.imgGray}
                 fixed={node.childImageSharp.gray}
               />
               <Img

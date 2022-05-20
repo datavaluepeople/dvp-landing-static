@@ -14,7 +14,7 @@ import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
 
-import styles from './client-images.module.scss';
+import * as styles from './client-images.module.scss';
 
 const ClientImages = ({}) => {
   const linkNameMap = {

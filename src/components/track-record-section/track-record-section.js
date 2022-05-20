@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './track-record-section.module.scss';
+import * as styles from './track-record-section.module.scss';
 
 const TrackRecordSection = ({trackRecord}) => {
   return (

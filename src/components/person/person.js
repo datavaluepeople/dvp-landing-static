@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import ImageFadeIn from 'react-image-fade-in';
 
-import styles from './person.module.scss';
-import sharedPeopleStyles from '../../styles/shared/people.scss';
+import * as styles from './person.module.scss';
+import * as sharedPeopleStyles from
+  '../../styles/shared/people-variables.module.scss';
 
 
 const Person = (
@@ -53,7 +54,7 @@ const Person = (
         <h2>{fullName}</h2>
         <h3>{title}</h3>
         <p>{bio}</p>
-        <p><b className={styles.email}>{email}</b></p>
+        <p><b>{email}</b></p>
         <div className={styles.linkContainer}>
           <a
             href={`https://www.linkedin.com/in/${linkedIn}/`}

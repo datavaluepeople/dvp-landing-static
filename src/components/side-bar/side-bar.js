@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
 
-import sideBarStyles from './side-bar.module.scss';
+import * as sideBarStyles from './side-bar.module.scss';
 
 import ChatWithUs from '../chat-with-us/chat-with-us.js';
 import WhoWeAre from '../who-we-are/who-we-are.js';

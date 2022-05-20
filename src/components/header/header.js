@@ -5,7 +5,7 @@ import {Link} from 'gatsby';
 import Logo from '../logo/logo';
 import Burger from '../burger/burger';
 import SideBar from '../side-bar/side-bar';
-import headerStyles from './header.module.scss';
+import * as headerStyles from './header.module.scss';
 
 const Header = ({isHome, isOpen, toggleMenuOpen}) => {
   let headerContainerClass;
