@@ -30,5 +30,5 @@ export default Burger;
 Burger.propTypes = {
   isHome: PropTypes.bool,
   isOpen: PropTypes.bool,
-  toggleMenuOpen: PropTypes.function,
+  toggleMenuOpen: PropTypes.func,
 };
