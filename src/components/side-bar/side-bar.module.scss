@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../../styles/base_values.scss';
 @import '../../styles/colors.scss';
 @import '../../styles/breakpoints.scss';
@@ -51,11 +52,11 @@ $a-font-size: 1.7rem;
   width: 100%;
   bottom: 0;
   @include lg {
-    bottom: $sidebar-left-margin-lg - ($a-line-height /2);
+    bottom: $sidebar-left-margin-lg - math.div($a-line-height, 2);
   }
 
   @include xlg {
-    bottom: $sidebar-left-margin-xlg - ($a-line-height / 2);
+    bottom: $sidebar-left-margin-xlg - math.div($a-line-height, 2);
   }
 
 }
@@ -101,7 +102,7 @@ $a-font-size: 1.7rem;
   }
 }
  
-$arrow-height: $a-font-size * (3 / 4);
+$arrow-height: $a-font-size * calc(3 / 4);
 .arrow {
   float: right;
   font-size: $arrow-height;

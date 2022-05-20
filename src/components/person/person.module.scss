@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../../styles/base_values.scss';
 @import '../../styles/breakpoints.scss';
 @import '../../styles/colors.scss';
@@ -55,7 +56,7 @@ $margin-text: 1.2rem;
     
     margin-bottom: 0;
     @include md {
-      margin-bottom: $margin-text / 3;
+      margin-bottom: math.div($margin-text, 3);
     }
   }
   h3 {
@@ -80,7 +81,7 @@ $margin-text: 1.2rem;
     margin-bottom: $margin-text;
   }
   img {
-    margin-right: $margin-text / 2;
+    margin-right: math.div($margin-text, 2);
   }
 }
 

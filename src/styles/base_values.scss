@@ -1,9 +1,10 @@
+@use "sass:math";
 /* Base values */
 $base-font-size: 20px;
 $base-line-height: 1.666;
 
 /* general positioning values */
-$side-bar-width: 100% * (1/3);
+$side-bar-width: 100% * math.div(1, 3);
 $content-width: 100% - $side-bar-width;
 
 /* Margin */
