@@ -3,9 +3,10 @@
 @import '../../styles/colors.scss';
 @import '../../styles/breakpoints.scss';
 @import '../../styles/shared/header.scss';
+@import '../../styles/shared/mixins.scss';
 
 .container {
-  composes: light from '../../styles/global.scss';
+  @include lightMixin;
   position: fixed;
   height: calc(100% - #{$nav-bar-height-sm});
   top: $nav-bar-height-sm;

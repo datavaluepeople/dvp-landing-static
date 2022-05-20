@@ -1,0 +1,11 @@
+@import '../../styles/colors.scss';
+
+@mixin darkMixin {
+  background-color: $dvp-dark;
+  color: $dvp-white;
+}
+
+@mixin lightMixin {
+  background-color: $dvp-white;
+  color: $dvp-dark;
+}

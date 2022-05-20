@@ -2,16 +2,15 @@
 @import './base_values.scss';
 @import './colors.scss';
 
+@import './shared/mixins.scss';
 @import './typograph.scss';
 
 .dark {
-  background-color: $dvp-dark;
-  color: $dvp-white;
+  @include darkMixin;
 }
 
 .light {
-  background-color: $dvp-white;
-  color: $dvp-dark;
+  @include lightMixin;
 }
 
 html, body {

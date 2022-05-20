@@ -1,14 +1,16 @@
 @import '../../styles/base_values.scss';
 @import '../../styles/breakpoints.scss';
 @import '../../styles/colors.scss';
+@import '../../styles/shared/mixins.scss';
 
 .dark {
-  composes: dark from '../../styles/global.scss';
+  @include darkMixin;
 }
 
 .light {
-  /* place holder */
+  @include lightMixin;
 }
+
 
 @mixin nullOpenSideBar {
   position: static;
