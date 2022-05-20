@@ -31,9 +31,3 @@ $screen-xlg-min: 1240px;
        @content;
    }
 }
-
-:export {
-  screenMDMin: $screen-md-min-int;
-  screenLGMin: $screen-lg-min-int;
-  screenXLGMin: $screen-xlg-min-int;
-}

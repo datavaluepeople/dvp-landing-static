@@ -106,9 +106,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require('sass'),
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
