@@ -52,7 +52,6 @@
     "eslint": "^8.16.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.21.5",
-    "prettier": "^1.12.1",
     "sass": "^1.30.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -68,8 +67,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "eslint src/",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint .",
+    "format": "eslint --fix .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

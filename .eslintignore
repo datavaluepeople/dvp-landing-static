@@ -1,3 +1,5 @@
+static/animation-iframes
+node_modules
 .cache
 package.json
 package-lock.json
