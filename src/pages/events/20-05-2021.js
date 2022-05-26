@@ -23,12 +23,14 @@ const May2021Event = ({location}) => {
         09:00 - 09:10 - intro + datavaluepeople who are we and what we do
         <br/>
         <br/>
-        09:10 - 09:30 - Data science fundamentals - without the hype! (Dan Cerigo)
+        09:10 - 09:30 -
+        Data science fundamentals - without the hype! (Dan Cerigo)
         <br/>
           09:30 - 09:40 - Questions/break
         <br/>
         <br/>
-        09:40 - 10:00 - Data platforms; monolith or microservices? (Will Underwood)
+        09:40 - 10:00 -
+        Data platforms; monolith or microservices? (Will Underwood)
         <br/>
           10:00 - 10:10 - Questions/break
         <br/>
@@ -36,7 +38,8 @@ const May2021Event = ({location}) => {
           10:10 - 10:20 - Longer Break
         <br/>
         <br/>
-        10:20 - 10:40 - Recommender systems from ideation to production (Andrew Sutjahjo)
+        10:20 - 10:40 -
+        Recommender systems from ideation to production (Andrew Sutjahjo)
         <br/>
           10:40 - 10:50 - Questions/break
         <br/>
@@ -53,7 +56,11 @@ const May2021Event = ({location}) => {
         <br/>
       </p>
       <p>
-        datavaluepeople are a select team of highly technical data professionals, who build bespoke end-to-end machine learning systems. We're running a morning of sessions covering some practical methods and strategies for delivering successful data science projects.
+        datavaluepeople are a select team of highly technical
+        data professionals, who build bespoke end-to-end machine learning
+        systems. We&apos;re running a morning of sessions for Strategy Insight
+        attendees covering some practical methods and strategies for delivering
+        successful data science projects.
       </p>
     </Layout>
   );

@@ -16,7 +16,8 @@ const LandingPageIndex = ({location}) => {
       <div className={indexStyles.container}>
         <div className={indexStyles.textContainer}>
           <h1 className={indexStyles.title}>
-            We build bespoke state-of-the-art machine learning systems that deliver value you can measure.
+            We build bespoke state-of-the-art machine
+            learning systems that deliver value you can measure.
           </h1>
           <WhoWeAre HomePage={true}/>
         </div>
