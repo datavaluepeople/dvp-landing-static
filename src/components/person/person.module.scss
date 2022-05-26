@@ -34,8 +34,12 @@
   }
 }
 
-.column {
+@mixin columnMixin {
   flex-basis: auto;
+}
+
+.column {
+  @include columnMixin;
 }
 
 $margin-text: 1.2rem;
@@ -45,7 +49,7 @@ $margin-text: 1.2rem;
     position: relative;
     margin-top: $margin-text;
     margin-left: 1rem;
-    composes: column;
+    @include columnMixin;
     flex-shrink: 1;
   }
 
@@ -104,7 +108,7 @@ $margin-text: 1.2rem;
 
   @include md {
     flex-shrink: 0;
-    composes: column;
+    @include columnMixin;
   }
 
   @include xlg {
