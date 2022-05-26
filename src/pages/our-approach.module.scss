@@ -12,10 +12,14 @@
   @include contentContainerMixin;
 }
 
-.pLarge {
+@mixin pLargeMixin {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.2rem;
+}
+
+.pLarge {
+  @include pLargeMixin;
 }
 
 .pGrey {
@@ -24,7 +28,7 @@
 }
 
 .hireUs {
-  composes: pLarge;
+  @include pLargeMixin;
   display: inline-block;
   margin-bottom: 0.8rem;
 }
