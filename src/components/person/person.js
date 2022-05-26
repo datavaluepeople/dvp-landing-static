@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import ImageFadeIn from 'react-image-fade-in';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 import * as styles from './person.module.scss';
 import * as sharedPeopleStyles from
@@ -45,7 +45,7 @@ const Person = (
           alt='profile picture'
           style={{'position': 'absolute'}}
         />
-        <ImageFadeIn
+        <LazyLoadImage
           className={styles.imgReal}
           src={profilePictureGifUrl ? profilePictureGifUrl : ''}
         />
