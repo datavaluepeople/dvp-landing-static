@@ -14,15 +14,7 @@
 
 .imgContainer {
   margin: 1rem;
-  max-width: 14rem;
   flex-grow: 0;
   flex-shrink: 1;
 }
 
-/*
- * Specific image width setting
- * use max-width: to make the max image smaller
- */
-:global(.img_09_plugify) {
-  max-width: 10rem;
-}
