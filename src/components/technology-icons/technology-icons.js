@@ -40,9 +40,14 @@ const TechonolgyIcons = ({}) => {
               gray: gatsbyImageData(
                 layout: FIXED,
                 transformOptions: {grayscale: true},
-                width: 30
+                width: 30,
+                placeholder: BLURRED,
               ),
-              color: gatsbyImageData(layout: FIXED, width: 30),
+              color: gatsbyImageData(
+                layout: FIXED,
+                width: 30,
+                placeholder: NONE
+              ),
             }
           }
         }
@@ -66,11 +71,13 @@ const TechonolgyIcons = ({}) => {
             >
               <GatsbyImage
                 image={node.childImageSharp.gray}
+                loading='eager'
               />
               <GatsbyImage
                 className={styles.imgColor}
                 image={node.childImageSharp.color}
                 style={{'position': 'absolute'}}
+                loading='eager'
               />
             </div>
           </a>
