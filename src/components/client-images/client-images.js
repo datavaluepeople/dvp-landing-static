@@ -43,10 +43,8 @@ const ClientImages = ({}) => {
             name
             childImageSharp {
               gray: gatsbyImageData(
-                layout: FIXED,
                 transformOptions: {grayscale: true},
-                height: 70,
-                quality: 100,
+                height: 80,
               )
             }
           }
@@ -60,10 +58,6 @@ const ClientImages = ({}) => {
         return (
           <div
             key={node.name}
-            style={{
-              maxHeight: node.childImageSharp.gray.height + 'px',
-              flexBasis: node.childImageSharp.gray.width + 'px',
-            }}
             className={`
               ${styles.imgContainer}
               img_${node.name}
