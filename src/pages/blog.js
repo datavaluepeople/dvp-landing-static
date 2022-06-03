@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
 
+import Bio from '../components/blog-bio';
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
@@ -30,6 +31,10 @@ const BlogIndex = ({data, location}) => {
         <ol style={{listStyle: `none`}}>
           {posts.map((post) => {
             const title = post.frontmatter.title || post.fields.slug;
+            const author = post.frontmatter.author;
+            const avatar = (
+              author.gifPlaceHolder.childImageSharp.gatsbyImageData
+            );
 
             return (
               <li key={post.fields.slug}>
@@ -54,6 +59,12 @@ const BlogIndex = ({data, location}) => {
                       itemProp='description'
                     />
                   </section>
+                  <address>
+                    <Bio
+                      fullName={author.fullName}
+                      avatar={avatar}
+                    />
+                  </address>
                 </article>
               </li>
             );
@@ -72,26 +83,34 @@ BlogIndex.propTypes = {
 };
 
 
-export const BlogIndexPageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+export const BlogIndexPageQuery = graphql`query
+{
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    nodes {
+      excerpt
+      fields {
+        slug
       }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+        author {
+          fullName
+          gifPlaceHolder {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED,
+                placeholder: BLURRED,
+                width: 60,
+                aspectRatio: 1
+              )
+            }
+          }
         }
       }
     }
   }
+}
 `;
 

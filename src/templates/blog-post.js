@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
 
+import Bio from '../components/blog-bio';
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
@@ -9,6 +10,10 @@ const BlogPostTemplate = ({data, location}) => {
   console.log(data);
   const post = data.markdownRemark;
   const {previous, next} = data;
+  const author = post.frontmatter.author;
+  const avatar = (
+    author.gifPlaceHolder.childImageSharp.gatsbyImageData
+  );
 
   return (
     <Layout location={location}>
@@ -31,6 +36,12 @@ const BlogPostTemplate = ({data, location}) => {
         />
         <hr />
         <footer>
+          <Bio
+            fullName={author.fullName}
+            bio={author.bio}
+            avatar={avatar}
+            email={author.email}
+          />
         </footer>
       </article>
       <nav className='blog-post-nav'>
@@ -89,6 +100,21 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author {
+          fullName
+          bio
+          email
+          gifPlaceHolder {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED,
+                placeholder: BLURRED,
+                width: 60,
+                aspectRatio: 1
+              )
+            }
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
