@@ -83,3 +83,8 @@ You can test the CICD:
 `gcloud builds submit --config cloudbuild.yaml . --substitutions _GATSBY_ACTIVE_ENV=staging2,_TARGET_PROJECT_ID=dvp-landing-static`
 
 The substitutions above will deploy to staging2.
+
+## CMS
+- [Blog](./docs/blog.md)
+- [People](./docs/people.md)
+- [Track Record Sections](./docs/track-record-sections.md)
