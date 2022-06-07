@@ -12,9 +12,9 @@
  */
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 
-import styles from './client-images.module.scss';
+import * as styles from './client-images.module.scss';
 
 const ClientImages = ({}) => {
   const linkNameMap = {
@@ -42,11 +42,10 @@ const ClientImages = ({}) => {
           node {
             name
             childImageSharp {
-              gray: fluid(maxHeight: 80, grayscale: true){
-                ...GatsbyImageSharpFluid
-                presentationWidth
-                presentationHeight
-              }
+              gray: gatsbyImageData(
+                transformOptions: {grayscale: true},
+                height: 80,
+              )
             }
           }
         }
@@ -59,10 +58,6 @@ const ClientImages = ({}) => {
         return (
           <div
             key={node.name}
-            style={{
-              maxHeight: node.childImageSharp.gray.presentationHeight,
-              flexBasis: node.childImageSharp.gray.presentationWidth,
-            }}
             className={`
               ${styles.imgContainer}
               img_${node.name}
@@ -75,12 +70,12 @@ const ClientImages = ({}) => {
               target='_blank'
               rel='noreferrer noopener'
             >
-              <Img
+              <GatsbyImage
                 style={{
-                  maxHeight: node.childImageSharp.gray.presentationHeight,
-                  flexBasis: node.childImageSharp.gray.presentationWidth,
+                  maxHeight: node.childImageSharp.gray.height + 'px',
+                  flexBasis: node.childImageSharp.gray.width + 'px',
                 }}
-                fluid={node.childImageSharp.gray}
+                image={node.childImageSharp.gray}
                 objectFit="contain"
               />
             </a>

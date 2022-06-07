@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import whoWeAreStyles from './who-we-are.module.scss';
+import * as whoWeAreStyles from './who-we-are.module.scss';
 import TechonolgyIcons from '../technology-icons/technology-icons';
 
 
@@ -13,7 +13,6 @@ const WhoWeAre = ({HomePage}) => {
   return (
     <div
       className={`
-        ${whoWeAreStyles.container}
         ${pageClass}
       `}
     >

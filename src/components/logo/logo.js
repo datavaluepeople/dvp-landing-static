@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logoStyles from './logo.module.scss';
+import * as logoStyles from './logo.module.scss';
 import {logoColorSrc, logoWhiteSrc} from './constants.js';
 import HypeAnimation from '../../components/hype-animation';
 import {Helmet} from 'react-helmet';

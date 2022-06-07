@@ -8,7 +8,7 @@ import
 TrackRecordSection
   from '../components/track-record-section/track-record-section';
 
-import trackRecordStyles from './track-record.module.scss';
+import * as trackRecordStyles from './track-record.module.scss';
 import ClientImages from '../components/client-images/client-images.js';
 
 const TrackRecordPage = ({data, location}) => {

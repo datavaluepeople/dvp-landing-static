@@ -6,7 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import burgerStyles from './burger.module.scss';
+import * as burgerStyles from './burger.module.scss';
 
 const Burger = ({isHome, isOpen, toggleMenuOpen}) => {
   return (
@@ -30,5 +30,5 @@ export default Burger;
 Burger.propTypes = {
   isHome: PropTypes.bool,
   isOpen: PropTypes.bool,
-  toggleMenuOpen: PropTypes.function,
+  toggleMenuOpen: PropTypes.func,
 };

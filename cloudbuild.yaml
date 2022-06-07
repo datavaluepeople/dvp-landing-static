@@ -2,20 +2,21 @@ steps:
   # Copy the env files here
   - name: gcr.io/cloud-builders/gsutil
     args: ["-m", "cp", "gs://dvp-landing-static-env/*", "."]
-  - name: node:10.15.1
+  - name: node:16.15.0
     entrypoint: npm
     args: ["ci"]
-  - name: node:10.15.1
+  - name: node:16.15.0
     entrypoint: npm
-    args: ["install", "gatsby-cli@2.18.0"]
-  - name: node:10.15.1
+    args: ["install", "gatsby-cli@4.15.0"]
+  - name: node:16.15.0
     entrypoint: "./node_modules/.bin/gatsby"
     args: ["build"]
     env:
       - "GATSBY_ACTIVE_ENV=${_GATSBY_ACTIVE_ENV}"
-  - name: node:10.15.1
+  - name: node:16.15.0
     entrypoint: npm
     args: ["install", "firebase-tools"]
-  - name: node:10.15.1
+  - name: node:16.15.0
     entrypoint: "./node_modules/.bin/firebase"
     args: ["deploy", "--project", "${_TARGET_PROJECT_ID}"]
+timeout: "1200s"

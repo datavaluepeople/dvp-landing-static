@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import chatWithUsStyles from './chat-with-us.module.scss';
+import * as chatWithUsStyles from './chat-with-us.module.scss';
 
 const ChatWithUs = ({isHome}) => {
   return (

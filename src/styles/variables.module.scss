@@ -1,0 +1,15 @@
+@import './base_values.scss';
+@import './breakpoints.scss';
+@import './colors.scss';
+
+:export {
+  baseFontSize: $base-font-size;
+  baseLineHeight: $base-line-height;
+  screenMDMin: $screen-md-min-int;
+  screenLGMin: $screen-lg-min-int;
+  screenXLGMin: $screen-xlg-min-int;
+  dvpDark: $dvp-dark;
+  dvpWhite: $dvp-white;
+  dvpGrey: $dvp-grey;
+  dvpWave: $dvp-wave;
+}

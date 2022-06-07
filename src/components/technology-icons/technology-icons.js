@@ -11,9 +11,9 @@
  */
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 
-import styles from './technology-icons.module.scss';
+import * as styles from './technology-icons.module.scss';
 
 const TechonolgyIcons = ({}) => {
   const linkNameMap = {
@@ -37,12 +37,17 @@ const TechonolgyIcons = ({}) => {
           node {
             name
             childImageSharp {
-              gray: fixed(grayscale: true, width: 30){
-                ...GatsbyImageSharpFixed
-              }
-              color: fixed(width: 30){
-                ...GatsbyImageSharpFixed
-              }
+              gray: gatsbyImageData(
+                layout: FIXED,
+                transformOptions: {grayscale: true},
+                width: 30,
+                placeholder: BLURRED,
+              ),
+              color: gatsbyImageData(
+                layout: FIXED,
+                width: 30,
+                placeholder: NONE
+              ),
             }
           }
         }
@@ -64,14 +69,15 @@ const TechonolgyIcons = ({}) => {
             <div
               className={styles.imgContainer}
             >
-              <Img
-                className={styles.imgGray}
-                fixed={node.childImageSharp.gray}
+              <GatsbyImage
+                image={node.childImageSharp.gray}
+                loading='eager'
               />
-              <Img
+              <GatsbyImage
                 className={styles.imgColor}
-                fixed={node.childImageSharp.color}
+                image={node.childImageSharp.color}
                 style={{'position': 'absolute'}}
+                loading='eager'
               />
             </div>
           </a>

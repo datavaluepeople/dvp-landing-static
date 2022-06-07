@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+@import '../breakpoints.scss';
+
+@mixin darkMixin {
+  background-color: $dvp-dark;
+  color: $dvp-white;
+}
+
+@mixin lightMixin {
+  background-color: $dvp-white;
+  color: $dvp-dark;
+}
+
+@mixin contentTitleMixin {
+  display: none;
+  @include md {
+    display: initial;
+  }
+}
+
+@mixin contentContainerMixin {
+  @include md {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include xlg {
+    padding-top: 3.8rem;
+    padding-left: 2rem;
+  }
+}

@@ -5,7 +5,7 @@
  */
 import React, {useRef, useEffect} from 'react';
 
-import styles from './wave.module.scss';
+import * as styles from './wave.module.scss';
 
 import WaveAnimator from './wave-animator.js';
 

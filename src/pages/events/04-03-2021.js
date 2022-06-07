@@ -23,7 +23,9 @@ const March2021Event = ({location}) => {
         09:00 - 09:10 - intro + datavaluepeople who are we and what we do
         <br/>
         <br/>
-        09:10 - 09:30 - An introduction to AI platforms: the components, the challenges and where to start
+        09:10 - 09:30 -
+        An introduction to AI platforms: the components,
+        the challenges and where to start
         <br/>
           09:30 - 09:40 - Questions/break
         <br/>
@@ -52,7 +54,11 @@ const March2021Event = ({location}) => {
         <br/>
       </p>
       <p>
-        datavaluepeople are a select team of highly technical data professionals, who build bespoke end-to-end machine learning systems. We're running a morning of sessions for Strategy Insight attendees covering some practical methods and strategies for delivering successful data science projects.
+        datavaluepeople are a select team of highly technical
+        data professionals, who build bespoke end-to-end machine learning
+        systems. We&apos;re running a morning of sessions for Strategy Insight
+        attendees covering some practical methods and strategies for delivering
+        successful data science projects.
       </p>
     </Layout>
   );

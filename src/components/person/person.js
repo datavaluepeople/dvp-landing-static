@@ -1,10 +1,12 @@
 import React from 'react';
+import slugify from 'slugify';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import ImageFadeIn from 'react-image-fade-in';
+import {GatsbyImage} from 'gatsby-plugin-image';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
-import styles from './person.module.scss';
-import sharedPeopleStyles from '../../styles/shared/people.scss';
+import * as styles from './person.module.scss';
+import * as sharedPeopleStyles from
+  '../../styles/shared/people-variables.module.scss';
 
 
 const Person = (
@@ -20,40 +22,54 @@ const Person = (
       profilePictureGifUrl,
     },
 ) => {
-  const maxWidth = sharedPeopleStyles.personImgXlgMax;
-  const minWidth = sharedPeopleStyles.personImgXlgMin;
-  let gifPlaceHolderSources = '';
-  if (gifPlaceHolder) {
-    gifPlaceHolderSources = [
-      {
-        ...gifPlaceHolder.md[0].fixed,
-        media: `(max-width: ${maxWidth})`,
-      },
-      {
-        ...gifPlaceHolder.xlg[0].fixed,
-        media: `(min-width: ${minWidth})`,
-      },
-    ];
+  const placeholderImage = gifPlaceHolder.childrenImageSharp[0].gatsbyImageData;
+  const minLargeHeight = placeholderImage.height;
+  let gifImage;
+  if (profilePictureGifUrl) {
+    gifImage = (
+      <LazyLoadImage className={styles.imgReal} src={profilePictureGifUrl}/>
+    );
+  } else {
+    gifImage = '';
   }
+  const ratio = (
+    sharedPeopleStyles.personImgMdWidth / sharedPeopleStyles.personImgXlgWidth
+  );
+  const minSmallHeight = placeholderImage.height * ratio;
+  const personSlugId = slugify(fullName);
+
   return (
-    <div id={id} className={styles.container}>
+    <div id={personSlugId} className={styles.container}>
+      {/* The Gatsby image that is used as the placeholder
+        has style position absolute. This means that sometimes
+        the image goes over the height of the flex box.
+
+        We write some min height embedded CSS so that the min height
+        is correct for that image.
+      */}
+      <style dangerouslySetInnerHTML={{__html: `
+         #${personSlugId} .${styles.imgContainer} {
+           min-height: ${minSmallHeight}px;
+         }
+         @media (min-width: 1240px) {
+            #${personSlugId} .${styles.imgContainer} {
+              min-height: ${minLargeHeight}px;
+            }
+         }
+      `}}></style>
       <div className={styles.imgContainer}>
-        <Img
+        <GatsbyImage
           className={styles.imgPlaceholder}
-          fixed={gifPlaceHolderSources}
-          alt='profile picture'
+          image={placeholderImage}
           style={{'position': 'absolute'}}
         />
-        <ImageFadeIn
-          className={styles.imgReal}
-          src={profilePictureGifUrl ? profilePictureGifUrl : ''}
-        />
+        {gifImage}
       </div>
       <div className={styles.textContainer}>
         <h2>{fullName}</h2>
         <h3>{title}</h3>
         <p>{bio}</p>
-        <p><b className={styles.email}>{email}</b></p>
+        <p><b>{email}</b></p>
         <div className={styles.linkContainer}>
           <a
             href={`https://www.linkedin.com/in/${linkedIn}/`}

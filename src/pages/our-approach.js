@@ -5,7 +5,7 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import HypeAnimation from '../components/hype-animation';
 
-import styles from './our-approach.module.scss';
+import * as styles from './our-approach.module.scss';
 
 const OurApproachPage = ({location}) => {
   const approachIconHeight = '40px';

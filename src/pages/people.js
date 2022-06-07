@@ -6,7 +6,7 @@ import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 
 import Person from '../components/person/person';
-import styles from './people.module.scss';
+import * as styles from './people.module.scss';
 
 const PeoplePage = ({data, location}) => {
   /*
@@ -25,6 +25,7 @@ const PeoplePage = ({data, location}) => {
           return (
             <Person
               key={node.id}
+              id={node.id}
               fullName={node.fullName}
               title={node.title}
               bio={node.bio}
@@ -85,15 +86,11 @@ query {
         github
         linkedIn
         gifPlaceHolder {
-          md: childrenImageSharp {
-            fixed(width: 250) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-          xlg: childrenImageSharp {
-            fixed(width: 350) {
-              ...GatsbyImageSharpFixed
-            }
+          childrenImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED,
+              breakpoints: [768, 1024, 1240]
+            )
           }
         }
         profilePictureGif {

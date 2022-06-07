@@ -2,19 +2,24 @@
 @import '../styles/breakpoints.scss';
 @import '../styles/colors.scss';
 @import '../styles/shared/hype-animations.scss';
+@import '../styles/shared/mixins.scss';
 
 .title {
-  composes: contentTitle from '../styles/shared/content-pages.scss';
+  @include contentTitleMixin;
 }
 
 .content {
-  composes: contentContainer from '../styles/shared/content-pages.scss';
+  @include contentContainerMixin;
 }
 
-.pLarge {
+@mixin pLargeMixin {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.2rem;
+}
+
+.pLarge {
+  @include pLargeMixin;
 }
 
 .pGrey {
@@ -23,7 +28,7 @@
 }
 
 .hireUs {
-  composes: pLarge;
+  @include pLargeMixin;
   display: inline-block;
   margin-bottom: 0.8rem;
 }

@@ -1,8 +1,7 @@
 /**
  * staticProps that define wave rendering and behaviour
  */
-import colors from '../../styles/colors.scss';
-import breakpoints from '../../styles/breakpoints.scss';
+import * as scssvariables from '../../styles/variables.module.scss';
 
 const staticProps = (canvasProps) => {
   const shared = {
@@ -33,11 +32,11 @@ const staticProps = (canvasProps) => {
     perspectiveOffset: 150,
     // Line color, note that color and alpha can make
     // unexpected to changes to line rendering
-    lineColor: colors.dvpWave,
+    lineColor: scssvariables.dvpWave,
     // Background color for the canvas
-    bgColor: colors.dvpDark,
+    bgColor: scssvariables.dvpDark,
   };
-  if (canvasProps.windowWidth <= breakpoints.screenMDMin) {
+  if (canvasProps.windowWidth <= scssvariables.screenMDMin) {
     const overrideSM = {
       step: 0.005,
       rows: 90,
@@ -47,7 +46,7 @@ const staticProps = (canvasProps) => {
     return {...shared, ...overrideSM};
   }
 
-  if (canvasProps.windowWidth <= breakpoints.screenLGMin) {
+  if (canvasProps.windowWidth <= scssvariables.screenLGMin) {
     const overrideMD = {
       step: 0.003,
       rows: 50,
@@ -56,7 +55,7 @@ const staticProps = (canvasProps) => {
     return {...shared, ...overrideMD};
   }
 
-  if (canvasProps.windowWidth <= breakpoints.screenXLGMin) {
+  if (canvasProps.windowWidth <= scssvariables.screenXLGMin) {
     const overrideLG = {
       rows: 65,
       perspectiveOffset: 80,

@@ -50,10 +50,18 @@ module.exports = {
       options: {
         path: `${__dirname}/content/data`,
         name: `track-record`,
-        plugins: [
-          `gatsby-transformer-json`,
-          `gatsby-transformer-yaml`,
-        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        path: `${__dirname}/content/data`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        path: `${__dirname}/content/data`,
       },
     },
     {
@@ -98,9 +106,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require('sass'),
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

@@ -1,39 +1,33 @@
-// Tablets
+/* Tablets */
 
 $screen-md-min-int: 768;
 $screen-md-min: 768px;
 
-// Desktop
+/* Desktop */
 $screen-lg-min-int: 1024;
 $screen-lg-min: 1024px;
 
-// x Desktop
+/* x Desktop */
 $screen-xlg-min-int: 1240;
 $screen-xlg-min: 1240px;
 
-// Medium devices
+/* Medium devices */
 @mixin md {
    @media (min-width: #{$screen-md-min}) {
        @content;
    }
 }
 
-// Large devices
+/* Large devices */
 @mixin lg {
    @media (min-width: #{$screen-lg-min}) {
        @content;
    }
 }
 
-// Extra Large devices
+/* Extra Large devices */
 @mixin xlg {
    @media (min-width: #{$screen-xlg-min}) {
        @content;
    }
-}
-
-:export {
-  screenMDMin: $screen-md-min-int;
-  screenLGMin: $screen-lg-min-int;
-  screenXLGMin: $screen-xlg-min-int;
 }
