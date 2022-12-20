@@ -7,7 +7,6 @@ import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
 const BlogPostTemplate = ({data, location}) => {
-  console.log(data);
   const post = data.markdownRemark;
   const {previous, next} = data;
   const author = post.frontmatter.author;
