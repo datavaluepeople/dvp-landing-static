@@ -48,6 +48,12 @@ const SideBar = ({isHome, isOpen, toggleMenuOpen}) => {
                 <span className={sideBarStyles.arrow}>‣</span>
               </Link>
             </li>
+            <li className={sideBarStyles.navListItem}>
+              <Link to="/blog/" className={sideBarStyles.navListLink}>
+                Blog
+                <span className={sideBarStyles.arrow}>‣</span>
+              </Link>
+            </li>
           </ul>
         </nav>
         <BuilderFooter SideBarAndIsHome={isHome } HomePage={false}/>
