@@ -26,7 +26,7 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location}>
       <Seo title='All posts' />
-      <h1 className={styles.title}>Posts</h1>
+      <h1 className={styles.title}>Blog</h1>
       <div className={styles.content}>
         <ol style={{listStyle: `none`}}>
           {posts.map((post) => {
