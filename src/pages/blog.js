@@ -6,7 +6,7 @@ import Bio from '../components/blog-bio';
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
-import * as styles from './people.module.scss';
+import * as styles from './blog.module.scss';
 
 
 const BlogIndex = ({data, location}) => {
@@ -32,26 +32,23 @@ const BlogIndex = ({data, location}) => {
           {posts.map((post) => {
             const title = post.frontmatter.title || post.fields.slug;
             const author = post.frontmatter.author;
-            const avatar = (
-              author.gifPlaceHolder.childImageSharp.gatsbyImageData
-            );
 
             return (
-              <li key={post.fields.slug}>
+              <li className={styles.postItem} key={post.fields.slug}>
                 <article
-                  className='post-list-item'
                   itemScope
                   itemType='http://schema.org/Article'
                 >
-                  <header>
-                    <h2>
+                  <header className={styles.postHeader}>
+                    <h2 className={styles.postTitle}>
                       <Link to={post.fields.slug} itemProp='url'>
                         <span itemProp='headline'>{title}</span>
                       </Link>
                     </h2>
+                    <br/>
                     <small>{post.frontmatter.date}</small>
                   </header>
-                  <section>
+                  <section className={styles.postSection}>
                     <p
                       dangerouslySetInnerHTML={{
                         __html: post.frontmatter.description || post.excerpt,
@@ -59,10 +56,9 @@ const BlogIndex = ({data, location}) => {
                       itemProp='description'
                     />
                   </section>
-                  <address>
+                  <address className={styles.postAddress}>
                     <Bio
                       fullName={author.fullName}
-                      avatar={avatar}
                     />
                   </address>
                 </article>

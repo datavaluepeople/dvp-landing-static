@@ -10,3 +10,28 @@
 .content {
   @include contentContainerMixin;
 }
+
+.postItem {
+  margin-bottom: 4rem;
+}
+
+.postTitle {
+  @include contentTitleMixin;
+  a {
+    text-decoration: none
+  }
+}
+
+.postHeader {
+  margin-bottom: 1rem;
+}
+
+.postSection {
+  margin-bottom: 1rem;
+}
+
+.postAddress p {
+  color: $dvp-grey;
+  font-style: italic;
+  font-weight: 700;
+}
