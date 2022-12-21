@@ -5,7 +5,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {GatsbyImage} from 'gatsby-plugin-image';
 
-
 import ShortBio from './short-bio';
 
 const Bio = ({fullName, writtenDate, avatar, email}) => {
@@ -15,7 +14,7 @@ const Bio = ({fullName, writtenDate, avatar, email}) => {
         alt={fullName || 'Author Picture'}
         image={avatar}
       />
-      <p>Written by {fullName}.</p>
+      <ShortBio fullName={fullName}/>
       <p>{writtenDate}</p>
       <p>datavaluepeople is a group of data-driven people. Through applied machine learning, building automated systems, advising, and education, we create value for businesses, organizations, and humans. Contact us to find out more about how we can help your organisation or if you are interested in the team.</p>
       <p>{email}</p>
