@@ -28,54 +28,38 @@ const BlogPostTemplate = ({data, location}) => {
         itemScope
         itemType='http://schema.org/Article'
       >
-        <header className={styles.header}>
-          <h1 itemProp='headline'>{post.frontmatter.title}</h1>
-          <p>
-            {post.frontmatter.date}
-            <span className={styles.dateAuthorSpace}/>
-            <ShortBio fullName={author.fullName}/>
-          </p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{__html: post.html}}
-          itemProp='articleBody'
-        />
-        <hr />
-        <footer>
-          <Bio
-            fullName={author.fullName}
-            bio={author.bio}
-            avatar={avatar}
-            email={author.email}
+        <div className={styles.postContainer}>
+          <header className={styles.header}>
+            <h1 itemProp='headline'>{post.frontmatter.title}</h1>
+            <p>
+              {post.frontmatter.date}
+              <span className={styles.dateAuthorSpace}/>
+              <ShortBio fullName={author.fullName}/>
+            </p>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{__html: post.html}}
+            itemProp='articleBody'
           />
+        </div>
+        <footer className={styles.footer}>
+          <div className={styles.bioFooter}>
+            <div className={styles.postContainer}>
+              <Bio
+                fullName={author.fullName}
+                bio={author.bio}
+                avatar={avatar}
+                email={author.email}
+              />
+            </div>
+          </div>
+          <div className={styles.navFooter}>
+            <div className={styles.postContainer}>
+              Continue Reading..
+            </div>
+          </div>
         </footer>
       </article>
-      <nav className='blog-post-nav'>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel='prev'>
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel='next'>
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </Layout>
   );
 };
