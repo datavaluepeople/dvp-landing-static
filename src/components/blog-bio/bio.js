@@ -26,7 +26,7 @@ export default Bio;
 
 Bio.propTypes = {
   fullName: PropTypes.String,
-  bio: PropTypes.string,
+  writtenDate: PropTypes.String,
   avatar: PropTypes.object,
   email: PropTypes.string,
 };
