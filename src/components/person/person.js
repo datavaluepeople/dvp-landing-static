@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import {GatsbyImage} from 'gatsby-plugin-image';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 
+import PersonSocialMediaLinks from './social-media-links';
 import * as styles from './person.module.scss';
 import * as sharedPeopleStyles from
   '../../styles/shared/people-variables.module.scss';
@@ -70,29 +71,11 @@ const Person = (
         <h3>{title}</h3>
         <p>{bio}</p>
         <p><b>{email}</b></p>
-        <div className={styles.linkContainer}>
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}/`}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              alt='linkedIn icon'
-              src='/img/icons/linkedin.svg'
-            />
-          </a>
-          <a
-            href={`https://github.com/${github}/`}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              alt='github icon'
-              src='/img/icons/github.svg'
-            />
-          </a>
-        </div>
-
+        <PersonSocialMediaLinks
+          className={styles.linkContainer}
+          github={github}
+          linkedIn={linkedIn}
+        />
       </div>
     </div>
   );
