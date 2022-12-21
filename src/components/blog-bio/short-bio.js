@@ -8,7 +8,7 @@ import * as styles from './blog-bio.module.scss';
 
 const ShortBio = ({fullName}) => {
   return (
-    <span className={styles.shortBio}>Written by {fullName}.</span>
+    <span className={styles.shortBio}>Written by {fullName}</span>
   );
 };
 
