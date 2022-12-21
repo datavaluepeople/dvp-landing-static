@@ -50,6 +50,8 @@ const BlogPostTemplate = ({data, location}) => {
                 writtenDate={post.frontmatter.dateReadable}
                 avatar={avatar}
                 email={author.email}
+                github={author.github}
+                linkedIn={author.linkedIn}
               />
             </div>
           </div>
@@ -93,8 +95,9 @@ export const pageQuery = graphql`
         description
         author {
           fullName
-          bio
           email
+          github
+          linkedIn
           gifPlaceHolder {
             childImageSharp {
               gatsbyImageData(
