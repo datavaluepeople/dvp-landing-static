@@ -47,7 +47,7 @@ const BlogPostTemplate = ({data, location}) => {
             <div className={styles.postContainer}>
               <Bio
                 fullName={author.fullName}
-                bio={author.bio}
+                writtenDate={post.frontmatter.dateReadable}
                 avatar={avatar}
                 email={author.email}
               />
