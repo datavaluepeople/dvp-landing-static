@@ -24,7 +24,7 @@ const BlogPostTemplate = ({data, location}) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className='blog-post'
+        className={styles.article}
         itemScope
         itemType='http://schema.org/Article'
       >
