@@ -25,7 +25,7 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
         </p>
         <p className={styles.writtenDate}>{writtenDate}</p>
         <p>datavaluepeople is a group of data-driven people. Through applied machine learning, building automated systems, advising, and education, we create value for businesses, organizations, and humans. Contact us to find out more about how we can help your organisation or if you are interested in the team.</p>
-        <div>
+        <div className={styles.signpostContainer}>
           <PersonSocialMediaLinks
             github={github}
             linkedIn={linkedIn}

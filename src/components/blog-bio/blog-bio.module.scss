@@ -26,3 +26,11 @@
 .writtenDate {
   font-weight: 500;
 }
+
+.signpostContainer {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 1rem;
+  }
+}
