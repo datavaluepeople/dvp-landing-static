@@ -1,8 +1,5 @@
 /**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * Blog Bio component
  */
 import React from 'react';
 import PropTypes from 'prop-types';

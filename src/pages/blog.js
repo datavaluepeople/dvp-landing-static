@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
 
-import Bio from '../components/blog-bio';
+import ShortBio from '../components/blog-bio/short-bio';
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
@@ -57,7 +57,7 @@ const BlogIndex = ({data, location}) => {
                     />
                   </section>
                   <address className={styles.postAddress}>
-                    <Bio
+                    <ShortBio
                       fullName={author.fullName}
                     />
                   </address>
