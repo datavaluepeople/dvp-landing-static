@@ -7,6 +7,15 @@
   font-weight: 700;
 }
 
+.shortBioLink {
+  color: $dvp-grey;
+  text-decoration: none;
+  font-weight: 700;
+  &:hover {
+    color: $dvp-dark;
+  }
+}
+
 .email {
   font-weight: 700;
   color: $dvp-grey;
