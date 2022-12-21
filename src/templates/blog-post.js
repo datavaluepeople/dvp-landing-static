@@ -7,6 +7,8 @@ import Bio from '../components/blog-bio/bio';
 import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
+import * as styles from './blog-post.module.scss';
+
 const BlogPostTemplate = ({data, location}) => {
   const post = data.markdownRemark;
   const {previous, next} = data;
@@ -28,7 +30,11 @@ const BlogPostTemplate = ({data, location}) => {
       >
         <header>
           <h1 itemProp='headline'>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>
+            {post.frontmatter.date}
+            <span className={styles.dateAuthorSpace}/>
+            <ShortBio fullName={author.fullName}/>
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{__html: post.html}}
