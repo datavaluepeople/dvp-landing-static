@@ -56,23 +56,19 @@
   ul {
     list-style-position: inside;
   }
-  pre {
-    line-height: 2;
+  
+
+  pre[class*="language-"] {
     background: $dvp-dark;
-    word-wrap: break-word;
     box-decoration-break: clone;
     padding: .5rem .5rem .5rem;
     border-radius: .2rem;
-    color: $dvp-white;
   }
-  code {
-    line-height: 2;
+  code[class*="language"] {
     background: $dvp-dark;
-    word-wrap: break-word;
     box-decoration-break: clone;
-    padding: .1rem .1rem .1rem;
+    padding: .2rem .2rem .2rem;
     border-radius: .2rem;
-    color: $dvp-white;
   }
 
   pre code {
