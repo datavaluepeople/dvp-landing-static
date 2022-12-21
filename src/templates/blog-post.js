@@ -8,6 +8,8 @@ import Layout from '../components/layout/layout';
 import Seo from '../components/seo';
 
 import * as styles from './blog-post.module.scss';
+import './prism.css';
+import './prism.js';
 
 const BlogPostTemplate = ({data, location}) => {
   const post = data.markdownRemark;
