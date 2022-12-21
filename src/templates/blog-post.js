@@ -103,7 +103,7 @@ export const pageQuery = graphql`
               gatsbyImageData(
                 layout: FIXED,
                 placeholder: BLURRED,
-                width: 60,
+                width: 80,
                 aspectRatio: 1
               )
             }

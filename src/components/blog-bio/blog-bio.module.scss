@@ -6,3 +6,23 @@
   color: $dvp-grey;
   font-weight: 700;
 }
+
+.email {
+  font-weight: 700;
+}
+
+.bioContainer {
+  display: flex;
+}
+
+.avatarImg {
+  border-radius: 50%;
+}
+
+.avatarColumn {
+ padding-right: 2rem;
+}
+
+.writtenDate {
+  font-weight: 500;
+}
