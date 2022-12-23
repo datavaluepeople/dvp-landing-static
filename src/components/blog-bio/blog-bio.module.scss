@@ -23,6 +23,7 @@
 
 .bioContainer {
   display: flex;
+  padding-right: 3rem;
 }
 
 .avatarImg {
@@ -40,6 +41,7 @@
 .signpostContainer {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
   img {
     margin-right: 1rem;
   }
