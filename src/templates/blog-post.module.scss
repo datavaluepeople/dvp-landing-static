@@ -52,7 +52,13 @@
   @include blogContent;
 }
 
+.discussLinks {
+  margin-bottom: 2rem;
+}
+
 .postContent {
+  margin-bottom: 2rem;
+
   ul {
     list-style-position: inside;
   }
