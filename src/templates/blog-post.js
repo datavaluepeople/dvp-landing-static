@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
 
+import DiscussionLink from '../components/dicussion-link.js';
 import ShortBio from '../components/blog-bio/short-bio';
 import Bio from '../components/blog-bio/bio';
 import Layout from '../components/layout/layout';
@@ -44,6 +45,12 @@ const BlogPostTemplate = ({data, location}) => {
             dangerouslySetInnerHTML={{__html: post.html}}
             itemProp='articleBody'
           />
+          <section
+            className={styles.discussLinks}
+          >
+            <DiscussionLink linkType='LinkedIn' link={post.frontmatter.linkedin_link}/>
+            <DiscussionLink linkType='Hacker News' link={post.frontmatter.hackernews_link}/>
+          </section>
         </div>
         <footer className={styles.footer}>
           <div className={styles.bioFooter}>
@@ -96,6 +103,8 @@ export const pageQuery = graphql`
         date
         dateReadable: date(formatString: "MMMM DD, YYYY")
         description
+        linkedin_link
+        hackernews_link
         author {
           fullName
           email

@@ -3,6 +3,8 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 author: benjamin
+linkedin_link: https://www.linkedin.com/feed/update/urn:li:activity:6981517377830060032
+hackernews_link: https://blog.otterstack.com/posts/202212-doom-calculator/
 ---
 
 This is my first post on my new fake blog! How exciting!

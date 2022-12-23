@@ -82,6 +82,8 @@ exports.createSchemaCustomization = ({actions}) => {
       description: String
       date: Date @dateformat
       author: PeopleYaml @link(by: "yamlId")
+      linkedin_link: String
+      hackernews_link: String
     }
     type Fields {
       slug: String
