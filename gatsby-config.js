@@ -7,6 +7,18 @@ require('dotenv').config({
   path: `.env.${activeEnv}`,
 });
 
+
+/**
+ * Excluding the test blog posts if not development
+ */
+let excludeAssets = []
+if (activeEnv != "development") {
+  excludeAssets = [
+    "**/blog/test/**"
+  ]
+}
+console.log("Excluding assets from build", excludeAssets)
+
 module.exports = {
   siteMetadata: {
     title: `datavaluepeople`,
@@ -43,6 +55,7 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+        ignore: excludeAssets,
       },
     },
     {
