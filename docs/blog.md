@@ -12,6 +12,8 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 author: benjamin
+linkedin_link: https://www.linkedin.com/feed/update/urn:li:activity:6981517377830060032
+hackernews_link: https://blog.otterstack.com/posts/202212-doom-calculator/
 ---
 ```
 
@@ -20,6 +22,8 @@ These meta properties will be used:
 - `date`: to order the post. Recent displayed first on the blog
 - `description`: short description on the blog page
 - `author`: link to the author in `content/data/people.yaml`
+- `linkedin_link`: (Optional) link to the LinkedIn post that will be added to the bottom of the post as "Discuss further on LinkedIn"
+- `hackernews_link`: (Optional) link to the HackerNews in that will be added to the bottom of the post as "Discuss further on HackerNews"
 
 ## Images
 It is possible to add images to the post.
