@@ -4,7 +4,6 @@
 @import '../styles/shared/mixins.scss';
 
 .title {
-  @include contentTitleMixin;
 }
 
 .content {
@@ -16,7 +15,6 @@
 }
 
 .postTitle {
-  @include contentTitleMixin;
   a {
     text-decoration: none
   }
