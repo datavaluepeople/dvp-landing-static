@@ -11,6 +11,7 @@ const DiscussionLink = ({linkType, link}) => {
         target="_blank"
         rel="noreferrer noopener"
         href={link}
+        style={{"text-decoration": "underline"}}
       >
         <p>Discuss further on {linkType}</p>
       </a>
