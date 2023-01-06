@@ -16,18 +16,18 @@
   }
 }
 
-.email {
-  font-weight: 700;
-  color: $dvp-grey;
-}
-
 .bioContainer {
   display: flex;
-  padding-right: 3rem;
+  flex-direction: column;
+  @include md {
+    flex-direction: row;
+    padding-right: 3rem;
+  }
 }
 
 .avatarImg {
   border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
 .avatarColumn {
@@ -40,9 +40,21 @@
 
 .signpostContainer {
   display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
   img {
     margin-right: 1rem;
   }
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  > * {
+    margin-bottom: 1rem;
+  }
+  margin-bottom: 1rem
+}
+
+.email {
+  font-weight: 700;
+  color: $dvp-grey;
+  word-break: break-all;
 }

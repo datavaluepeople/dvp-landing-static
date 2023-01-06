@@ -29,7 +29,7 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
             github={github}
             linkedIn={linkedIn}
           />
-            <span className={styles.email}>{email}</span>
+          <span className={styles.email}>{email}</span>
         </div>
         <p style={{ "margin-bottom": 0 }}>datavaluepeople is a group of data-driven people. Through applied machine learning, building automated systems, advising, and education, we create value for businesses, organizations, and humans. Contact us to find out more about how we can help your organisation or if you are interested in the team.</p>
       </div>
