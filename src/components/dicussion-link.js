@@ -5,7 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const DiscussionLink = ({linkType, link}) => {
-  if (link != "") {
+  if (link && link != "") {
     return (
       <a
         target="_blank"
