@@ -37,3 +37,12 @@ Then add to the md file:
 The link between the post and the author is made through the `author` property in the meta of the post and the `id` value in `content/date/people.yaml`.
 
 See [People docs](./people.md) for more information.
+
+## Test pages
+There are a number of test pages which are used for development.
+
+These test pages are in the folder `/content/assets/blog/test/`. Pages in this folder will in general be ignored and not included in the build. However in theses cases they will be included:
+- the build environment (GATSBY_ACTIVE_ENV or NODE_ENV) is `development`. `development` is the default is non is set.
+- the environment variable `INCLUDE_TEST_BLOG_ASSETS` is set in the `.env` file for the environment.
+
+When developing this means that if you run `gatsby develop` the test pages will be in the website. If you use `gatsby build` they will not be unless you set the `INCLUDE_TEST_BLOG_ASSETS` in the `.env.production` file.
