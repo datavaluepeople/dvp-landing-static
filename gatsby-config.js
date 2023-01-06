@@ -12,7 +12,7 @@ require('dotenv').config({
  * Excluding the test blog posts if not development
  */
 let excludeAssets = []
-if (activeEnv != "development") {
+if (activeEnv != "development" && !process.env.INCLUDE_TEST_BLOG_ASSETS) {
   excludeAssets = [
     "**/blog/test/**"
   ]
