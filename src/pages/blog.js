@@ -26,13 +26,12 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location}>
       <Seo title='All posts' />
-      <h1 className={styles.title}>Blog</h1>
+      <h1>Blog</h1>
       <div className={styles.content}>
         <ol style={{listStyle: `none`}}>
           {posts.map((post) => {
             const title = post.frontmatter.title || post.fields.slug;
             const author = post.frontmatter.author;
-
             return (
               <li className={styles.postItem} key={post.fields.slug}>
                 <article

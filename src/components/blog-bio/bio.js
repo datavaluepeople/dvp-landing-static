@@ -19,7 +19,7 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
           image={avatar}
         />
       </div>
-      <div className={styles.textColumn}>
+      <div>
         <p>
           <ShortBio fullName={fullName}/>
         </p>
