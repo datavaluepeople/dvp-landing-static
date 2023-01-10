@@ -33,11 +33,10 @@ const BlogPostTemplate = ({data, location}) => {
         <div className={styles.postContainer}>
           <header className={styles.header}>
             <h1 itemProp='headline'>{post.frontmatter.title}</h1>
-            <p>
+            <div className={styles.timeAuthorRow}>
               <time datetime={post.frontmatter.date}>{post.frontmatter.dateReadable}</time>
-              <span className={styles.dateAuthorSpace}/>
               <ShortBio fullName={author.fullName}/>
-            </p>
+            </div>
           </header>
           <section
             className={styles.postContent}

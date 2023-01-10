@@ -7,8 +7,19 @@
   margin-bottom: 2rem;
 }
 
-.dateAuthorSpace {
-  padding-right: 2rem;
+.timeAuthorRow {
+  display: flex;
+  flex-direction: column;
+  @include md {
+    flex-direction: row;
+  }
+  > * {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  > *:last-child {
+    margin-right: 0;
+  }
 }
 
 @mixin postContainer {
