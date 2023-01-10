@@ -41,6 +41,18 @@ The link between the post and the author is made through the `author` property i
 
 See [People docs](./people.md) for more information.
 
+## Discussion and comments on posts
+We have gone for a minimal method for having discussion and comments on posts. There is no comment functionality in the blog but we use LinkedIn or HackerNews to continue the discussion.
+
+As such the process for adding a discussion for a blog post should be:
+1. write the blog post following the instructions above
+2. make a PR for the post and have it merged in to `main`
+3. Share the blog post on LinkedIn or HackerNews
+4. Add the meta property: `linkedin_link` or `hackernews_link` which to be the link to the message on these social media sites
+5. make a PR for the meta changes and have it merged in to `main`
+
+There will then be a `Discuss further on <site>` at the bottom of the post.
+
 ## Test pages
 There are a number of test pages which are used for development.
 
