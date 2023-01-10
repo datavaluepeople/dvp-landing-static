@@ -26,6 +26,8 @@ Description of the meta properties:
 - `linkedin_link`: (Optional) link to the LinkedIn post that will be added to the bottom of the post as "Discuss further on LinkedIn"
 - `hackernews_link`: (Optional) link to the HackerNews in that will be added to the bottom of the post as "Discuss further on HackerNews"
 
+For the content please see examples in [test posts ../content/assets/blog/test/](../content/assets/blog/test/).
+
 ## Images
 It is possible to add images to the post.
 
