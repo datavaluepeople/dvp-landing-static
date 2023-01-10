@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
 
-import DiscussionLink from '../components/dicussion-link.js';
+import DiscussionLink from '../components/discussion-link.js';
 import ShortBio from '../components/blog-bio/short-bio';
 import Bio from '../components/blog-bio/bio';
 import Layout from '../components/layout/layout';
