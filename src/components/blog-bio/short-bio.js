@@ -24,5 +24,5 @@ const ShortBio = ({fullName}) => {
 export default ShortBio;
 
 ShortBio.propTypes = {
-  fullName: PropTypes.String,
+  fullName: PropTypes.string,
 };

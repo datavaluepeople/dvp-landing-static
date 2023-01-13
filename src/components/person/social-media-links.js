@@ -47,7 +47,7 @@ const PersonSocialMediaLinks = ({className, github, linkedIn}) => {
 export default PersonSocialMediaLinks;
 
 PersonSocialMediaLinks.propTypes = {
-  className: PropTypes.String,
-  github: PropTypes.String,
-  linkedIn: PropTypes.String,
+  className: PropTypes.string,
+  github: PropTypes.string,
+  linkedIn: PropTypes.string,
 };

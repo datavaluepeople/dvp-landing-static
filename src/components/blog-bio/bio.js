@@ -40,10 +40,10 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
 export default Bio;
 
 Bio.propTypes = {
-  fullName: PropTypes.String,
-  writtenDate: PropTypes.String,
+  fullName: PropTypes.string,
+  writtenDate: PropTypes.string,
   avatar: PropTypes.object,
-  email: PropTypes.String,
-  github: PropTypes.String,
-  linkedIn: PropTypes.String,
+  email: PropTypes.string,
+  github: PropTypes.string,
+  linkedIn: PropTypes.string,
 };

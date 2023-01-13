@@ -28,6 +28,6 @@ DiscussionLink.defaultProps = {
 }
 
 DiscussionLink.propTypes = {
-  linkType: PropTypes.String,
-  link: PropTypes.String,
+  linkType: PropTypes.string,
+  link: PropTypes.string,
 };
