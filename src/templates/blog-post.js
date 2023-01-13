@@ -34,7 +34,7 @@ const BlogPostTemplate = ({data, location}) => {
           <header className={styles.header}>
             <h1 itemProp='headline'>{post.frontmatter.title}</h1>
             <div className={styles.timeAuthorRow}>
-              <time datetime={post.frontmatter.date}>{post.frontmatter.dateReadable}</time>
+              <time dateTime={post.frontmatter.date}>{post.frontmatter.dateReadable}</time>
               <ShortBio fullName={author.fullName}/>
             </div>
           </header>
