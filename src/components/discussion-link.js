@@ -13,7 +13,7 @@ const DiscussionLink = ({linkType, link}) => {
         href={link}
         style={{"text-decoration": "underline"}}
       >
-        <p>Discuss further on {linkType}</p>
+        <p>Discuss on {linkType}</p>
       </a>
     );
   } else {
