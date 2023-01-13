@@ -31,7 +31,7 @@ const TechonolgyIcons = ({}) => {
     query TechIcons {
       techIcons: allFile(
           filter: {absolutePath: {regex: "/icons/technologies/"}},
-          sort: {fields: name}
+          sort: {name: ASC}
         ) {
         edges {
           node {
