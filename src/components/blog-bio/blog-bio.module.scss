@@ -28,6 +28,12 @@
 .avatarImg {
   border-radius: 50%;
   margin-bottom: 1.5rem;
+/*
+* Resolve the issue with safari bored radius:
+* https://stackoverflow.com/questions/66835241/gatsby-image-plugin-not-displaying-properly-on-ios-devices
+**/
+  position: relative;
+  z-index: 0;
 }
 
 .avatarColumn {
