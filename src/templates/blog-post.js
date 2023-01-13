@@ -65,7 +65,7 @@ const BlogPostTemplate = ({data, location}) => {
           </div>
           <div className={styles.navFooter}>
             <div className={styles.postContainer}>
-              <Link to="/blog">Continue Reading</Link>
+              <Link to="/blog">Continue reading</Link>
             </div>
           </div>
         </footer>
