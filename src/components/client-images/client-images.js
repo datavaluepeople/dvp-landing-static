@@ -36,7 +36,7 @@ const ClientImages = ({}) => {
     query ClientImages {
       clientImages: allFile(
           filter: {absolutePath: {regex: "/icons/clients/"}},
-          sort: {fields: name}
+          sort: {name: ASC}
         ) {
         edges {
           node {
