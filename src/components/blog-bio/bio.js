@@ -31,7 +31,7 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
           />
           <span className={styles.email}>{email}</span>
         </div>
-        <p style={{marginBottom: 0}}>datavaluepeople is a group of data-driven people. Through applied machine learning, building automated systems, advising, and education, we create value for businesses, organizations, and humans. <b>Get in touch us to speak to us about how we could work with your organisation, or if you are interested in joining our team.</b></p>
+        <p style={{marginBottom: 0}}>datavaluepeople is a group of data-driven people. Through applied machine learning, building automated systems, advising, and education, we create value for businesses, organizations, and humans. <b>Drop us an email to speak to us about how we could work with your organisation, or if you are interested in joining our team.</b></p>
       </div>
     </div>
   );
