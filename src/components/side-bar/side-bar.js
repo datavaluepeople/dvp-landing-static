@@ -15,18 +15,21 @@ const SideBar = ({isHome, isOpen, toggleMenuOpen}) => {
         ${isOpen ? sideBarStyles.show : sideBarStyles.hide}
         ${isHome ? sideBarStyles.home : ''}
       `}>
-      <Link
-        className={sideBarStyles.chatLink}
-        onClick={() => {
-          toggleMenuOpen(false);
-        }}
-        to='/our-approach#chat-with-us'
-      >
-        <ChatWithUs
-          isHome={isHome}
-        />
-      </Link>
-      {isHome && <WhoWeAre HomePage={false}/>}
+      <div className={sideBarStyles.linkContainerHome}>
+        <Link
+          className={sideBarStyles.chatLink}
+          onClick={() => {
+            toggleMenuOpen(false);
+          }}
+          to='/our-approach#chat-with-us'
+        >
+          <ChatWithUs
+            isHome={isHome}
+          />
+        </Link>
+        <div className={sideBarStyles.linkContainerDivider}></div>
+        {isHome && <WhoWeAre HomePage={false}/>}
+      </div>
       <div className={sideBarStyles.footer}>
         <nav className={sideBarStyles.nav}>
           <ul className={sideBarStyles.navList}>
@@ -45,6 +48,12 @@ const SideBar = ({isHome, isOpen, toggleMenuOpen}) => {
             <li className={sideBarStyles.navListItem}>
               <Link to="/our-approach/" className={sideBarStyles.navListLink}>
                 Our approach
+                <span className={sideBarStyles.arrow}>‣</span>
+              </Link>
+            </li>
+            <li className={sideBarStyles.navListItem}>
+              <Link to="/blog/" className={sideBarStyles.navListLink}>
+                Blog
                 <span className={sideBarStyles.arrow}>‣</span>
               </Link>
             </li>

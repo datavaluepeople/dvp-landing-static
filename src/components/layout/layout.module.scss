@@ -12,25 +12,8 @@
 }
 
 
-@mixin nullOpenSideBar {
-  position: static;
-  overflow: auto;
-  height: auto;
-  width: auto;
-  overflow: auto;
-}
-
-
 .container {
-  @include xlg {
-    width: $content-width;
-  }
-
-  &.openSideBar {
-    @include xlg {
-      @include nullOpenSideBar;
-    }
-  }
+  @include contentContainer;
 }
 
 .openSideBar {
@@ -80,13 +63,5 @@
 }
 
 .main{
-  padding: 0 $margin-sm-v $margin-sm-h;
-
-  @include md {
-    padding: 0 $margin-md-h $margin-md-v;
-  }
-
-  @include xlg {
-    padding: 0 0 $margin-lg-v $margin-lg-h;
-  }
+  @include contentMain;
 }

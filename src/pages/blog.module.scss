@@ -1,0 +1,38 @@
+@import '../styles/base_values.scss';
+@import '../styles/breakpoints.scss';
+@import '../styles/colors.scss';
+@import '../styles/shared/mixins.scss';
+
+.content {
+  @include contentContainerMixin;
+}
+
+.postItem {
+  margin-bottom: 4rem;
+}
+
+.postTitle {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.postDate {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.postHeader {
+  margin-bottom: 1rem;
+}
+
+.postSection {
+  margin-bottom: 1rem;
+}
+
+.postAddress {
+  font-style: normal;
+}
