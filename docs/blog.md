@@ -20,7 +20,7 @@ hackernews_link: https://blog.otterstack.com/posts/202212-doom-calculator/
 
 Description of the meta properties:
 - `title`: title of the page and the post
-- `date`: to order the post on the blog page. The most recent posts will be displayed first.
+- `date`: to order the post on the blog page. The most recent posts will be displayed first. CLI command `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 - `description`: short description on the blog page that is used on the blog page (listing of the posts) and the social media links. Keep this short ~300 characters.
 - `author`: link to the author in `content/data/people.yaml`
 - `linkedin_link`: (Optional) link to the LinkedIn post that will be added to the bottom of the post as "Discuss further on LinkedIn"
