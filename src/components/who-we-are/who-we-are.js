@@ -17,8 +17,8 @@ const WhoWeAre = ({HomePage}) => {
       `}
     >
       <p>
-        We are a group of data-driven people.
-        Through applied machine learning, building automated systems,
+        We are a group of machine learning experts.
+        Through applied ML, building automated systems,
         advising, and education, we create value for businesses,
         organizations, and humans.
         <br/>

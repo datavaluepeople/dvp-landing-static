@@ -12,7 +12,7 @@ import * as indexStyles from './index.module.scss';
 const LandingPageIndex = ({location}) => {
   return (
     <Layout location={location}>
-      <SEO title="We build bespoke state-of-the-art data-driven systems"/>
+      <SEO title="We build bespoke state-of-the-art machine learning systems"/>
       <div className={indexStyles.container}>
         <div className={indexStyles.textContainer}>
           <h1 className={indexStyles.title}>

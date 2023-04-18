@@ -78,7 +78,7 @@ const OurApproachPage = ({location}) => {
               width={approachIconWidth}
               className={styles.approachIcons}
             />
-            Automated Data-driven Systems
+            Automated Machine Learning Systems
           </h3>
           <p>
             Full hands-on development,
