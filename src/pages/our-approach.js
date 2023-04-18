@@ -65,7 +65,7 @@ const OurApproachPage = ({location}) => {
           <p>
             Combining initial proof-of-concept machine learning modelling,
             with evidence based and data led investigation,
-            we establish the expected value & ROI of the complete end system.
+            we establish the expected ROI of the complete end system.
             <br/>
             <b>Timeline:</b> Multiple sprints over 1-2 months
           </p>
