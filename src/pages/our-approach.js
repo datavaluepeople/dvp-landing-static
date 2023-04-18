@@ -31,9 +31,6 @@ const OurApproachPage = ({location}) => {
           </span>
         </p>
         <section className={styles.wayWeWorkSection}>
-          <span className={styles.hireUs}>
-            Hire us to advise, analyse, and automate.
-          </span>
           <h2 className={styles.wayWeWork}>The ways we work:</h2>
           <h3>
             <HypeAnimation
