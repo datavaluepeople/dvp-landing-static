@@ -22,7 +22,7 @@ const OurApproachPage = ({location}) => {
           how much value we’ve generated for you.
           <br/>
           <br/>
-          View our sales deck <a href='/downloads/datavaluepeople-sales-deck.pdf'>here</a>
+          View our sales deck <a href='/downloads/datavaluepeople-sales-deck.pdf' target='_blank'>here</a>
         </p>
         <h2 id="chat-with-us"><mark>Get in touch at partners@datavaluepeople.com</mark></h2>
         <section className={styles.wayWeWorkSection}>
