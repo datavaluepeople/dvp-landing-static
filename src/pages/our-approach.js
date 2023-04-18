@@ -20,16 +20,11 @@ const OurApproachPage = ({location}) => {
           increasing profit, reducing costs, or customer acquisition;
           we’re not satisfied until we can tell you numerically
           how much value we’ve generated for you.
+          <br/>
+          <br/>
+          View our sales deck <a href='/downloads/datavaluepeople-sales-deck.pdf'>here</a>
         </p>
         <h2 id="chat-with-us"><mark>Get in touch at partners@datavaluepeople.com</mark></h2>
-        <p className={styles.pLarge}>
-          <br/>
-          <span className={styles.pGrey}>
-            For more detailed information on our services,
-            you can view our sales
-            deck <a href='/downloads/datavaluepeople-sales-deck.pdf'>here</a>
-          </span>
-        </p>
         <section className={styles.wayWeWorkSection}>
           <h2 className={styles.wayWeWork}>The ways we work:</h2>
           <h3>
