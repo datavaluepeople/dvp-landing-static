@@ -21,9 +21,8 @@ const OurApproachPage = ({location}) => {
           we’re not satisfied until we can tell you exactly
           how much value we’ve generated for you.
         </p>
-        <h2 id="chat-with-us"><mark>Are you our future partner?</mark></h2>
+        <h2 id="chat-with-us"><mark>Get in touch at partners@datavaluepeople.com</mark></h2>
         <p className={styles.pLarge}>
-          Get in touch at partners@datavaluepeople.com
           <br/>
           <span className={styles.pGrey}>
             For more detailed information on our services,
