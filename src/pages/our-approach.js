@@ -16,9 +16,9 @@ const OurApproachPage = ({location}) => {
       <h1 className={styles.title}>Our approach</h1>
       <div className={styles.content}>
         <p className={styles.pLarge}>
-          Whether your priorities are customer acquisition,
-          revenue, reducing costs, or profit;
-          we’re not satisfied until we can tell you exactly
+          Whether your priorities are increasing revenue,
+          increasing profit, reducing costs, or customer acquisition;
+          we’re not satisfied until we can tell you numerically
           how much value we’ve generated for you.
         </p>
         <h2 id="chat-with-us"><mark>Get in touch at partners@datavaluepeople.com</mark></h2>
