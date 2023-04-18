@@ -23,7 +23,7 @@ const OurApproachPage = ({location}) => {
         </p>
         <h2 id="chat-with-us"><mark>Are you our future partner?</mark></h2>
         <p className={styles.pLarge}>
-          Get in touch at everyone@datavaluepeople.com
+          Get in touch at partners@datavaluepeople.com
           <br/>
           <span className={styles.pGrey}>
             For more detailed information on our services,
