@@ -86,7 +86,7 @@ const OurApproachPage = ({location}) => {
             that through machine learning and automated-decision-making
             deliver measurable and long lasting value.
             <br/>
-            <b>Timeline:</b> Iterative sprints over 2+ months
+            <b>Timeline:</b> Ongoing iterative sprints over 2+ months
           </p>
         </section>
       </div>
