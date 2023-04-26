@@ -1,5 +1,9 @@
 # Development and deployment
 
+This code base uses:
+- [gatsby](https://www.gatsbyjs.com/): as framework
+- [firebase](https://firebase.google.com/): for hosting and deployments
+
 ## Local Dev environment
 Install node version manager: see https://www.gatsbyjs.org/tutorial/part-zero/.
 
