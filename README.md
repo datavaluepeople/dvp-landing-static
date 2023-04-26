@@ -9,3 +9,8 @@ See [./docs/development-deployment.md](./docs/development-deployment.md)
 - [Blog](./docs/blog.md)
 - [People](./docs/people.md)
 - [Track Record Sections](./docs/track-record-sections.md)
+
+## Firebase links:
+- Production firebase console: [here](https://console.firebase.google.com/project/dvp-landing-266011/overview)
+- Staging firebase console: [here](https://console.firebase.google.com/project/dvp-landing-staging/overview)
+- Staging2 firebase console: [here](https://console.firebase.google.com/project/dvp-landing-static/overview)
