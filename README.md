@@ -1,6 +1,6 @@
 # datavaluepeople landing website
 
-This repo is based of https://github.com/gatsbyjs/gatsby-starter-blog.
+This repo contains the code for the datavaluepeople landing page. It is based of https://github.com/gatsbyjs/gatsby-starter-blog.
 
 ## Local Dev environment
 Install node version manager: see https://www.gatsbyjs.org/tutorial/part-zero/.
