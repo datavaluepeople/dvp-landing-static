@@ -7,7 +7,7 @@ steps:
     args: ["ci"]
   - name: node:16.15.0
     entrypoint: "./node_modules/.bin/markdownlint-cli2-config"
-    args: [".markdownlint-cli2.yaml", "content/assets/blog/**/*.md", "#node_modules"]
+    args: [".markdownlint-cli2.yaml", "content/assets/blog/**/*.md"]
   - name: node:16.15.0
     entrypoint: npm
     args: ["install", "gatsby-cli@4.15.0"]
