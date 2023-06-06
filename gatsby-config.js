@@ -26,7 +26,7 @@ module.exports = {
       name: `datavaluepeople`,
       summary: `datavaluepeople`,
     },
-    description: `datavaluepeople | We build bespoke state-of-the-art machine learning systems.`,
+    description: `datavaluepeople | We build bespoke state-of-the-art artificial intelligence systems.`,
     siteUrl: process.env.SITE_URL,
     social: {
       twitter: `datavaluepeople`,

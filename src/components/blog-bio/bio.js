@@ -32,8 +32,8 @@ const Bio = ({fullName, writtenDate, avatar, email, github, linkedIn}) => {
           <span className={styles.email}>{email}</span>
         </div>
         <p style={{marginBottom: 0}}>
-          datavaluepeople is a group of machine learning experts.
-          Through applied ML, building automated systems,
+          datavaluepeople is a group of artificial intelligence experts.
+          Through applied machine learning, building automated systems,
           advising, and education, we create value for
           businesses, organizations, and humans.
           <b>Drop us an email to speak to us about how we could
