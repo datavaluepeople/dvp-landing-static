@@ -39,12 +39,6 @@ gatsby develop
 
 If you install something with `npm` you will need to do it in a session that has `nvm use` initialised.
 
-Once you have node and gatsby installed:
-```
-npm install
-gatsby develop
-```
-
 ## Deployment
 Currently the repo is set up to deploy to the firebase. That was done follow this [tutorial](https://www.gatsbyjs.org/docs/deploying-to-firebase/).
 
