@@ -1,8 +1,8 @@
 ---
-title: Compiled advice on learning Data Science/Machine Learning/Data Engineering
+title: Compiled advice on learning Data Science, Machine Learning, and Data Engineering
 date: "2023-04-03T23:46:37.121Z"
 description: "An ongoing updating post compiling the advice and resources we've given to people on
-learning Data Science/Machine Learning/Data Engineering."
+learning Data Science, Machine Learning, and Data Engineering."
 author: dan
 ---
 
