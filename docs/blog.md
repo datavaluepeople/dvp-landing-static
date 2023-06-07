@@ -28,6 +28,17 @@ Description of the meta properties:
 
 For the content please see examples in [test posts ../content/assets/blog/test/](../content/assets/blog/test/).
 
+## Markdown Linting
+
+Blog markdown files are linted to ensure a consistent styling and format. This is enforced in the
+CI. To check linting locally run:
+```shell
+./node_modules/.bin/markdownlint-cli2-config .markdownlint-cli2.yaml content/assets/blog/**/*.md
+```
+
+Reference to all config file options can be found
+[here](https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml)
+
 ## Images
 It is possible to add images to the post.
 

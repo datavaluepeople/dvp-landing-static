@@ -14,6 +14,7 @@ github.com/datavaluepeople/dvp-landing-static.
 ## Advice for moving from PhD to industry data science job - 2023-03-01
 
 So here's a bunch of stuff, hopefully there some usefulness in there:
+
 - This course looks pretty legit in terms of covering the
   highly-pertinent-but-often-ignored-peripheral-bits-of-tech-and-knowledge (i.e. git, linux, etc.)
   https://www.udemy.com/course/core-data-science-and-machine-learning/ Looks like you'd build some
@@ -51,6 +52,7 @@ _Note; parts of the following are also relevant for going from scratch to any da
 are relevant for any dev job._
 
 = Fundamental things definitely to learn =
+
 - Using the command line (also called the "terminal"). This is Linux (Unix on Mac). Probably try
   not to learn the Windows command line, as it is not used as much in the industry as Linux is.
   Starting point: https://ubuntu.com/tutorials/command-line-for-beginners#1-overview You can play
@@ -64,6 +66,7 @@ are relevant for any dev job._
   point: https://www.postgresql.org/docs/online-resources/
 
 = Things you then might want to learn =
+
 - Python - don't worry about making it too data orientated. Just get familiar with Python and
   programming like basic toy stuff to begin with. You don't have to know python to be a data
   engineer, just there's a lot of companies that use python in data engineering and just generally,
@@ -96,4 +99,3 @@ _We often support clients with their hiring of perm data scientists/engineers et
 out technical interviews with their candidates. The questions can serve a good guide on what areas
 one might need to improve their knowledge and experience in. Drop us an email and we'll send you
 them. (Not posting them publicly as we still want them to be useful for interviews!)_
-
