@@ -1,4 +1,5 @@
 config:
+
   # MD013/line-length - Line length
   MD013:
     # Number of characters - set to match what we use in python
@@ -7,3 +8,6 @@ config:
     heading_line_length: 99
     # Number of characters for code blocks
     code_block_line_length: 99
+
+  # MD034/no-bare-urls - Bare URL used
+  MD034: false
