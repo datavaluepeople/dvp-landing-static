@@ -4,6 +4,8 @@ date: "2023-04-03T23:46:37.121Z"
 description: "An ongoing updating post compiling the advice and resources we've given to people on
 learning Data Science, Machine Learning, and Data Engineering."
 author: dan
+linkedin_link: https://cat-bounce.com/
+hackernews_link: http://endless.horse/
 ---
 
 We often speak to people who are looking to get into the data science, machine learning, and data
