@@ -83,6 +83,11 @@
     list-style-position: inside;
     padding-left: 1rem;
   }
+
+  a {
+    color: $dvp-red;
+    text-decoration: underline;
+  }
   
 
   pre[class*="language-"] {
