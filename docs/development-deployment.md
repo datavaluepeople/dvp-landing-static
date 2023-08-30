@@ -73,7 +73,7 @@ For each environments it is important to configure the firebase project that wil
 To deploy to `staging2` the commands are:
 ```
 GATSBY_ACTIVE_ENV=staging2 gatsby build
-firebase deploy
+firebase deploy --project dvp-landing-static
 ```
 
 ### Notes
