@@ -97,7 +97,7 @@ mind so as not to get demotivated.
 
 ## datavaluepeople's technical interview questions for client hiring - 2021-01-01
 
-_We often support clients with their hiring of perm data scientists/engineers etc, but carrying
+We often support clients with their hiring of perm data scientists/engineers etc, but carrying
 out technical interviews with their candidates. The questions can serve a good guide on what areas
 one might need to improve their knowledge and experience in. Drop us an email and we'll send you
-them. (Not posting them publicly as we still want them to be useful for interviews!)_
+them. (Not posting them publicly as we still want them to be useful for interviews!)
