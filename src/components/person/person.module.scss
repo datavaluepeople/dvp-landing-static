@@ -7,6 +7,7 @@
 .title {
 }
 
+$margin-text: 1.2rem;
 .container {
   margin-bottom: 5rem;
   @include md {
@@ -32,6 +33,23 @@
       }
     }
   }
+
+  /*
+  Benjamin Cerigo gif is a bit smaller then
+  the other gifs, so we need to adjust the margin-bottom
+  */
+  &:global(#Benjamin-Cerigo) {
+    @include md {
+      p,h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+    @include lg {
+      p,h3 {
+        margin-bottom: $margin-text;
+      }
+    }
+  }
 }
 
 @mixin columnMixin {
@@ -42,7 +60,6 @@
   @include columnMixin;
 }
 
-$margin-text: 1.2rem;
 .textContainer {
   margin-top: $margin-text;
   @include md {
