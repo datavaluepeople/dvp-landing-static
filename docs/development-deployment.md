@@ -16,6 +16,11 @@ nvm which
 
 Install gatsby: `npm install -g gatsby`
 
+### Note on browser usage
+Benjamin had a lot of problems with changing styling on chrome I recommend doing styling work on
+Firefox and then doing: `gatsby clean; gatsby develop` and checking on Chrome. I think this comes
+from the caching of Chrome.
+
 ### Environment file
 Currently there are a number of `.env` files which configure the build of different environment.
 The files are not in version control but can be downloaded by:
