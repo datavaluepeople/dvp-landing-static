@@ -27,8 +27,13 @@ html, body {
   mark {
     background-color: $dvp-yellow;
   }
+
+  img {
+    margin-bottom: 0
+  }
 }
 
 iframe {
   border: 0;
+  margin-bottom: 0
 }
