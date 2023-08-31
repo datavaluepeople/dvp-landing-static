@@ -3,8 +3,8 @@ import * as scssvariables from '../styles/variables.module.scss';
 
 
 const typography = new Typography({
-  baseFontSize: toString(scssvariables.baseFontSize),
-  baseLineHeight: toString(scssvariables.baseLineHeight),
+  baseFontSize: scssvariables.baseFontSize,
+  baseLineHeight: parseFloat(scssvariables.baseLineHeight),
   headerFontFamily: [
     'camptonbold_demo',
     'sans-serif',

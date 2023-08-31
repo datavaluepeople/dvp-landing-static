@@ -16,6 +16,11 @@ nvm which
 
 Install gatsby: `npm install -g gatsby`
 
+### Note on browser usage
+Benjamin had a lot of problems with changing styling on chrome I recommend doing styling work on
+Firefox and then doing: `gatsby clean; gatsby develop` and checking on Chrome. I think this comes
+from the caching of Chrome.
+
 ### Environment file
 Currently there are a number of `.env` files which configure the build of different environment.
 The files are not in version control but can be downloaded by:
@@ -68,7 +73,7 @@ For each environments it is important to configure the firebase project that wil
 To deploy to `staging2` the commands are:
 ```
 GATSBY_ACTIVE_ENV=staging2 gatsby build
-firebase deploy
+firebase deploy --project dvp-landing-static
 ```
 
 ### Notes
