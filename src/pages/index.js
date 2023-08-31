@@ -12,12 +12,12 @@ import * as indexStyles from './index.module.scss';
 const LandingPageIndex = ({location}) => {
   return (
     <Layout location={location}>
-      <SEO title="We build bespoke state-of-the-art data-driven systems"/>
+      <SEO title="We build bespoke state-of-the-art artificial intelligence systems"/>
       <div className={indexStyles.container}>
         <div className={indexStyles.textContainer}>
           <h1 className={indexStyles.title}>
-            We build bespoke state-of-the-art machine
-            learning systems that deliver value you can measure.
+            We build bespoke state-of-the-art artificial intelligence
+            systems that deliver value you can measure.
           </h1>
           <WhoWeAre HomePage={true}/>
         </div>

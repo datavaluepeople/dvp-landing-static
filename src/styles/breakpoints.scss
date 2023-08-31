@@ -31,3 +31,10 @@ $screen-xlg-min: 1240px;
        @content;
    }
 }
+
+/* Horizontal */
+@mixin sidebarProblem {
+  @media (max-height: 875px) {
+    @content
+  }
+}

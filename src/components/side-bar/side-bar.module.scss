@@ -12,6 +12,10 @@
   top: $nav-bar-height-sm;
   width: 100%;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
 
   @include md {
     height: calc(100% - #{$nav-bar-height-md});
@@ -30,6 +34,30 @@
   text-decoration: none;
 }
 
+.linkContainerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include xlg {
+    padding-bottom: 1rem;
+    @include sidebarProblem {
+      justify-content: space-between;
+      height: 50%;
+      min-height: 19rem;
+    }
+  }
+}
+
+.linkContainerDivider {
+  height: 0;
+  @include xlg {
+    height: 3.6rem;
+    @include sidebarProblem {
+      height: 0;
+    }
+  }
+}
+
 .show {
   right: 0;
   transition: right 0.3s;
@@ -41,7 +69,7 @@
 
   @include xlg {
     right: 0;
-    display: block;
+    display: flex;
   }
 }
 
@@ -49,15 +77,13 @@ $a-line-height: 2.4rem;
 $a-font-size: 1.7rem;
 
 .footer {
-  position: absolute;
   width: 100%;
-  bottom: 0;
   @include lg {
-    bottom: $sidebar-left-margin-lg - math.div($a-line-height, 2);
+    margin-bottom: $sidebar-left-margin-lg - math.div($a-line-height, 2);
   }
 
   @include xlg {
-    bottom: $sidebar-left-margin-xlg - math.div($a-line-height, 2);
+    margin-bottom: $sidebar-left-margin-xlg - math.div($a-line-height, 2);
   }
 
 }
@@ -119,7 +145,7 @@ $arrow-height: $a-font-size * calc(3 / 4);
   .hide {
     @include lg {
       right: 0;
-      display: block;
+      display: flex;
     }
   }
 }

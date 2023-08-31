@@ -16,25 +16,16 @@ const OurApproachPage = ({location}) => {
       <h1 className={styles.title}>Our approach</h1>
       <div className={styles.content}>
         <p className={styles.pLarge}>
-          Whether your priorities are customer acquisition,
-          revenue, reducing costs, or profit;
-          we’re not satisfied until we can tell you exactly
+          Whether your priorities are increasing revenue,
+          increasing profit, reducing costs, or customer acquisition;
+          we’re not satisfied until we can tell you numerically
           how much value we’ve generated for you.
-        </p>
-        <h2 id="chat-with-us"><mark>Are you our future partner?</mark></h2>
-        <p className={styles.pLarge}>
-          Get in touch at everyone@datavaluepeople.com
           <br/>
-          <span className={styles.pGrey}>
-            For more detailed information on our services,
-            you can view our sales
-            deck <a href='/downloads/datavaluepeople-sales-deck.pdf'>here</a>
-          </span>
+          <br/>
+          View our sales deck <a href='/downloads/datavaluepeople-sales-deck.pdf' target='_blank'>here</a>
         </p>
+        <h2 id="chat-with-us"><mark>Get in touch at partners@datavaluepeople.com</mark></h2>
         <section className={styles.wayWeWorkSection}>
-          <span className={styles.hireUs}>
-            Hire us to advise, analyse, and automate.
-          </span>
           <h2 className={styles.wayWeWork}>The ways we work:</h2>
           <h3>
             <HypeAnimation
@@ -66,7 +57,7 @@ const OurApproachPage = ({location}) => {
           <p>
             Combining initial proof-of-concept machine learning modelling,
             with evidence based and data led investigation,
-            we establish the expected value & ROI of the complete end system.
+            we establish the expected ROI of the complete end system.
             <br/>
             <b>Timeline:</b> Multiple sprints over 1-2 months
           </p>
@@ -78,7 +69,7 @@ const OurApproachPage = ({location}) => {
               width={approachIconWidth}
               className={styles.approachIcons}
             />
-            Automated Data-driven Systems
+            Automated Machine Learning Systems
           </h3>
           <p>
             Full hands-on development,
@@ -87,7 +78,7 @@ const OurApproachPage = ({location}) => {
             that through machine learning and automated-decision-making
             deliver measurable and long lasting value.
             <br/>
-            <b>Timeline:</b> Iterative sprints over 2+ months
+            <b>Timeline:</b> Ongoing iterative sprints over 2+ months
           </p>
         </section>
       </div>
