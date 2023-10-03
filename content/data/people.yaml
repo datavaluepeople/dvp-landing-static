@@ -52,7 +52,7 @@
   github: willunderwood
   gifPlaceHolder: ../../content/assets/people/will-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/will.gif
-  - id: lyudmila
+- id: lyudmila
   fullName: Lyudmila Lugovskaya
   title: Data Scientist
   bio: PhD in Finance, University of Cambridge, awarded scholarships. MSc in Psychology. Cross-industry experience of delivering practical data projects. Led data science teams. London/Barcelona based. 
