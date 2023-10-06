@@ -6,6 +6,7 @@ This repo contains the code for the datavaluepeople landing page. It is based of
 See [./docs/development-deployment.md](./docs/development-deployment.md)
 
 ## CMS
+If you are adding content to the website then see the docs:
 - [Blog](./docs/blog.md)
 - [People](./docs/people.md)
 - [Track Record Sections](./docs/track-record-sections.md)
