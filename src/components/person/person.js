@@ -51,11 +51,16 @@ const Person = (
 
         We write some min height embedded CSS so that the min height
         is correct for that image.
+
+        This is done for md and large screens.
       */}
       <style dangerouslySetInnerHTML={{__html: `
-         #${personSlugId} .${styles.imgContainer} {
-           min-height: ${minSmallHeight}px;
+         @media (min-width: 768px) {
+            #${personSlugId} .${styles.imgContainer} {
+              min-height: ${minSmallHeight}px;
+            }
          }
+
          @media (min-width: 1240px) {
             #${personSlugId} .${styles.imgContainer} {
               min-height: ${minLargeHeight}px;
