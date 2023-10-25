@@ -28,7 +28,11 @@ const Person = (
   let gifImage;
   if (profilePictureGifUrl) {
     gifImage = (
-      <LazyLoadImage className={styles.imgReal} src={profilePictureGifUrl}/>
+      <LazyLoadImage
+        className={styles.imgReal}
+        src={profilePictureGifUrl}
+        alt={fullName}
+      />
     );
   } else {
     gifImage = '';
@@ -63,6 +67,7 @@ const Person = (
           className={styles.imgPlaceholder}
           image={placeholderImage}
           style={{'position': 'absolute'}}
+          alt={fullName}
         />
         {gifImage}
       </div>
