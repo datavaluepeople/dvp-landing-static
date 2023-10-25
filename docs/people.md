@@ -12,4 +12,6 @@ The `/people` page is managed by the file `content/data/people.yaml`.
 - `profilePictureGif`: The gif for the person.
 
 ## gifPlaceHolder generation
-Generate the gifPlaceHolder by selecting a nice jpg from the gif using this site: https://ezgif.com/gif-to-jpg
+It is important that the gifPlaceholder has the same height and width of the gif. Generate the
+gifPlaceHolder by selecting a nice jpg from the gif using this site: https://ezgif.com/gif-to-jpg.
+ezgif.com will generate the gifPlaceHolder with the correct height and width.
