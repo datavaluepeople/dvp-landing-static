@@ -73,6 +73,7 @@ const Person = (
           image={placeholderImage}
           style={{'position': 'absolute'}}
           alt={fullName}
+          loading="eager"
         />
         {gifImage}
       </div>
