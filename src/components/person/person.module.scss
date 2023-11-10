@@ -33,23 +33,6 @@ $margin-text: 1.2rem;
       }
     }
   }
-
-  /*
-  Benjamin Cerigo gif is a bit smaller then
-  the other gifs, so we need to adjust the margin-bottom
-  */
-  &:global(#Benjamin-Cerigo) {
-    @include md {
-      p,h3 {
-        margin-bottom: 0.5rem;
-      }
-    }
-    @include lg {
-      p,h3 {
-        margin-bottom: $margin-text;
-      }
-    }
-  }
 }
 
 @mixin columnMixin {
@@ -136,6 +119,7 @@ $margin-text: 1.2rem;
 .imgPlaceholder {
   position: absolute;
   z-index: 2;
+  width: 100%;
 }
 
 .imgReal {
