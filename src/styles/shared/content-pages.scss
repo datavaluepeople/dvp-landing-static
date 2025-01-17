@@ -1,4 +1,4 @@
-@import '../styles/shared/mixins.scss';
+@use 'mixins.scss';
 
 .contentTitle {
   @include contentTitleMixin;

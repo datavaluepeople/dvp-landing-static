@@ -3,34 +3,34 @@ If you have problems with this not updating in the browser, try to run:
 gatsby clean
 gatsby develop
 */
-@import './fonts.scss';
-@import './base_values.scss';
-@import './colors.scss';
+@use 'fonts.scss';
+@use 'base_values.scss';
+@use 'colors.scss';
 
-@import './shared/mixins.scss';
-@import './typograph.scss';
+@use 'shared/mixins.scss';
+@use 'typograph.scss';
 
 .dark {
-  @include darkMixin;
+  @include mixins.darkMixin;
 }
 
 .light {
-  @include lightMixin;
+  @include mixins.lightMixin;
 }
 
 html, body {
-  font-size: $base-font-size;
-  color: $dvp-dark;
+  font-size: base_values.$base-font-size;
+  color: colors.$dvp-dark;
 
   a {
-    color: $dvp-dark;
+    color: colors.$dvp-dark;
     &:hover {
-      color: $dvp-dark;
+      color: colors.$dvp-dark;
     }
   }
 
   mark {
-    background-color: $dvp-yellow;
+    background-color: colors.$dvp-yellow;
   }
 
   img {

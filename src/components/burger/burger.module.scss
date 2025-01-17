@@ -1,7 +1,7 @@
 @use "sass:math";
-@import '../../styles/colors.scss';
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
 
 $burger-size: 1.2rem;
 
@@ -19,17 +19,17 @@ $burger-size: 1.2rem;
   width: $burger-size;
   height: $burger-size;
 
-  top: $margin-sm-v;
-  right: $margin-sm-h;
+  top: base_values.$margin-sm-v;
+  right: base_values.$margin-sm-h;
 
-  @include md {
-    top: $margin-md-v;
-    right: $margin-md-h;
+  @include breakpoints.md {
+    top: base_values.$margin-md-v;
+    right: base_values.$margin-md-h;
   }
 
-  @include xlg{
-    top: $margin-lg-v;
-    right: $margin-lg-h;
+  @include breakpoints.xlg{
+    top: base_values.$margin-lg-v;
+    right: base_values.$margin-lg-h;
   }
   
   &:focus {
@@ -37,7 +37,7 @@ $burger-size: 1.2rem;
   }
   
   div {
-    background: $dvp-dark;
+    background: colors.$dvp-dark;
     width: $burger-size;
     height: 0.2rem;
     transition: all 0.3s linear;
@@ -77,11 +77,11 @@ $burger-size: 1.2rem;
 
 .home {
   div {
-    background: $dvp-white;
+    background: colors.$dvp-white;
   }
 
-  @include lg{
-    top: $margin-lg-v;
-    right: $margin-lg-h;
+  @include breakpoints.lg{
+    top: base_values.$margin-lg-v;
+    right: base_values.$margin-lg-h;
   }
 }

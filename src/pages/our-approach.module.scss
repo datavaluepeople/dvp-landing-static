@@ -1,15 +1,15 @@
-@import '../styles/base_values.scss';
-@import '../styles/breakpoints.scss';
-@import '../styles/colors.scss';
-@import '../styles/shared/hype-animations.scss';
-@import '../styles/shared/mixins.scss';
+@use '../styles/base_values.scss';
+@use '../styles/breakpoints.scss';
+@use '../styles/colors.scss';
+@use '../styles/shared/hype-animations.scss';
+@use '../styles/shared/mixins.scss';
 
 .title {
-  @include contentTitleMixin;
+  @include mixins.contentTitleMixin;
 }
 
 .content {
-  @include contentContainerMixin;
+  @include mixins.contentContainerMixin;
 }
 
 @mixin pLargeMixin {
@@ -24,7 +24,7 @@
 
 .pGrey {
   font-size: 0.9rem;
-  color: $dvp-grey;
+  color: colors.$dvp-grey;
 }
 
 .hireUs {
@@ -54,5 +54,5 @@
 .approachIcons {
   vertical-align: bottom;
   margin-right: 0.5rem;
-  @include hype_fade;
+  @include hype-animations.hype_fade;
 }

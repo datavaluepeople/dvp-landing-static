@@ -1,30 +1,30 @@
 @use "sass:math";
-@import '../../styles/base_values.scss';
-@import '../../styles/colors.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/shared/header.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/header.scss';
 
 .sideBarElement {
   font-size: 0.6rem;
-  color: $dvp-grey-half;
+  color: colors.$dvp-grey-half;
   font-weight: 500;
 
   a {
-    color: $dvp-dark;
+    color: colors.$dvp-dark;
   }
 
-  padding: 4rem $sidebar-right-margin-sm 0.5rem $sidebar-left-margin-sm;
+  padding: 4rem header.$sidebar-right-margin-sm 0.5rem header.$sidebar-left-margin-sm;
 
-  @include md {
-    padding: 5rem $sidebar-right-margin-md 1rem $sidebar-left-margin-md;
+  @include breakpoints.md {
+    padding: 5rem header.$sidebar-right-margin-md 1rem header.$sidebar-left-margin-md;
   }
 
-  @include xlg {
+  @include breakpoints.xlg {
     display: none;
   }
 
   &.home {
-    @include lg {
+    @include breakpoints.lg {
       display: none;
     }
   }
@@ -33,23 +33,23 @@
 .homePageElement {
 
   font-size: 0.6rem;
-  color: $dvp-white-half;
+  color: colors.$dvp-white-half;
   font-weight: 500;
   position: absolute;
   bottom: 0;
 
   a {
-    color: $dvp-white;
+    color: colors.$dvp-white;
 
     &:hover {
-      color: $dvp-white;
+      color: colors.$dvp-white;
     }
   }
 
   display: none;
 
-  @include lg {
-    padding: $margin-lg-v 0 math.div($margin-lg-v, 2);
+  @include breakpoints.lg {
+    padding: base_values.$margin-lg-v 0 math.div(base_values.$margin-lg-v, 2);
     display: block;
   }
 }

@@ -1,25 +1,25 @@
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/colors.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/colors.scss';
 
 .shortBio {
-  color: $dvp-grey;
+  color: colors.$dvp-grey;
   font-weight: 700;
 }
 
 .shortBioLink {
-  color: $dvp-grey;
+  color: colors.$dvp-grey;
   text-decoration: none;
   font-weight: 700;
   &:hover {
-    color: $dvp-dark;
+    color: colors.$dvp-dark;
   }
 }
 
 .bioContainer {
   display: flex;
   flex-direction: column;
-  @include md {
+  @include breakpoints.md {
     flex-direction: row;
   }
 }
@@ -57,7 +57,7 @@
 
 .email {
   font-weight: 700;
-  color: $dvp-grey;
+  color: colors.$dvp-grey;
   word-break: break-all;
 }
 

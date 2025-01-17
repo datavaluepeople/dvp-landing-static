@@ -1,8 +1,8 @@
-@import './people.scss';
+@use './people.scss' as p;
 
 :export {
-  personImgXlgMax: $person-img-xlg-max;
-  personImgXlgMin: $person-img-xlg-min;
-  personImgMdWidth: $person-img-md-width-no;
-  personImgXlgWidth: $person-img-xlg-width-no;
+  personImgXlgMax: p.$person-img-xlg-max;
+  personImgXlgMin: p.$person-img-xlg-min;
+  personImgMdWidth: p.$person-img-md-width-no;
+  personImgXlgWidth: p.$person-img-xlg-width-no;
 }

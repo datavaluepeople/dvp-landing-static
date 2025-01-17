@@ -1,15 +1,15 @@
 @use "sass:math";
-@import '../../styles/base_values.scss';
-@import '../../styles/colors.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/shared/header.scss';
-@import '../../styles/shared/mixins.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/header.scss';
+@use '../../styles/shared/mixins.scss';
 
 .container {
-  @include lightMixin;
+  @include mixins.lightMixin;
   position: fixed;
-  height: calc(100% - #{$nav-bar-height-sm});
-  top: $nav-bar-height-sm;
+  height: calc(100% - #{header.$nav-bar-height-sm});
+  top: header.$nav-bar-height-sm;
   width: 100%;
   z-index: 10;
   display: flex;
@@ -17,15 +17,15 @@
   justify-content: space-between;
   overflow-y: auto;
 
-  @include md {
-    height: calc(100% - #{$nav-bar-height-md});
-    top: $nav-bar-height-md;
+  @include breakpoints.md {
+    height: calc(100% - #{header.$nav-bar-height-md});
+    top: header.$nav-bar-height-md;
   }
 
-  @include xlg {
+  @include breakpoints.xlg {
     top: 0;
     right: 0;
-    width: $side-bar-width;
+    width: base_values.$side-bar-width;
     height: 100%;
   }
 }
@@ -38,9 +38,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @include xlg {
+  @include breakpoints.xlg {
     padding-bottom: 1rem;
-    @include sidebarProblem {
+    @include breakpoints.sidebarProblem {
       justify-content: space-between;
       height: 50%;
       min-height: 19rem;
@@ -50,9 +50,9 @@
 
 .linkContainerDivider {
   height: 0;
-  @include xlg {
+  @include breakpoints.xlg {
     height: 3.6rem;
-    @include sidebarProblem {
+    @include breakpoints.sidebarProblem {
       height: 0;
     }
   }
@@ -67,7 +67,7 @@
   right: 100%;
   transition: right 0.2s;
 
-  @include xlg {
+  @include breakpoints.xlg {
     right: 0;
     display: flex;
   }
@@ -78,12 +78,12 @@ $a-font-size: 1.7rem;
 
 .footer {
   width: 100%;
-  @include lg {
-    margin-bottom: $sidebar-left-margin-lg - math.div($a-line-height, 2);
+  @include breakpoints.lg {
+    margin-bottom: header.$sidebar-left-margin-lg - math.div($a-line-height, 2);
   }
 
-  @include xlg {
-    margin-bottom: $sidebar-left-margin-xlg - math.div($a-line-height, 2);
+  @include breakpoints.xlg {
+    margin-bottom: header.$sidebar-left-margin-xlg - math.div($a-line-height, 2);
   }
 
 }
@@ -102,21 +102,21 @@ $a-font-size: 1.7rem;
 .navListItem {
   margin: 0;
   width: 100%;
-  padding: 0 $sidebar-right-margin-sm 0 $sidebar-left-margin-sm;
-  @include md {
-    padding: 0 $sidebar-right-margin-md 0 $sidebar-left-margin-md;
+  padding: 0 header.$sidebar-right-margin-sm 0 header.$sidebar-left-margin-sm;
+  @include breakpoints.md {
+    padding: 0 header.$sidebar-right-margin-md 0 header.$sidebar-left-margin-md;
   }
-  @include lg {
-    padding: 0 $sidebar-right-margin-lg 0 $sidebar-left-margin-lg;
+  @include breakpoints.lg {
+    padding: 0 header.$sidebar-right-margin-lg 0 header.$sidebar-left-margin-lg;
   }
 
-  @include xlg {
-    padding: 0 $sidebar-right-margin-xlg 0 $sidebar-left-margin-xlg;
+  @include breakpoints.xlg {
+    padding: 0 header.$sidebar-right-margin-xlg 0 header.$sidebar-left-margin-xlg;
   }
 }
 
 .navListLink {
-  color: $dvp-grey;
+  color: colors.$dvp-grey;
   text-decoration: none;
   display: inline-block;
   width: 100%;
@@ -125,7 +125,7 @@ $a-font-size: 1.7rem;
   line-height: $a-line-height;
 
   &:hover {
-    color: $dvp-dark;
+    color: colors.$dvp-dark;
   }
 }
  
@@ -136,14 +136,14 @@ $arrow-height: $a-font-size * calc(3 / 4);
 }
 
 .home {
-  @include lg {
+  @include breakpoints.lg {
     top: 0;
     right: 0;
-    width: $side-bar-width;
+    width: base_values.$side-bar-width;
     height: 100%;
   }
   .hide {
-    @include lg {
+    @include breakpoints.lg {
       right: 0;
       display: flex;
     }
