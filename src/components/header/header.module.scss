@@ -1,11 +1,11 @@
-@import '../../styles/colors.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/shared/mixins.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/mixins.scss';
 
 .dark {
-  @include darkMixin;
+  @include mixins.darkMixin;
 }
 
 .light {
-  @include lightMixin;
+  @include mixins.lightMixin;
 }

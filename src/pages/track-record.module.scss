@@ -1,14 +1,14 @@
-@import '../styles/base_values.scss';
-@import '../styles/breakpoints.scss';
-@import '../styles/colors.scss';
-@import '../styles/shared/mixins.scss';
+@use '../styles/base_values.scss';
+@use '../styles/breakpoints.scss';
+@use '../styles/colors.scss';
+@use '../styles/shared/mixins.scss';
 
 .title {
-  @include contentTitleMixin;
+  @include mixins.contentTitleMixin;
 }
 
 .content {
-  @include contentContainerMixin;
+  @include mixins.contentContainerMixin;
 }
 
 .pastClientSection {
@@ -17,14 +17,14 @@
 
 .clientsImageDesktop {
   display: none;
-  @include md {
+  @include breakpoints.md {
     display: block;
   }
 }
 
 .clientsImageMobile {
   display: block;
-  @include md {
+  @include breakpoints.md {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
-@import '../styles/base_values.scss';
-@import '../styles/breakpoints.scss';
-@import '../styles/colors.scss';
-@import '../styles/shared/mixins.scss';
+@use '../styles/base_values.scss';
+@use '../styles/breakpoints.scss';
+@use '../styles/colors.scss';
+@use '../styles/shared/mixins.scss';
 
 .header {
   margin-bottom: 2rem;
@@ -10,7 +10,7 @@
 .timeAuthorRow {
   display: flex;
   flex-direction: column;
-  @include md {
+  @include breakpoints.md {
     flex-direction: row;
   }
   > * {
@@ -33,29 +33,29 @@
 }
 
 @mixin blogContent {
-  @include contentMain;
-  padding-top: $margin-sm-v;
-  padding-bottom: $margin-sm-v;
-  @include md {
-    padding-top: $margin-md-v;
-    padding-bottom: $margin-md-v;
+  padding-top: base_values.$margin-sm-v;
+  padding-bottom: base_values.$margin-sm-v;
+  @include mixins.contentMain;
+  @include breakpoints.md {
+    padding-top: base_values.$margin-md-v;
+    padding-bottom: base_values.$margin-md-v;
   }
 
-  @include xlg {
-    padding-top: $margin-lg-v;
-    padding-bottom: $margin-lg-v;
+  @include breakpoints.xlg {
+    padding-top: base_values.$margin-lg-v;
+    padding-bottom: base_values.$margin-lg-v;
   }
 }
 
 .footer {
-  @include contentContainer;
   position: absolute;
   left: 0;
   width: 100%;
+  @include mixins.contentContainer;
 }
 
 .bioFooter {
-  background-color: $dvp-light-grey;
+  background-color: colors.$dvp-light-grey;
   @include blogContent;
 }
 
@@ -71,7 +71,7 @@
   margin-bottom: 2rem;
 
   h2 {
-    background: $dvp-yellow;
+    background: colors.$dvp-yellow;
     display: inline-block;
   }
 
@@ -85,19 +85,19 @@
   }
 
   a {
-    color: $dvp-red;
+    color: colors.$dvp-red;
     text-decoration: underline;
   }
   
 
   pre[class*="language-"] {
-    background: $dvp-dark;
+    background: colors.$dvp-dark;
     box-decoration-break: clone;
     padding: .5rem .5rem .5rem;
     border-radius: .2rem;
   }
   code[class*="language"] {
-    background: $dvp-dark;
+    background: colors.$dvp-dark;
     box-decoration-break: clone;
     padding: .2rem .2rem .2rem;
     border-radius: .2rem;

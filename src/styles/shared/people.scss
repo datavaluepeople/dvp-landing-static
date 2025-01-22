@@ -1,7 +1,7 @@
-@import '../../styles/breakpoints.scss';
+@use '../breakpoints.scss' as bp;
 
-$person-img-xlg-max: $screen-xlg-min - 1;
-$person-img-xlg-min: $screen-xlg-min;
+$person-img-xlg-max: bp.$screen-xlg-min - 1;
+$person-img-xlg-min: bp.$screen-xlg-min;
 
 
 $person-img-md-width-no: 300;

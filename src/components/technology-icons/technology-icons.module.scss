@@ -1,5 +1,5 @@
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
 
 .container {
   display: flex;
@@ -12,7 +12,7 @@
 
   margin-right: 1rem;
 
-  @include lg {
+  @include breakpoints.lg {
     margin-right: 0.5rem;
   }
 
