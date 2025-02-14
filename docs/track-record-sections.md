@@ -1,9 +1,11 @@
 # Track Record Sections
-The `/track-record` page is managed by the file `content/data/track-record-sections.yaml`.
+This is now hard coded in to the HTML to give more flexibility
 
-- `id`: Id of the section. This will be `yamlId` in graphQL.
-- `iconFile`: Icon for the sections. Should be an SVG.
-- `paragraph`: The text of the main paragraph of the section.
-- `valueDelivered`: Text Value Delivered section.
-- `previousClientLink`: Client Text.
-- `previousClientLink`: Text and href of the Client link.
+## Client Images
+To add new client images:
+- Get the logo of the client in a png of jpeg/jpg format
+- Add it to content/assets/icons/clients
+- The file name should have a number to indicate the order
+- Add the file name (without extension) to variable `linkNameMap` in `src/components/client-images/client-images.js` with the link being to the client's website.
+- Check that it looks ok
+
