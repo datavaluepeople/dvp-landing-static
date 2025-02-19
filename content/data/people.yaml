@@ -61,3 +61,12 @@
   github: lvlugov
   gifPlaceHolder: ../../content/assets/people/lyudmila-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/lyudmila.gif
+- id: alexis
+  fullName: Alexis Gillett
+  title: Data Scientist
+  bio: Mathematics and Statistics, University of Cambridge. PhD in Probability Theory, VU Amsterdam. MBA, UvA. Completed CFA program. Creative problem solver. Leadership in both commercial and data roles. Amsterdam based.
+  email: alexis@datavaluepeople.com
+  linkedIn: alexisgillett
+  github: ajg54
+  gifPlaceHolder: ../../content/assets/people/alexis-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/alexis.gif
