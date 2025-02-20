@@ -32,7 +32,7 @@ const ClientImages = ({}) => {
     '12_oxfordmartin': 'https://www.oxfordmartin.ox.ac.uk',
     '13_ineteconomics': 'https://www.ineteconomics.org',
     '14_buildup': 'https://howtobuildup.org',
-    '15_aistentr': 'https://www.aisentr.com/',
+    '15_aisentr': 'https://www.aisentr.com/',
   };
   const data = useStaticQuery(graphql`
     query ClientImages {
