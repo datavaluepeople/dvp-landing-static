@@ -1,30 +1,31 @@
-@import '../../styles/colors.scss';
-@import '../breakpoints.scss';
+@use '../colors.scss';
+@use '../breakpoints.scss';
+@use '../base_values.scss';
 
 @mixin darkMixin {
-  background-color: $dvp-dark;
-  color: $dvp-white;
+  background-color: colors.$dvp-dark;
+  color: colors.$dvp-white;
 }
 
 @mixin lightMixin {
-  background-color: $dvp-white;
-  color: $dvp-dark;
+  background-color: colors.$dvp-white;
+  color: colors.$dvp-dark;
 }
 
 @mixin contentTitleMixin {
   display: none;
-  @include md {
+  @include breakpoints.md {
     display: initial;
   }
 }
 
 @mixin contentContainerMixin {
-  @include md {
+  @include breakpoints.md {
     padding-top: 2.5rem;
     padding-left: 1.5rem;
   }
 
-  @include xlg {
+  @include breakpoints.xlg {
     padding-top: 3.8rem;
     padding-left: 2rem;
   }
@@ -40,25 +41,25 @@
 
 
 @mixin contentContainer {
-  @include xlg {
-    width: $content-width;
+  @include breakpoints.xlg {
+    width: base_values.$content-width;
   }
 
   &.openSideBar {
-    @include xlg {
+    @include breakpoints.xlg {
       @include nullOpenSideBar;
     }
   }
 }
 
 @mixin contentMain {
-  padding: 0 $margin-sm-v $margin-sm-h;
+  padding: 0 base_values.$margin-sm-v base_values.$margin-sm-h;
 
-  @include md {
-    padding: 0 $margin-md-h $margin-md-v;
+  @include breakpoints.md {
+    padding: 0 base_values.$margin-md-h base_values.$margin-md-v;
   }
 
-  @include xlg {
-    padding: 0 0 $margin-lg-v $margin-lg-h;
+  @include breakpoints.xlg {
+    padding: 0 0 base_values.$margin-lg-v base_values.$margin-lg-h;
   }
 }

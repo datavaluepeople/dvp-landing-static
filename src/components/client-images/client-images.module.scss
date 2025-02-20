@@ -1,4 +1,4 @@
-@import '../../styles/breakpoints.scss';
+@use '../../styles/breakpoints.scss';
 
 .container {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
 
-  @include md {
+  @include breakpoints.md {
     justify-content: flex-start;
     max-width: 45rem;
   }

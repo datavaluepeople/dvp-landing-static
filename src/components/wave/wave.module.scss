@@ -1,5 +1,5 @@
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
 
 .waveImgContainer{
   position: absolute;
@@ -10,23 +10,23 @@
   top: 12rem;
   left: 0;
 
-  @include md {
+  @include breakpoints.md {
     top: 10rem;
     height: 15rem;
   }
 
-  @include lg {
+  @include breakpoints.lg {
     top: 50%;
     height: 41%;
     left: -1%;
-    width: $content-width + 5%;
+    width: base_values.$content-width + 5%;
   }
 
-  @include xlg {
+  @include breakpoints.xlg {
     top: 46%;
     height: 40%;
     left: -0.5%;
-    width: $content-width + 3%;
+    width: base_values.$content-width + 3%;
   }
 
   canvas {

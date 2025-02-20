@@ -1,37 +1,37 @@
-@import '../../styles/breakpoints.scss';
-@import '../../styles/base_values.scss';
-@import '../../styles/shared/header.scss';
-@import '../../styles/shared/hype-animations.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/shared/header.scss';
+@use '../../styles/shared/hype-animations.scss';
 
 .logo {
   display: inline-block;
-  height: $logo-height-sm;
-  margin: $margin-sm-v $margin-sm-h;
+  height: header.$logo-height-sm;
+  margin: base_values.$margin-sm-v base_values.$margin-sm-h;
 
-  @include md {
-    height: $logo-height-md;
-    margin: $margin-md-v $margin-md-h;
+  @include breakpoints.md {
+    height: header.$logo-height-md;
+    margin: base_values.$margin-md-v base_values.$margin-md-h;
   }
 
-  @include xlg {
-    height: $logo-height-lg;
-    margin: $margin-lg-v $margin-lg-h;
+  @include breakpoints.xlg {
+    height: header.$logo-height-lg;
+    margin: base_values.$margin-lg-v base_values.$margin-lg-h;
   }
 }
 
 .home {
   position: relative;
-  height: $logo-height-sm;
-  margin: $margin-sm-v $margin-sm-h;
+  height: header.$logo-height-sm;
+  margin: base_values.$margin-sm-v base_values.$margin-sm-h;
 
-  @include md {
-    height: $logo-height-md;
-    margin: $margin-md-v $margin-md-h;
+  @include breakpoints.md {
+    height: header.$logo-height-md;
+    margin: base_values.$margin-md-v base_values.$margin-md-h;
   }
 
-  @include lg {
-    height: $logo-height-lg;
-    margin: $margin-lg-v $margin-lg-h;
+  @include breakpoints.lg {
+    height: header.$logo-height-lg;
+    margin: base_values.$margin-lg-v base_values.$margin-lg-h;
 
     .img {
       opacity: 0;
@@ -49,10 +49,11 @@
   position: absolute;
   top: -10px;
   left: -39px;
-  @include lg {
+  @include hype-animations.hype_fade(0.7s);
+
+  @include breakpoints.lg {
     /* Have to use important to override the style on element */
     display: block !important;
   }
-  @include hype_fade(0.7s);
 }
 

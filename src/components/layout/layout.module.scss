@@ -1,19 +1,19 @@
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/colors.scss';
-@import '../../styles/shared/mixins.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/shared/mixins.scss';
 
 .dark {
-  @include darkMixin;
+  @include mixins.darkMixin;
 }
 
 .light {
-  @include lightMixin;
+  @include mixins.lightMixin;
 }
 
 
 .container {
-  @include contentContainer;
+  @include mixins.contentContainer;
 }
 
 .openSideBar {
@@ -24,13 +24,13 @@
 }
 
 .containerHome {
-  @include lg {
-    width: $content-width;
+  @include breakpoints.lg {
+    width: base_values.$content-width;
   }
 
   &.openSideBar {
-    @include lg {
-      @include nullOpenSideBar;
+    @include breakpoints.lg {
+      @include mixins.nullOpenSideBar;
     }
   }
 }
@@ -43,25 +43,25 @@
   height: 100%;
   /* Width will be gotten from the parent */
   width: 100%;
-  background-color: $dvp-dark;
+  background-color: colors.$dvp-dark;
 
-  @include lg {
-    width: $content-width;
+  @include breakpoints.lg {
+    width: base_values.$content-width;
   }
 }
 
 .mainHome {
-  padding: $margin-sm-v $margin-sm-h;
+  padding: base_values.$margin-sm-v base_values.$margin-sm-h;
 
-  @include md {
-    padding: 0 $margin-md-h $margin-md-v;
+  @include breakpoints.md {
+    padding: 0 base_values.$margin-md-h base_values.$margin-md-v;
   }
 
-  @include lg {
-    padding: 0 $margin-lg-h $margin-lg-v;
+  @include breakpoints.lg {
+    padding: 0 base_values.$margin-lg-h base_values.$margin-lg-v;
   }
 }
 
 .main{
-  @include contentMain;
+  @include mixins.contentMain;
 }

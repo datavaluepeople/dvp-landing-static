@@ -1,8 +1,8 @@
 @use "sass:math";
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/colors.scss';
-@import '../../styles/shared/people.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/colors.scss';
+@use '../../styles/shared/people.scss';
 
 .title {
 }
@@ -10,7 +10,7 @@
 $margin-text: 1.2rem;
 .container {
   margin-bottom: 5rem;
-  @include md {
+  @include breakpoints.md {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -45,7 +45,7 @@ $margin-text: 1.2rem;
 
 .textContainer {
   margin-top: $margin-text;
-  @include md {
+  @include breakpoints.md {
     position: relative;
     margin-top: $margin-text;
     margin-left: 1rem;
@@ -59,7 +59,7 @@ $margin-text: 1.2rem;
     font-size: 1.2rem;
     
     margin-bottom: 0;
-    @include md {
+    @include breakpoints.md {
       margin-bottom: math.div($margin-text, 3);
     }
   }
@@ -69,7 +69,7 @@ $margin-text: 1.2rem;
     font-size: 1rem;
     margin-bottom: $margin-text;
     font-weight: 400;
-    @include md {
+    @include breakpoints.md {
       font-weight: 500;
     }
   }
@@ -90,13 +90,13 @@ $margin-text: 1.2rem;
 }
 
 .linkContainer {
-  @include md {
+  @include breakpoints.md {
     position: absolute;
     bottom: 0;
     margin-bottom: $margin-text;
   }
 
-  @include xlg {
+  @include breakpoints.xlg {
     position: static;
   }
 
@@ -104,15 +104,15 @@ $margin-text: 1.2rem;
 
 .imgContainer {
   position: relative;
-  width: $person-img-md-width;
+  width: people.$person-img-md-width;
 
-  @include md {
+  @include breakpoints.md {
     flex-shrink: 0;
     @include columnMixin;
   }
 
-  @include xlg {
-    width: $person-img-xlg-width;
+  @include breakpoints.xlg {
+    width: people.$person-img-xlg-width;
   }
 }
 

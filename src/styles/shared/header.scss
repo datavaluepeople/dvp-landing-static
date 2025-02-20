@@ -1,13 +1,13 @@
 /* Sharing the height of the nav bar */
-@import '../../styles/base_values.scss';
+@use '../base_values.scss';
 
 $logo-height-sm: 3rem;
 $logo-height-md: 5rem;
 $logo-height-lg: 5rem;
 
-$nav-bar-height-sm: ($margin-sm-v * 2) + $logo-height-sm;
-$nav-bar-height-md: ($margin-md-v * 2) + $logo-height-md;
-$nav-bar-height-lg: ($margin-lg-v * 2) + $logo-height-lg;
+$nav-bar-height-sm: (base_values.$margin-sm-v * 2) + $logo-height-sm;
+$nav-bar-height-md: (base_values.$margin-md-v * 2) + $logo-height-md;
+$nav-bar-height-lg: (base_values.$margin-lg-v * 2) + $logo-height-lg;
 
 $sidebar-right-margin-sm: 1.5rem;
 $sidebar-left-margin-sm: 1.5rem;

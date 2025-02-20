@@ -1,6 +1,6 @@
-@import '../../styles/base_values.scss';
-@import '../../styles/breakpoints.scss';
-@import '../../styles/shared/header.scss';
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/header.scss';
 
 .lineContainer {
   width: 100%;
@@ -12,17 +12,17 @@
   align-items:center;
   justify-content: flex-end;
 
-  margin: $margin-sm-v $margin-sm-h;
-  margin-right: $sidebar-right-margin-sm;
+  margin: base_values.$margin-sm-v base_values.$margin-sm-h;
+  margin-right: header.$sidebar-right-margin-sm;
 
-  @include md {
-    margin: $margin-md-v $margin-md-h;
-    margin-right: $sidebar-right-margin-md;
+  @include breakpoints.md {
+    margin: base_values.$margin-md-v base_values.$margin-md-h;
+    margin-right: header.$sidebar-right-margin-md;
   }
 
-  @include xlg {
-    margin: $margin-lg-v $margin-lg-h;
-    margin-right: $sidebar-right-margin-xlg;
+  @include breakpoints.xlg {
+    margin: base_values.$margin-lg-v base_values.$margin-lg-h;
+    margin-right: header.$sidebar-right-margin-xlg;
   }
 
 }
@@ -40,8 +40,8 @@
 }
 
 .home {
-  @include lg {
-    margin: $margin-lg-v $margin-lg-h;
-    margin-right: $sidebar-right-margin-lg;
+  @include breakpoints.lg {
+    margin: base_values.$margin-lg-v base_values.$margin-lg-h;
+    margin-right: header.$sidebar-right-margin-lg;
   }
 }
