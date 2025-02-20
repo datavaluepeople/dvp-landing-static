@@ -24,11 +24,30 @@ const TrackRecordPage = ({location}) => {
             />
             Generative AI Solutions
           </h2>
-          <p>Using LLMs and state-of-the-art techniques such as multi-agent systems and advanced prompt engineering to create generative AI solutions.</p>
+          <p>
+            Using LLMs and state-of-the-art techniques
+            such as multi-agent systems and advanced prompt
+            engineering to create generative AI solutions.
+          </p>
           <b>Previous projects:</b>
-          <ul>
-            <li><b>AiSentr:</b> delivered prototypes using Azure GPTs, RAG and multi-agentic framework to help close an important partnership for the business.</li>
-            <li><b>Automatic Classifiers for Peace (ACfP):</b> delivered an LLM-powered classifier to aid peacebuilders in finding insights from social media data. Open source repository and community, <a href="https://gitlab.com/automatic-classifiers-for-peace/acfp" target="_blank">here</a>.
+          <ul className={sectionStyles.projectList}>
+            <li>
+              <b><a
+                href="https://www.aisentr.com/"
+                target="_blank"
+                rel="noreferrer"
+              >AiSentr:</a></b> delivered prototypes using Azure GPTs, RAG and a
+              multi-agent framework, to help close an important partnership for
+              the business.
+            </li>
+            <li>
+              <b>Automatic Classifiers for Peace:</b> delivered an
+              LLM-powered classifier to aid peacebuilders in finding insights
+              from social media data. Open source repository and community <a
+                href="https://gitlab.com/automatic-classifiers-for-peace/acfp"
+                target="_blank"
+                rel="noreferrer"
+              >here</a>.
             </li>
           </ul>
         </div>
@@ -41,19 +60,37 @@ const TrackRecordPage = ({location}) => {
             />
             End-to-End AI Platforms
           </h2>
-          <p>Building and delivering a complete AI platform, that covers the full spectrum from data collection and processing to data visualization, derivation of insights and automated decision-making.</p>
+          <p>
+            Building and delivering complete AI platforms that covers the
+            full spectrum from data collection and processing, to data
+            visualization, derivation of insights, and automated
+            decision-making.
+          </p>
           <b>Previous projects:</b>
-          <ul>
-            <li><b>
-              <a
-                href="https://howtobuildup.org/phoenix/" target="_blank"
-              >
-                  Phoenix:
-              </a>
-            </b> a collaboration between <a href="https://howtobuildup.org/" target="_blank" >
-                Build Up
-              </a> and datavaluepeople, has helped 50+ peacebuilding organisations to draw insights and drive new initiatives based on social media analysis.</li>
-            <li>A data science platform for <b><a href="https://www.loveholidays.com" target="_blank">www.loveholidays.com</a></b> uses a core mono repo solution that gives structure and value to their data science team.
+          <ul className={sectionStyles.projectList}>
+            <li>
+              <b>
+                <a
+                  href="https://howtobuildup.org/phoenix/"
+                  target="_blank"
+                  rel="noreferrer"
+                >Phoenix:</a>
+              </b> a collaboration between <a
+                href="https://howtobuildup.org/"
+                target="_blank"
+                rel="noreferrer"
+              >Build Up</a> and datavaluepeople, has helped 100+ peacebuilding
+              organisations to do large scale data driven evidence based
+              initiative development through social media analysis.
+            </li>
+            <li>
+              <b><a
+                href="https://www.loveholidays.com"
+                target="_blank"
+                rel="noreferrer"
+              >LoveHolidays:</a></b> a data science platform using a core mono
+              repo solution that gives structure and value to their data
+              science team.
             </li>
           </ul>
         </div>
@@ -61,18 +98,32 @@ const TrackRecordPage = ({location}) => {
           <h2 className={sectionStyles.title}>
             <img
               className={sectionStyles.icon}
-              alt={`Advanced ML Modeling  icon`}
+              alt={`Advanced ML Modeling icon`}
               src={`/track-record/icon3.svg`}
             />
             Advanced ML Modeling
           </h2>
-          <p>Building state-of-the-art models that help to make novel and strategically important decisions.</p>
+          <p>
+            Building state-of-the-art models that help to make novel and
+            strategically important decisions.
+          </p>
           <b>Previous projects:</b>
-          <ul>
-            <li>For <b>a top 10 worldwide pharma company</b>, we developed a batch manufacturing optimisation model, able to predict end-product quality during the batch production process, enabling reactive corrections and optimisations during.</li>
-            <li>Developed a pricing and ad-auction bidding model for <b><a href="https://www.loveholidays.com" target="_blank">
-              www.loveholidays.com
-              </a></b>, making millions of decisions daily, leveraging hierarchical bayesian modelling to get accurate predictions in a massively high dimensional, thus highly sparse, prediction space.
+          <ul className={sectionStyles.projectList}>
+            <li>
+              For <b>a top 10 worldwide pharma company</b>, we developed a
+              batch manufacturing optimisation model, able to predict
+              end-product quality of the batch production process, enabling
+              reactive corrections and optimisations during.
+            </li>
+            <li>
+              <b><a
+                href="https://www.loveholidays.com"
+                target="_blank"
+                rel="noreferrer"
+              >LoveHolidays:</a></b> developed a pricing and ad-auction bidding
+              model making millions of decisions daily, leveraging
+              hierarchical bayesian modelling to get accurate predictions in a
+              massively high dimensional, thus highly sparse, prediction space.
             </li>
           </ul>
         </div>
