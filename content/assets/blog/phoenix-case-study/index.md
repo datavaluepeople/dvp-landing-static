@@ -96,7 +96,8 @@ interest—crucial when sifting through huge volumes of potentially conflict-rel
    data trends they are interested.
 
 4. **Collaborate & share**: Being open-source, Phoenix allows contributors worldwide to enhance its
-   capabilities—ensuring continued evolution and impact.
+   capabilities—ensuring continued evolution and impact. As well as increasing the transparency and
+   accessibility of social media analysis for a positive impact.
 
 ***
 
