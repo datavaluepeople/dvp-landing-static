@@ -1,5 +1,6 @@
 ---
-title: "Phoenix: An end-to-end AI platform powering peacebuilding efforts"
+title: "Phoenix: An end-to-end AI powered Social Media analysis platform powering peacebuilding
+efforts"
 date: "2025-02-10T10:16:57Z"
 description: "Phoenix is an open-source AI platform developed by Build Up and datavaluepeople to aid
 peacebuilding through social media analysis. Launched in January 2025, it addresses challenges like
