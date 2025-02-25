@@ -6,7 +6,7 @@ description: "Phoenix is an open-source AI platform developed by Build Up and da
 aid peacebuilding through social media analysis. Launched in January 2025, it addresses challenges
 like large data processing, limited technical expertise, and under-resourced-language
 classification. Key features include a user-friendly interface, secure authentication, data
-scraping, and multilingual classification. Phoenix has already supported over 50 peacebuilders,
+scraping, and multilingual classification. Phoenix has already supported hundreds peacebuilders,
 processed terabytes of data, and gained recognition at the Paris Peace AI Forum. A public-good
 platform, making advanced AI tools accessible for conflict analysis of digital spaces. Phoenix
 exemplifies how collaboration and ethical AI can drive global peacebuilding efforts."
@@ -106,7 +106,7 @@ interest—crucial when sifting through huge volumes of potentially conflict-rel
 Since launch, Phoenix has proven invaluable for peacebuilders worldwide, yielding several
 noteworthy outcomes:
 
-1. **Global reach**: Versions v1 and v2 of Phoenix have supported more than 50 peacebuilders,
+1. **Global reach**: Versions v1 and v2 of Phoenix have supported hundreds of peacebuilders,
    allowing them to analyze social media discourses and develop targeted interventions. Including
    being one of the 31 of 770 projects accepted into the [Paris Peace
    Forum](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia/2024/10/24/call-for-projects-from-the-paris-peace-forum-a-growing-interest-in-addressing-global-challenges-through-ai).
@@ -129,7 +129,7 @@ address complex global challenges. By combining Build Up’s peacebuilding exper
 datavaluepeople’s technical prowess, the platform empowers mediators to analyze social media data
 at scale, uncovering critical insights that inform conflict prevention strategies. Its ability to
 process terabytes of multilingual data, deliver visualizations, and adapt to diverse regions has
-already made it indispensable to peacebuilders in over 50 communities. With plans to launch as a
+already made it indispensable to peacebuilders in hundreds of communities. With plans to launch as a
 public-good platform by 2025, Phoenix is poised to extend its impact further, democratizing access
 to advanced AI tools for organizations committed to fostering peace.
 
