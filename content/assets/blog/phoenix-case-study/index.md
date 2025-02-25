@@ -44,8 +44,9 @@ platforms can be overwhelming. Several roadblocks stood in the way:
 3. **Under-resourced-language and multi-language support**: Commercial social media analysis tools
    don't often support under-resource languages or multi-language analysis.
 
-4. **Open-source requirement**: Build Up wanted a project open to contributors worldwide,
-   facilitating collaboration and continuous improvement.
+4. **Open-source requirement**: Build Up wanted to show the non-commercial nature of the project.
+   Plus to make the technology transparent and to allowing others with technical expertise to
+   collaborate and use it.
 
 ***
 
