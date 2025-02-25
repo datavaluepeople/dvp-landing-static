@@ -92,8 +92,8 @@ interest—crucial when sifting through huge volumes of potentially conflict-rel
 2. **Classify**: Phoenix’s machine learning models process the incoming data, identifying critical
    topics, trends, and sentiments.
 
-3. **Explore**: Users start with a standard dashboard and tailor visualizations to track regional
-   tensions or other priorities.
+3. **Explore**: Users start with a standard dashboard and then tailor visualizations to track
+   regional tensions or other priorities.
 
 4. **Collaborate & share**: Being open-source, Phoenix allows contributors worldwide to enhance its
    capabilities—ensuring continued evolution and impact.
