@@ -2,14 +2,14 @@
 title: "Phoenix: An end-to-end AI powered Social Media analysis platform powering peacebuilding
 efforts"
 date: "2025-02-10T10:16:57Z"
-description: "Phoenix is an open-source AI platform developed by Build Up and datavaluepeople to aid
-peacebuilding through social media analysis. Launched in January 2025, it addresses challenges like
-data overload, limited technical expertise, and multi-language support. Key features include a
-user-friendly interface, secure authentication, data scraping, and multilingual classification.
-Phoenix has already supported over 50 peacebuilders, processed terabytes of data, and gained
-recognition at the Paris Peace Forum. By 2025, it will be a public-good platform, making advanced
-AI tools accessible for conflict prevention. Phoenix exemplifies how collaboration and ethical AI
-can drive global peacebuilding efforts."
+description: "Phoenix is an open-source AI platform developed by Build Up and datavaluepeople to
+aid peacebuilding through social media analysis. Launched in January 2025, it addresses challenges
+like large data processing, limited technical expertise, and multi-language classification. Key
+features include a user-friendly interface, secure authentication, data scraping, and multilingual
+classification. Phoenix has already supported over 50 peacebuilders, processed terabytes of data,
+and gained recognition at the Paris Peace AI Forum. A public-good platform, making advanced AI
+tools accessible for conflict analysis of digital spaces. Phoenix exemplifies how collaboration and
+ethical AI can drive global peacebuilding efforts."
 author: benjamin
 linkedin_link:
 hackernews_link:
