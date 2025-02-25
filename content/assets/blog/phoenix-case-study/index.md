@@ -21,7 +21,7 @@ accomplish through the Project Phoenix. Developed in partnership with datavaluep
 an open-source (code repository [here](https://gitlab.com/howtobuildup/phoenix)), end-to-end AI
 platform designed to help peacebuilders and mediators analyze social media data, informing
 effective strategies for conflict prevention and resolution. Since January 2025 phoenix has been
-open to the public and you can apply for a Phoenix account,
+open to the public and you can apply for a Phoenix account
 [here](https://howtobuildup.org/phoenix/).
 
 In this article, we’ll explore the challenges Build Up faced, the solutions datavaluepeople
