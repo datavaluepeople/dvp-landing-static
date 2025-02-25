@@ -64,10 +64,10 @@ skills.
 
 ### **Authentication and dashboarding**
 
-Phoenix’s custom authentication system ensures secure access, while its Superset-based dashboards
-make data visualization highly flexible. Users can build interactive charts and graphs that help
-surface trends or spikes in conflict-related discussions—providing clarity on community sentiment
-and emerging risks.
+Phoenix’s industry standard authentication system ensures secure access, while its Superset-based
+dashboards make data visualization highly flexible. Users can build interactive charts and graphs
+that help surface trends or spikes in conflict-related discussions—providing clarity on community
+sentiment and emerging risks.
 
 ### **Data scraping integration**
 
