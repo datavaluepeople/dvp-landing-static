@@ -19,9 +19,9 @@ role in preventing conflict and fostering peace. That’s exactly what [Build
 Up](https://howtobuildup.org/phoenix/), a nonprofit dedicated to supporting peacebuilders—sought to
 accomplish through the Project Phoenix. Developed in partnership with datavaluepeople, Phoenix is
 an open-source (code repository [here](https://gitlab.com/howtobuildup/phoenix)), end-to-end AI
-platform designed to help peacebuilders and mediators analyze social media data, informing
-effective strategies for conflict prevention and resolution. Since January 2025 phoenix has been
-open to the public and you can apply for a Phoenix account
+powered platform designed to help peacebuilders and mediators allowing them to analyze social media
+discourses, informing effective strategies for conflict prevention and resolution. Since January
+2025 phoenix has been open to the public and you can apply for a Phoenix account
 [here](https://howtobuildup.org/phoenix/).
 
 In this article, we’ll explore the challenges Build Up faced, the solutions datavaluepeople
@@ -39,7 +39,7 @@ platforms can be overwhelming. Several roadblocks stood in the way:
    streams of social media data.
 
 2. **Limited technical expertise**: Many peacebuilders aren’t data scientists, so any AI-driven
-   platform had to be intuitive and accessible.
+   platform had to make analyzing social media discourses intuitive and accessible.
 
 3. **Under-resourced-language and multi-language support**: Commercial social media analysis tools
    don't often support under-resource languages or multi-language analysis.
