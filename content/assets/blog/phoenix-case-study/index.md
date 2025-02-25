@@ -76,7 +76,7 @@ collection from social media and other online sources. It lets users define spec
 what data to capture, helping them focus on the most relevant content while honouring platform and
 data privacy policies.
 
-### **Classification systems for all languages**
+### **Classification systems for all (Unicode-supported) languages**
 
 A standout feature is Phoenix’s multilingual classification engine, which manages high- and
 low-resource languages alike. This ensures peacebuilders can quickly identify posts of
