@@ -58,8 +58,9 @@ that addresses each challenge in a single, comprehensive platform.
 ### **Modern web console**
 
 Built with React and Next.js, Phoenix’s web console offers a straightforward interface accessible
-from any device with an internet connection. It allows peacebuilders to easily configure analyses,
-explore data sources, and review insights without advanced technical skills.
+from any device with an internet connection. It allows peacebuilders to collect social media data,
+explore data points, easily configure analyses, and review insights without advanced technical
+skills.
 
 ### **Authentication and dashboarding**
 
