@@ -112,7 +112,9 @@ noteworthy outcomes:
    Forum](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia/2024/10/24/call-for-projects-from-the-paris-peace-forum-a-growing-interest-in-addressing-global-challenges-through-ai).
 
 2. **Massive data handling at low cost**: Phoenix has processed terabytes of social media data,
-   managing the scale more commonly associated with large tech firms than small nonprofits.
+   managing the scale more commonly associated with large tech firms than small nonprofits. With
+   the platform, that Build Up maintains, being free for small organisations that make a positive
+   impact.
 
 3. **Real insights**: By revealing the narratives driving online discussion, Phoenix enables
    quicker, more evidence-based decision-making. Case studies can be found in the [Phoenix
