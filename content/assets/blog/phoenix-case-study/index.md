@@ -130,10 +130,10 @@ Phoenix stands as a transformative example of how collaboration and user-centric
 address complex global challenges. By combining Build Up’s peacebuilding expertise with
 datavaluepeople’s technical prowess, the platform empowers mediators to analyze social media data
 at scale, uncovering critical insights that inform conflict prevention strategies. Its ability to
-process terabytes of multilingual data, deliver visualizations, and adapt to diverse regions has
-already made it indispensable to peacebuilders in hundreds of communities. With plans to launch as a
-public-good platform by 2025, Phoenix is poised to extend its impact further, democratizing access
-to advanced AI tools for organizations committed to fostering peace.
+process terabytes of multilingual data, deliver visualizations, and be adaptable to specific user
+needs has already made it indispensable to peacebuilders in hundreds of communities. With plans to
+launch as a public-good platform by 2025, Phoenix is poised to extend its impact further,
+democratizing access to advanced AI tools for organizations committed to fostering peace.
 
 Beyond peacebuilding, Phoenix offers a blueprint for SMEs and other entities grappling with
 data-intensive challenges. Its scalable infrastructure handles explosive data growth, while its
