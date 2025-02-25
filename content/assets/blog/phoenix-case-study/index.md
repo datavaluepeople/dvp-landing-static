@@ -93,7 +93,7 @@ interest—crucial when sifting through huge volumes of potentially conflict-rel
    topics, trends, and sentiments.
 
 3. **Explore**: Users start with a standard dashboard and then tailor visualizations to track
-   regional tensions or other priorities.
+   data trends they are interested.
 
 4. **Collaborate & share**: Being open-source, Phoenix allows contributors worldwide to enhance its
    capabilities—ensuring continued evolution and impact.
