@@ -8,7 +8,7 @@ like large data processing, limited technical expertise, and under-resourced-lan
 classification. Key features include a user-friendly interface, secure authentication, data
 scraping, and multi-language classification. Phoenix has already supported hundreds of
 peacebuilders, processed terabytes of data, and gained recognition at the Paris Peace AI Forum. A
-public-good platform, making advanced AI tools accessible for conflict analysis of digital spaces.
+public-good platform, making advanced AI tools accessible for conflict analysis of digital spaces;
 Phoenix exemplifies how collaboration and ethical AI can drive global peacebuilding efforts."
 author: benjamin
 linkedin_link:
