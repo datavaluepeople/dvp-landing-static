@@ -41,8 +41,9 @@ platforms is practically impossible. Several roadblocks stood in the way:
 2. **Limited technical expertise**: Many peacebuilders aren’t data scientists, so any AI-driven
    platform had to make analyzing social media discourses intuitive and accessible.
 
-3. **Multi-language support, including under-resourced-languages**: Commercial social media analysis tools
-   don't often support under-resource languages or multi-language analysis.
+3. **Multi-language support, including under-resourced-languages**: Commercial social media
+   analysis tools don't often support under-resourced languages or classification across multiple
+   languages.
 
 4. **Open-source requirement**: Build Up wanted to show the non-commercial nature of the project.
    Plus to make the technology transparent and to allowing others with technical expertise to
