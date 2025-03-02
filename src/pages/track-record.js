@@ -80,7 +80,7 @@ const TrackRecordPage = ({location}) => {
                 target="_blank"
                 rel="noreferrer"
               >Build Up</a> and datavaluepeople, has helped 100+ peacebuilding
-              organisations to do large scale data driven evidence based
+              organisations to do large scale data-driven evidence-based
               initiative development through social media analysis.
             </li>
             <li>
