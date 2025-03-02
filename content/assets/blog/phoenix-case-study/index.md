@@ -88,7 +88,7 @@ interest—crucial when sifting through huge volumes of potentially conflict-rel
 ## **How it works**
 
 1. **Gather**: Peacebuilders specify keywords, locations, or other criteria for collecting data
-   from social media and other sources.
+   from social media and other sources such as [ACLED](https://acleddata.com/).
 
 2. **Classify**: Phoenix’s machine learning models process the incoming data, identifying critical
    topics, trends, and sentiments.
