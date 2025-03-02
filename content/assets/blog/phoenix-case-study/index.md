@@ -109,7 +109,7 @@ noteworthy outcomes:
 
 1. **Global reach**: Versions v1 and v2 of Phoenix have supported hundreds of peacebuilders,
    allowing them to analyze social media discourses and develop targeted interventions. Including
-   being one of the 31 of 770 projects accepted into the [Paris Peace
+   being one of the 31 projects (of 770 applicants) accepted into the [Paris Peace
    Forum](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia/2024/10/24/call-for-projects-from-the-paris-peace-forum-a-growing-interest-in-addressing-global-challenges-through-ai).
 
 2. **Massive data handling at low cost**: Phoenix has processed terabytes of social media data,
