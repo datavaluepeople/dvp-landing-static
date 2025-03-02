@@ -114,8 +114,8 @@ noteworthy outcomes:
 
 2. **Massive data handling at low cost**: Phoenix has processed terabytes of social media data,
    managing the scale more commonly associated with large tech firms than small nonprofits. With
-   the platform, that Build Up maintains, being free for small organisations that make a positive
-   impact.
+   the platform, that Build Up and datavaluepeople maintain, being free for small organisations
+   that make a positive impact.
 
 3. **Real insights**: By revealing the narratives driving online discussion, Phoenix enables
    quicker, more evidence-based decision-making. Case studies can be found in the [Phoenix
