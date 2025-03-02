@@ -61,7 +61,7 @@ const TrackRecordPage = ({location}) => {
             End-to-End AI Platforms
           </h2>
           <p>
-            Building and delivering complete AI platforms that covers the
+            Building and delivering complete AI platforms that cover the
             full spectrum from data collection and processing, to data
             visualization, derivation of insights, and automated
             decision-making.
