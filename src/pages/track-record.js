@@ -88,9 +88,10 @@ const TrackRecordPage = ({location}) => {
                 href="https://www.loveholidays.com"
                 target="_blank"
                 rel="noreferrer"
-              >LoveHolidays:</a></b> a data science platform using a core mono
-              repo solution that gives structure and value to their data
-              science team.
+              >LoveHolidays:</a></b> established the core mono-repo, python
+              libraries, infrastructure, workflows, for the data science
+              team, powering 10s of effective data science projects across the
+              business.
             </li>
           </ul>
         </div>
