@@ -51,7 +51,7 @@ platforms is practically impossible. Several roadblocks stood in the way:
 
 ***
 
-## **The solution: Phoenix—An AI platform for peacebuilders**
+## **The solution: Phoenix — An AI powered Social Media analysis platform for peacebuilders**
 
 Working closely with Build Up, datavaluepeople created Phoenix: a powerful, user-friendly system
 that addresses each challenge in a single, comprehensive platform.
