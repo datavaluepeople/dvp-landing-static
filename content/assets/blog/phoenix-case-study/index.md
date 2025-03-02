@@ -6,10 +6,10 @@ description: "Phoenix is an open-source AI platform developed by Build Up and da
 aid peacebuilding through social media analysis. Launched in January 2025, it addresses challenges
 like large data processing, limited technical expertise, and under-resourced-language
 classification. Key features include a user-friendly interface, secure authentication, data
-scraping, and multilingual classification. Phoenix has already supported hundreds of peacebuilders,
-processed terabytes of data, and gained recognition at the Paris Peace AI Forum. A public-good
-platform, making advanced AI tools accessible for conflict analysis of digital spaces. Phoenix
-exemplifies how collaboration and ethical AI can drive global peacebuilding efforts."
+scraping, and multi-language classification. Phoenix has already supported hundreds of
+peacebuilders, processed terabytes of data, and gained recognition at the Paris Peace AI Forum. A
+public-good platform, making advanced AI tools accessible for conflict analysis of digital spaces.
+Phoenix exemplifies how collaboration and ethical AI can drive global peacebuilding efforts."
 author: benjamin
 linkedin_link:
 hackernews_link:
@@ -78,7 +78,7 @@ data privacy policies.
 
 ### **Classification systems for all (Unicode-supported) languages**
 
-A standout feature is Phoenix’s multilingual classification engine, which manages high- and
+A standout feature is Phoenix’s multi-language classification engine, which manages high- and
 low-resource languages alike. This ensures peacebuilders can quickly identify posts of
 interest—crucial when sifting through huge volumes of potentially conflict-related material.
 
@@ -130,7 +130,7 @@ Phoenix stands as a transformative example of how collaboration and user-centric
 address complex global challenges. By combining Build Up’s peacebuilding expertise with
 datavaluepeople’s technical prowess, the platform empowers mediators to analyze social media data
 at scale, uncovering critical insights that inform conflict prevention strategies. Its ability to
-process terabytes of multilingual data, deliver visualizations, and be adaptable to specific user
+process terabytes of multi-language data, deliver visualizations, and be adaptable to specific user
 needs has already made it indispensable to hundreds of peacebuilders. With the launch as a
 public-good platform in 2025, Phoenix is poised to extend its impact further, democratizing access
 to advanced AI tools for organizations committed to fostering peace.
