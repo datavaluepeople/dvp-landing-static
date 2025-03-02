@@ -33,7 +33,7 @@ provided, and how Phoenix is transforming social media analysis for peacebuildin
 
 Peacebuilders and mediators increasingly look to social media to gauge public sentiment and
 identify emerging tensions. Yet collecting and analyzing massive volumes of data from diverse
-platforms can be overwhelming. Several roadblocks stood in the way:
+platforms is practically impossible. Several roadblocks stood in the way:
 
 1. **Data overload**: Peacebuilders needed a reliable way to gather, organize, and filter vast
    streams of social media data.
