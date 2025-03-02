@@ -19,7 +19,7 @@ role in preventing conflict and fostering peace. That’s exactly what [Build
 Up](https://howtobuildup.org/phoenix/), a nonprofit dedicated to supporting peacebuilders—sought to
 accomplish through Phoenix. Developed in partnership with datavaluepeople, Phoenix is an
 open-source (code repository [here](https://gitlab.com/howtobuildup/phoenix)), end-to-end AI
-powered platform designed to help peacebuilders and mediators allowing them to analyze social media
+powered platform designed to help peacebuilders and mediators, allowing them to analyze social media
 discourses, informing effective strategies for conflict prevention and resolution. Since January
 2025 phoenix has been open to the public and you can apply for a Phoenix account
 [here](https://howtobuildup.org/phoenix/).
