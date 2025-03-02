@@ -6,7 +6,7 @@ description: "Phoenix is an open-source AI platform developed by Build Up and da
 aid peacebuilding through social media analysis. Launched in January 2025, it addresses challenges
 like large data processing, limited technical expertise, and under-resourced-language
 classification. Key features include a user-friendly interface, secure authentication, data
-scraping, and multilingual classification. Phoenix has already supported hundreds peacebuilders,
+scraping, and multilingual classification. Phoenix has already supported hundreds of peacebuilders,
 processed terabytes of data, and gained recognition at the Paris Peace AI Forum. A public-good
 platform, making advanced AI tools accessible for conflict analysis of digital spaces. Phoenix
 exemplifies how collaboration and ethical AI can drive global peacebuilding efforts."
