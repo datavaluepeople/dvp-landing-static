@@ -123,7 +123,7 @@ const TrackRecordPage = ({location}) => {
               >LoveHolidays:</a></b> developed a pricing and ad-auction bidding
               model making millions of decisions daily, leveraging
               hierarchical bayesian modelling to get accurate predictions in a
-              massively high dimensional, thus highly sparse, prediction space.
+              massively high dimensional, thus very data sparse, prediction space.
             </li>
           </ul>
         </div>
