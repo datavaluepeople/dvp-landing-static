@@ -41,7 +41,11 @@ const TrackRecordPage = ({location}) => {
               the business.
             </li>
             <li>
-              <b>Automatic Classifiers for Peace:</b> delivered an
+              <b><a
+                href="https://gitlab.com/automatic-classifiers-for-peace/acfp"
+                target="_blank"
+                rel="noreferrer"
+              >Automatic Classifiers for Peace:</a></b> delivered an
               LLM-powered classifier to aid peacebuilders in finding insights
               from social media data. Open source repository and community <a
                 href="https://gitlab.com/automatic-classifiers-for-peace/acfp"
