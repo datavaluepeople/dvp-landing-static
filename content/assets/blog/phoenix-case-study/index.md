@@ -127,25 +127,14 @@ noteworthy outcomes:
 
 ## **Conclusion**
 
-Phoenix stands as a transformative example of how collaboration and user-centric innovation can
-address complex global challenges. By combining Build Up’s peacebuilding expertise with
-datavaluepeople’s technical prowess, the platform empowers mediators to analyze social media data
-at scale, uncovering critical insights that inform conflict prevention strategies. Its ability to
-process terabytes of multi-language data, deliver visualizations, and be adaptable to specific user
-needs has already made it indispensable to hundreds of peacebuilders. With the launch as a
-public-good platform in 2025, Phoenix is poised to extend its impact further, democratizing access
-to advanced AI tools for organizations committed to fostering peace.
+It has been a rewarding journey collaborating with Build Up on Phoenix. Together we have found a
+way to balance a “sticks and chewing gum” approach to rapidly deliver working solutions on a
+limited budget while still ensuring that peacebuilders have robust, maintainable, and transparent
+technology at their fingertips. There’s a great deal of satisfaction in creating something that
+communities worldwide can not only use but also improve upon—knowing it might help prevent conflict
+and foster dialogue. We’re excited for Phoenix to continue evolving, flourishing, and positively
+impacting peacebuilding efforts for years to come.
 
-Beyond peacebuilding, Phoenix offers a blueprint for SMEs and other entities grappling with
-data-intensive challenges. Its scalable infrastructure handles explosive data growth, while its
-modular, open-source architecture allows organizations to customize solutions without reinventing
-the wheel. The platform’s intuitive design lowers barriers for non-technical users, and its
-transparency builds trust—critical for aligning AI tools with organizational values. Phoenix
-demonstrates that ethical, impactful AI is not exclusive to tech giants; with a focus on
-adaptability, collaboration, and accessibility, even resource-constrained teams can leverage data
-to drive smarter decisions, innovate products, and engage communities. By prioritizing these
-principles, Phoenix charts a path for organizations worldwide to harness AI not just as a tool, but
-as a force for equitable progress.
 
 **Ready to explore what AI can do for your organization?** Contact us today and let’s take your
 data-driven vision to the next level.
