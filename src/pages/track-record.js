@@ -85,7 +85,12 @@ const TrackRecordPage = ({location}) => {
                 rel="noreferrer"
               >Build Up</a> and datavaluepeople, has helped 100+ peacebuilding
               organisations to do large scale data-driven evidence-based
-              initiative development through social media analysis.
+              initiative development through social media analysis, read more
+              in our <a
+                href="/blog/phoenix-case-study/"
+                target="_blank"
+                rel="noreferrer"
+              >case study</a>.
             </li>
             <li>
               <b><a
