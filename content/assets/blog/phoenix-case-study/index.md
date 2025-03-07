@@ -135,6 +135,5 @@ communities worldwide can not only use but also improve upon—knowing it might 
 and foster dialogue. We’re excited for Phoenix to continue evolving, flourishing, and positively
 impacting peacebuilding efforts for years to come.
 
-
 **Ready to explore what AI can do for your organization?** Contact us today and let’s take your
 data-driven vision to the next level.
