@@ -31,12 +31,8 @@ const TrackRecordPage = ({location}) => {
           </p>
           <b>Previous projects:</b>
           <ul className={sectionStyles.projectList}>
-            <li>
-              <b><a
-                href="https://www.aisentr.com/"
-                target="_blank"
-                rel="noreferrer"
-              >AiSentr:</a></b> delivered prototypes using Azure GPTs, RAG and a
+          <li>
+              <b>A tech startup:</b> delivered prototypes using Azure GPTs, RAG and a
               multi-agent framework, to help close an important partnership for
               the business.
             </li>
