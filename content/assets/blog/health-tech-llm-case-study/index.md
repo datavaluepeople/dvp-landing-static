@@ -39,7 +39,7 @@ What made the multi-agent system particularly effective was the implementation o
 
 ## Results and business impact
 
-The project delivered three prototypes:
+The [project](https://datavaluepeople.com/track-record/) delivered three prototypes:
 - An LLM agent that queries a SQL database to answer user queries;
 - An LLM agent that performs correlation analysis;
 - An LLM agent that locates relevant data in a collection of CSV files and performs simple numerical analysis.
@@ -48,3 +48,4 @@ Beyond the technical achievements, these tools played a significant role in help
 This project highlights an often-overlooked truth: good data analysis isn't just about technology, but creative problem-solving. By treating LLMs like collaborators that need guidance, the team turned a complex challenge into a practical solution.
 
 
+Ready to explore what AI can do for your organisation? Contact us today for a free introductory chat!
