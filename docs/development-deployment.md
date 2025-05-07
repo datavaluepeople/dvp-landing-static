@@ -18,7 +18,7 @@ nvm install
 nvm which
 ```
 
-Install gatsby: `npm install -g gatsby`
+Install: `npm install`
 
 ### Note on browser usage
 Benjamin had a lot of problems with changing styling on chrome I recommend doing styling work on
@@ -32,10 +32,9 @@ The files are not in version control but can be downloaded by:
 gsutil -m cp gs://dvp-landing-static-env/* .
 ```
 
-Once you have node and gatsby installed:
+Once you have node and packages installed:
 ```
-npm install
-gatsby develop
+npm run develop
 ```
 
 Gatsby will then start a local server so you can view the state of the website
@@ -45,10 +44,15 @@ also automatically update when changes have been made.
 To then restart once when you have a new session (you turn your computer off and on):
 ```
 nvm use
-gatsby develop
+npm run develop
 ```
 
 If you install something with `npm` you will need to do it in a session that has `nvm use` initialised.
+
+If you want to run gatsby command you can do:
+```
+npx gatsby <command>
+```
 
 ## Deployment
 Currently the repo is set up to deploy to the firebase. That was done follow this [tutorial](https://www.gatsbyjs.org/docs/deploying-to-firebase/).
