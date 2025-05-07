@@ -34,7 +34,7 @@ const TrackRecordPage = ({location}) => {
           <li>
               <b>A tech startup:</b> delivered prototypes using Azure GPTs, RAG and a
               multi-agent framework, to help close an important partnership for
-              the business.
+              the business. Read more in our [case study](https://datavaluepeople.com/blog/health-tech-llm-case-study/).
             </li>
             <li>
               <b><a

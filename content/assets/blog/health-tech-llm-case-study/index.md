@@ -39,7 +39,7 @@ What made the multi-agent system particularly effective was the implementation o
 
 ## Results and business impact
 
-The [project](https://datavaluepeople.com/track-record/) delivered three prototypes:
+The project delivered three prototypes:
 - An LLM agent that queries a SQL database to answer user queries;
 - An LLM agent that performs correlation analysis;
 - An LLM agent that locates relevant data in a collection of CSV files and performs simple numerical analysis.
