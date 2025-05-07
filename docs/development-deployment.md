@@ -9,7 +9,8 @@ This code base uses:
 Pull requests should be made on `staging` rather than `main`.
 
 ## Local Dev environment
-Install node version manager: see https://www.gatsbyjs.org/tutorial/part-zero/.
+Install node version manager: see
+https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
 
 Install node (uses .nvmrc):
 ```
