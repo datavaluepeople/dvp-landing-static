@@ -2,24 +2,26 @@ steps:
   # Copy the env files here
   - name: gcr.io/cloud-builders/gsutil
     args: ["-m", "cp", "gs://dvp-landing-static-env/*", "."]
-  - name: node:18.13.0
+  - name: node:22.15.0
     entrypoint: npm
     args: ["ci"]
-  - name: node:18.13.0
+  - name: node:22.15.0
     entrypoint: "./node_modules/.bin/markdownlint-cli2-config"
     args: [".markdownlint-cli2.yaml", "content/assets/blog/**/*.md"]
-  - name: node:18.13.0
+  - name: node:22.15.0
     entrypoint: npm
     args: ["install", "gatsby-cli@5.14.0"]
-  - name: node:18.13.0
+  - name: node:22.15.0
     entrypoint: "./node_modules/.bin/gatsby"
     args: ["build"]
     env:
       - "GATSBY_ACTIVE_ENV=${_GATSBY_ACTIVE_ENV}"
-  - name: node:18.13.0
+  - name: node:22.15.0
     entrypoint: npm
-    args: ["install", "firebase-tools"]
-  - name: node:18.13.0
+    # Pinning firebase-tools to version 14.2.2 so we don't get unexpected build
+    # breakages when a new version is released.
+    args: ["install", "firebase-tools@14.2.2"]
+  - name: node:22.15.0
     entrypoint: "./node_modules/.bin/firebase"
     args: ["deploy", "--project", "${_TARGET_PROJECT_ID}"]
 timeout: "1200s"
