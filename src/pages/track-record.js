@@ -122,8 +122,8 @@ const TrackRecordPage = ({location}) => {
             <li>
               For <b>a top 10 worldwide pharma company</b>, we developed a
               batch manufacturing optimisation model, able to predict
-              end-product quality of the batch production process, enabling
-              reactive process corrections and optimisations.
+              end-product quality of the batch production process in real-time,
+              enabling reactive process corrections and optimisations.
             </li>
             <li>
               <b><a
