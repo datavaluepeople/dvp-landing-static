@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imgContainer {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    .imgColor {
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+  }
+}
+
+.imgColor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // ⬅️ Vertically & horizontally centers
+  opacity: 0;
+}

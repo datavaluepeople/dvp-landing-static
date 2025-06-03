@@ -2,6 +2,9 @@
 @use '../../styles/breakpoints.scss';
 @use '../../styles/shared/header.scss';
 
+.container {
+}
+
 .homePageElement {
   p {
     font-size: 0.9rem;
@@ -36,10 +39,4 @@
     font-weight: 500;
     line-height: 1.6rem;
   }
-}
-
-.listItem {
-  font-size: 0.7rem;
-  margin-bottom: 0rem;
-  font-style: italic;
 }
