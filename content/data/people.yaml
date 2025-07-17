@@ -70,3 +70,12 @@
   github: ajg54
   gifPlaceHolder: ../../content/assets/people/alexis-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/alexis.gif
+- id: marshall
+  fullName: Marshall Chisom Ogbuagu
+  title: Software Engineer
+  bio: Senior Frontend Engineer with fintech, healthtech, edutech, stockmarket experience. Led frontend teams and rebuilt full SaaS platforms solo. Scaled products handling billions in transactions. Passionate about clean UI, real-time systems, and mentoring devs. Studying Master’s in Computer Science at Ravensbourne University. Lagos/London Based.
+  email: marshall@datavaluepeople.com
+  linkedIn: chisom-ogbuagu
+  github: chiysom
+  gifPlaceHolder: ../../content/assets/people/marshall-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/marshall.gif
