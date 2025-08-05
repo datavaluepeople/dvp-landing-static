@@ -1,0 +1,39 @@
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/header.scss';
+
+.homePageElement {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+
+    @include breakpoints.md {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+    }
+  }
+  
+  @include breakpoints.lg {
+    display: none;
+  }
+}
+
+.sideBarElement {
+  display: none;
+  
+  @include breakpoints.lg {
+    display: block;
+    margin: 0 header.$sidebar-right-margin-lg 0 header.$sidebar-left-margin-lg;
+  }
+
+  @include breakpoints.xlg {
+    margin: 0 header.$sidebar-right-margin-xlg 0 header.$sidebar-left-margin-xlg;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+  }
+}
