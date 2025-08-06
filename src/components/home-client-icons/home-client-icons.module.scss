@@ -1,8 +1,18 @@
+@use '../../styles/breakpoints.scss';
+
 .container {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+
+  @include breakpoints.lg {
+    gap: 0.5rem;
+  }
+
+  @include breakpoints.xlg {
+    gap: 1.5rem;
+  }
 }
 
 .imgContainer {
