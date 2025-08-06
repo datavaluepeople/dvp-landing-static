@@ -17,12 +17,12 @@ const WhoWeAreUsp = ({HomePage}) => {
       `}
     >
       <p>
-        We’re a trusted team of senior AI and data specialists.
-        We move fast, ship production systems, and embed directly with client teams.
-        No layers of management - work directly with us in tight weekly development cycles.
+        We’re a trusted team of senior AI and data specialists.<br />
+        We move fast, ship production systems, and embed directly with client teams.<br />
+        No layers of management - work directly with us in tight weekly development cycles.<br />
         Lean, high-ROI, collaborative problem-solving with measurable results.<br />
-        Trusted by:
       </p>
+      <p className={whoWeAreStyles.trustedBy}>Trusted by:</p>
       <HomeClientIcons />
     </div>
   );
