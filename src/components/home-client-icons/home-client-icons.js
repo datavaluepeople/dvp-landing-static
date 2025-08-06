@@ -35,12 +35,12 @@ const HomeClientIcons = ({}) => {
               gray: gatsbyImageData(
                 layout: FIXED,
                 transformOptions: {grayscale: true},
-                width: 60,
+                width: 45,
                 placeholder: BLURRED,
               ),
               color: gatsbyImageData(
                 layout: FIXED,
-                width: 60,
+                width: 45,
                 placeholder: NONE
               ),
             }
