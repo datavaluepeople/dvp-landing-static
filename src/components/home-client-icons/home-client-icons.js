@@ -6,8 +6,11 @@
  * - find a png that has a transparent background and
  *   is cropped to fit the icon exactly as a square or triangle
  * - add the icon to the `/content/assets/icons/home-clients/`
- * - give the name of the file the correct numbering, they are order by name
- * - add the link to the `linkNameMap` object in this file
+ * - for each logo, create two versions:
+ *   - `{number}_{name}_small.png` for 60px (small screens)
+ *   - `{number}_{name}_large.png` for 30px (large screens)
+ *   - example: `1_swiss_small.png` and `1_swiss_large.png`
+ * - add the link to the `linkNameMap` object in this file using the base name
  */
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
@@ -21,6 +24,7 @@ const HomeClientIcons = ({}) => {
     '2_adidas': 'https://www.adidas.com/',
     '3_pantone': 'https://www.pantone.com/',
     '4_nhs': 'https://www.nhs.uk/',
+    '5_alan_turing_institute': 'https://www.turing.ac.uk/',
   };
 
   const imagedata = useStaticQuery(graphql`
@@ -62,15 +66,31 @@ const HomeClientIcons = ({}) => {
     }
   `);
 
+  // Group images by base name (without _small/_large suffix)
+  const groupedImages = imagedata.homeClientIcons.edges.reduce((acc, {node}) => {
+    const baseName = node.name.replace(/_small|_large$/, '');
+    const size = node.name.includes('_small') ? 'small' : 'large';
+    
+    if (!acc[baseName]) {
+      acc[baseName] = {};
+    }
+    acc[baseName][size] = node;
+    return acc;
+  }, {});
+
   return (
     <div className={styles.container}>
-      {imagedata.homeClientIcons.edges.map(({node}) => {
+      {Object.entries(groupedImages).map(([baseName, images]) => {
+        // Only render if we have both small and large versions
+        if (!images.small || !images.large) {
+          console.warn(`Missing size variant for ${baseName}. Need both _small and _large versions.`);
+          return null;
+        }
+
         return (
           <a
-            key={node.name}
-            href={
-              linkNameMap[node.name] ? linkNameMap[node.name] : ''
-            }
+            key={baseName}
+            href={linkNameMap[baseName] || ''}
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -78,12 +98,12 @@ const HomeClientIcons = ({}) => {
               {/* Small screens (up to large) - 60px */}
               <div className={styles.smallScreen}>
                 <GatsbyImage
-                  image={node.childImageSharp.graySmall}
+                  image={images.small.childImageSharp.graySmall}
                   loading='eager'
                 />
                 <GatsbyImage
                   className={styles.imgColor}
-                  image={node.childImageSharp.colorSmall}
+                  image={images.small.childImageSharp.colorSmall}
                   style={{'position': 'absolute'}}
                   loading='eager'
                 />
@@ -92,12 +112,12 @@ const HomeClientIcons = ({}) => {
               {/* Large screens and above - 30px */}
               <div className={styles.largeScreen}>
                 <GatsbyImage
-                  image={node.childImageSharp.grayLarge}
+                  image={images.large.childImageSharp.grayLarge}
                   loading='eager'
                 />
                 <GatsbyImage
                   className={styles.imgColor}
-                  image={node.childImageSharp.colorLarge}
+                  image={images.large.childImageSharp.colorLarge}
                   style={{'position': 'absolute'}}
                   loading='eager'
                 />
