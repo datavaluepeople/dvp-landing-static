@@ -3,11 +3,10 @@
 @use '../../styles/shared/header.scss';
 
 @mixin side-bar-shared {
-  .list {
+  ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-left: 1rem;
 
     li {
       list-style-type: none;
@@ -28,7 +27,7 @@
 
 
 .homePageElement {
-  p {
+  p, ul {
     font-size: 0.9rem;
     line-height: 1.8rem;
     font-weight: 400;
@@ -46,7 +45,7 @@
   @include side-bar-shared;
 
   /* Override the side-bar-shared */
-  .list {
+  ul {
     margin-left: 1rem;
   }
 }
@@ -63,12 +62,14 @@
     margin: 0 header.$sidebar-right-margin-xlg 0 header.$sidebar-left-margin-xlg;
   }
 
-  p {
+  p, ul {
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.4rem;
     margin-bottom: 1rem
   }
   @include side-bar-shared;
-  /* Override the side-bar-shared */
+  ul {
+    margin-left: 0.7rem;
+  }
 }
