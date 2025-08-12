@@ -17,11 +17,12 @@ import * as styles from './home-client-icons.module.scss';
 
 const HomeClientIcons = ({}) => {
   const linkNameMap = {
-    '15_swiss': 'https://www.python.org/',
-    '16_adidas': 'https://pytorch.org/',
-    '17_pantone': 'https://www.docker.com/',
-    '18_nhs': 'https://airflow.apache.org/',
+    '1_swiss': 'https://www.admin.ch/gov/en/start/departments/department-foreign-affairs-fdfa.html',
+    '2_adidas': 'https://www.adidas.com/',
+    '3_pantone': 'https://www.pantone.com/',
+    '4_nhs': 'https://www.nhs.uk/',
   };
+
   const imagedata = useStaticQuery(graphql`
     query HomeClientIcons {
       homeClientIcons: allFile(
