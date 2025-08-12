@@ -14,7 +14,7 @@
   }
 
   li::before {
-    content: '○';
+    content: '⋄';
     position: absolute;
     left: -0.8em;          /* Adjust this value so that it appears where you want. */
     font-size: 1.1em;      /* Adjust this value so that it appears what size you want. */
@@ -26,6 +26,7 @@
     font-size: 0.9rem;
     line-height: 1.8rem;
     font-weight: 400;
+    margin-bottom: 1.6rem;
 
     @include breakpoints.md {
       font-size: 1.4rem;
@@ -35,6 +36,9 @@
   
   @include breakpoints.lg {
     display: none;
+  }
+  .list {
+    margin-left: 1rem;
   }
 }
 
@@ -51,8 +55,9 @@
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.4rem;
+    margin-bottom: 1rem
   }
 }
