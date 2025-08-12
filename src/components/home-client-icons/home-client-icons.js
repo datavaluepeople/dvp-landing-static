@@ -33,15 +33,26 @@ const HomeClientIcons = ({}) => {
           node {
             name
             childImageSharp {
-              gray: gatsbyImageData(
+              graySmall: gatsbyImageData(
                 layout: FIXED,
                 transformOptions: {grayscale: true},
-                width: 45,
+                width: 60,
                 placeholder: BLURRED,
               ),
-              color: gatsbyImageData(
+              grayLarge: gatsbyImageData(
                 layout: FIXED,
-                width: 45,
+                transformOptions: {grayscale: true},
+                width: 30,
+                placeholder: BLURRED,
+              ),
+              colorSmall: gatsbyImageData(
+                layout: FIXED,
+                width: 60,
+                placeholder: NONE
+              ),
+              colorLarge: gatsbyImageData(
+                layout: FIXED,
+                width: 30,
                 placeholder: NONE
               ),
             }
@@ -50,9 +61,10 @@ const HomeClientIcons = ({}) => {
       }
     }
   `);
+
   return (
     <div className={styles.container}>
-      {imagedata.homeClientIcons.edges.map(({key, node}) => {
+      {imagedata.homeClientIcons.edges.map(({node}) => {
         return (
           <a
             key={node.name}
@@ -62,19 +74,34 @@ const HomeClientIcons = ({}) => {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <div
-              className={styles.imgContainer}
-            >
-              <GatsbyImage
-                image={node.childImageSharp.gray}
-                loading='eager'
-              />
-              <GatsbyImage
-                className={styles.imgColor}
-                image={node.childImageSharp.color}
-                style={{'position': 'absolute'}}
-                loading='eager'
-              />
+            <div className={styles.imgContainer}>
+              {/* Small screens (up to large) - 60px */}
+              <div className={styles.smallScreen}>
+                <GatsbyImage
+                  image={node.childImageSharp.graySmall}
+                  loading='eager'
+                />
+                <GatsbyImage
+                  className={styles.imgColor}
+                  image={node.childImageSharp.colorSmall}
+                  style={{'position': 'absolute'}}
+                  loading='eager'
+                />
+              </div>
+
+              {/* Large screens and above - 30px */}
+              <div className={styles.largeScreen}>
+                <GatsbyImage
+                  image={node.childImageSharp.grayLarge}
+                  loading='eager'
+                />
+                <GatsbyImage
+                  className={styles.imgColor}
+                  image={node.childImageSharp.colorLarge}
+                  style={{'position': 'absolute'}}
+                  loading='eager'
+                />
+              </div>
             </div>
           </a>
         );

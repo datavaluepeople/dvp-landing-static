@@ -28,3 +28,21 @@
   left: 0;
   opacity: 0;
 }
+
+// Show 60px images on small to medium screens
+.smallScreen {
+  display: block;
+
+  @include breakpoints.lg {
+    display: none;
+  }
+}
+
+// Show 30px images on large screens and above
+.largeScreen {
+  display: none;
+
+  @include breakpoints.lg {
+    display: block;
+  }
+}
