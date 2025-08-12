@@ -2,6 +2,16 @@
 @use '../../styles/breakpoints.scss';
 @use '../../styles/shared/header.scss';
 
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .homePageElement {
   p {
     font-size: 0.9rem;
@@ -34,6 +44,6 @@
   p {
     font-size: 0.7rem;
     font-weight: 500;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
   }
 }
