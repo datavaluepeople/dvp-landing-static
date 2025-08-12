@@ -2,26 +2,17 @@
 
 .container {
   display: flex;
-  // flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-
-  @include breakpoints.lg {
-    gap: 0.5rem;
-  }
-
-  @include breakpoints.xlg {
-    gap: 1.5rem;
-  }
+  flex-wrap: wrap;
 }
 
 .imgContainer {
   position: relative;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 0.5rem;
+  margin-right: 2rem;
+
+  @include breakpoints.lg {
+    margin-right: 1rem;
+  }
 
   &:hover {
     .imgColor {
@@ -33,8 +24,7 @@
 
 .imgColor {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); // ⬅️ Vertically & horizontally centers
+  top: 0;
+  left: 0;
   opacity: 0;
 }
