@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import * as whoWeAreStyles from './who-we-are.module.scss';
+import * as whoWeAreStyles from './who-we-are-collective.module.scss';
 import TechonolgyIcons from '../technology-icons/technology-icons';
 
 
-const WhoWeAre = ({HomePage}) => {
+const WhoWeAreCollective = ({HomePage}) => {
   const pageClass = HomePage ?
     whoWeAreStyles.homePageElement :
     whoWeAreStyles.sideBarElement;
@@ -29,8 +29,8 @@ const WhoWeAre = ({HomePage}) => {
   );
 };
 
-export default WhoWeAre;
+export default WhoWeAreCollective;
 
-WhoWeAre.propTypes = {
+WhoWeAreCollective.propTypes = {
   HomePage: PropTypes.bool,
 };

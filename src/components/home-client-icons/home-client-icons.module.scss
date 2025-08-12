@@ -1,0 +1,48 @@
+@use '../../styles/breakpoints.scss';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-right: 2rem;
+
+  @include breakpoints.lg {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    .imgColor {
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+  }
+}
+
+.imgColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+// Show 60px images on small to medium screens
+.smallScreen {
+  display: block;
+
+  @include breakpoints.lg {
+    display: none;
+  }
+}
+
+// Show 30px images on large screens and above
+.largeScreen {
+  display: none;
+
+  @include breakpoints.lg {
+    display: block;
+  }
+}

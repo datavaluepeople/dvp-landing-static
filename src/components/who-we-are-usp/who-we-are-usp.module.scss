@@ -1,0 +1,75 @@
+@use '../../styles/base_values.scss';
+@use '../../styles/breakpoints.scss';
+@use '../../styles/shared/header.scss';
+
+@mixin side-bar-shared {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    li::before {
+      content: '⋄';
+      position: absolute;
+      left: -0.8em;
+      font-size: 1.1em;
+    }
+  }
+}
+
+
+
+.homePageElement {
+  p, ul {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+
+    @include breakpoints.md {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+    }
+  }
+  
+  @include breakpoints.lg {
+    display: none;
+  }
+  @include side-bar-shared;
+
+  /* Override the side-bar-shared */
+  ul {
+    margin-left: 1rem;
+  }
+}
+
+.sideBarElement {
+  display: none;
+  
+  @include breakpoints.lg {
+    display: block;
+    margin: 0 header.$sidebar-right-margin-lg 0 header.$sidebar-left-margin-lg;
+  }
+
+  @include breakpoints.xlg {
+    margin: 0 header.$sidebar-right-margin-xlg 0 header.$sidebar-left-margin-xlg;
+  }
+
+  p, ul {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin-bottom: 1rem
+  }
+  @include side-bar-shared;
+  ul {
+    margin-left: 0.7rem;
+  }
+}

@@ -41,7 +41,7 @@
 
 .home {
   @include breakpoints.lg {
-    margin: base_values.$margin-lg-v base_values.$margin-lg-h;
+    margin: 2rem base_values.$margin-lg-h;
     margin-right: header.$sidebar-right-margin-lg;
   }
 }
