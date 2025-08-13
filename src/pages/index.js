@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 import BuilderFooter from '../components/builder-footer/builder-footer.js';
-import WhoWeAre from '../components/who-we-are/who-we-are.js';
+import WhoWeAreUsp from '../components/who-we-are-usp/who-we-are-usp.js';
 import Wave from '../components/wave/wave';
 
 import * as indexStyles from './index.module.scss';
@@ -19,7 +19,7 @@ const LandingPageIndex = ({location}) => {
             We build bespoke state-of-the-art artificial intelligence
             systems that deliver value you can measure.
           </h1>
-          <WhoWeAre HomePage={true}/>
+          <WhoWeAreUsp HomePage={true}/>
         </div>
       </div>
       <Wave />
