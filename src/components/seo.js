@@ -20,6 +20,7 @@ const SEO = (
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
