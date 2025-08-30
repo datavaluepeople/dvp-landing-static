@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import {Helmet} from 'react-helmet';
 import {useStaticQuery, graphql} from 'gatsby';
 
 const SEO = (
@@ -20,13 +20,16 @@ const SEO = (
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const {title: siteTitle, description: siteDescription, siteUrl} = site.siteMetadata;
+  const metaDescription = description || siteDescription;
+  const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
   return (
     <Helmet
@@ -34,7 +37,10 @@ const SEO = (
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${siteTitle}`}
+      link={[
+        {rel: 'canonical', href: siteUrl},
+      ]}
       meta={[
         {
           name: `description`,
@@ -50,7 +56,7 @@ const SEO = (
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl,
+          content: siteUrl,
         },
         {
           property: `og:type`,
@@ -58,7 +64,7 @@ const SEO = (
         },
         {
           property: `og:image`,
-          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+          content: absoluteOgImage,
         },
         {
           property: `og:image:width`,
@@ -67,6 +73,10 @@ const SEO = (
         {
           property: `og:image:height`,
           content: ogImageHeight,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:title`,
