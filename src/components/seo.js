@@ -27,7 +27,9 @@ const SEO = (
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const {title: siteTitle, description: siteDescription, siteUrl} = site.siteMetadata;
+  const metaDescription = description || siteDescription;
+  const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
   return (
     <Helmet
@@ -35,7 +37,10 @@ const SEO = (
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${siteTitle}`}
+      link={[
+        {rel: 'canonical', href: siteUrl},
+      ]}
       meta={[
         {
           name: `description`,
@@ -51,7 +56,7 @@ const SEO = (
         },
         {
           property: `og:url`,
-          content: site.siteMetadata.siteUrl,
+          content: siteUrl,
         },
         {
           property: `og:type`,
@@ -59,7 +64,7 @@ const SEO = (
         },
         {
           property: `og:image`,
-          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+          content: absoluteOgImage,
         },
         {
           property: `og:image:width`,
