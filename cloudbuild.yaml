@@ -10,6 +10,9 @@ steps:
     args: [".markdownlint-cli2.yaml", "content/assets/blog/**/*.md"]
   - name: node:22.15.0
     entrypoint: npm
+    args: ["run", "lint"]
+  - name: node:22.15.0
+    entrypoint: npm
     args: ["install", "gatsby-cli@5.14.0"]
   - name: node:22.15.0
     entrypoint: "./node_modules/.bin/gatsby"
