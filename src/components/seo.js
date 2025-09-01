@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import {useStaticQuery, graphql} from 'gatsby';
 
 const SEO = (
-    {description, lang, meta, title, ogImage, ogImageWidth, ogImageHeight},
+    {description, meta, title, ogImage, ogImageWidth, ogImageHeight},
 ) => {
   const {site} = useStaticQuery(
       graphql`
@@ -32,7 +32,6 @@ const SEO = (
 
   return (
     <>
-      <html lang={lang} />
       <title>{title} | {siteTitle}</title>
       <link rel="canonical" href={siteUrl} />
       <meta name="description" content={metaDescription} />
@@ -59,7 +58,6 @@ const SEO = (
 };
 
 SEO.defaultProps = {
-  lang: `en`,
   meta: [],
   description: ``,
   ogImage: `/img/datavaluepeople-og-image.png`,
@@ -69,7 +67,6 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   ogImage: PropTypes.string,

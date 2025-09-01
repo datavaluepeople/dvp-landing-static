@@ -6,7 +6,6 @@ import Logo from '../logo/logo';
 import Burger from '../burger/burger';
 import SideBar from '../side-bar/side-bar';
 import * as headerStyles from './header.module.scss';
-import { logoColorSrc, logoWhiteSrc } from '../logo/constants';
 
 const Header = ({isHome, isOpen, toggleMenuOpen}) => {
   return (
@@ -33,13 +32,6 @@ const Header = ({isHome, isOpen, toggleMenuOpen}) => {
     </header>
   );
 };
-
-export const Head = () => (
-  <>
-    <link rel="preload" href={logoColorSrc} as="image"/>
-    <link rel="preload" href={logoWhiteSrc} as="image"/>
-  </>
-);
 
 export default Header;
 
