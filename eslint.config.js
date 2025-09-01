@@ -9,8 +9,8 @@ module.exports = [
       sourceType: 'module',
       parserOptions: {
         ecmaFeatures: {
-          jsx: true
-        }
+          jsx: true,
+        },
       },
       globals: {
         window: 'readonly',
@@ -23,24 +23,24 @@ module.exports = [
         __dirname: 'readonly',
         __filename: 'readonly',
         Buffer: 'readonly',
-        global: 'readonly'
-      }
+        global: 'readonly',
+      },
     },
     plugins: {
-      react: react
+      react: react,
     },
     rules: {
       ...google.rules,
       ...react.configs.recommended.rules,
-      'max-len': ['error', { code: 100, ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
+      'max-len': ['error', {code: 100, ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true}],
       'require-jsdoc': 'off',
-      'valid-jsdoc': 'off'
+      'valid-jsdoc': 'off',
     },
     settings: {
       react: {
-        version: 'detect'
-      }
-    }
+        version: 'detect',
+      },
+    },
   },
   {
     ignores: [
@@ -48,7 +48,7 @@ module.exports = [
       'node_modules/**',
       '.cache/**',
       'public/**',
-      '*.json'
-    ]
-  }
+      '*.json',
+    ],
+  },
 ];

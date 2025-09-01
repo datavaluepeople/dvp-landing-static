@@ -70,7 +70,7 @@ const BlogPostTemplate = ({data, location}) => {
   );
 };
 
-export const Head = ({ data }) => {
+export const Head = ({data}) => {
   const post = data.markdownRemark;
   return (
     <SEO

@@ -11,8 +11,8 @@ import PropTypes from 'prop-types';
  */
 const generalStyles = {
   lineHeight: 0,
-  display: "inline-block"
-}
+  display: 'inline-block',
+};
 
 
 const PersonSocialMediaLinks = ({className, github, linkedIn}) => {

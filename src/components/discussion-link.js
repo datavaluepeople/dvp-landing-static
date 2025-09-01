@@ -5,13 +5,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const DiscussionLink = ({linkType, link}) => {
-  if (link && link != "") {
+  if (link && link != '') {
     return (
       <a
         target="_blank"
         rel="noreferrer noopener"
         href={link}
-        style={{textDecoration: "underline"}}
+        style={{textDecoration: 'underline'}}
       >
         <p>Discuss on {linkType}</p>
       </a>
@@ -24,8 +24,8 @@ const DiscussionLink = ({linkType, link}) => {
 export default DiscussionLink;
 
 DiscussionLink.defaultProps = {
-   link: ""
-}
+  link: '',
+};
 
 DiscussionLink.propTypes = {
   linkType: PropTypes.string,
