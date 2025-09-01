@@ -6,7 +6,7 @@ import DiscussionLink from '../components/discussion-link.js';
 import ShortBio from '../components/blog-bio/short-bio';
 import Bio from '../components/blog-bio/bio';
 import Layout from '../components/layout/layout';
-import Seo from '../components/seo';
+import SEO from '../components/seo';
 
 import * as styles from './blog-post.module.scss';
 import './prism.css';
@@ -22,10 +22,6 @@ const BlogPostTemplate = ({data, location}) => {
 
   return (
     <Layout location={location}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <article
         itemScope
         itemType='http://schema.org/Article'
@@ -73,6 +69,12 @@ const BlogPostTemplate = ({data, location}) => {
     </Layout>
   );
 };
+
+
+export const Head = () => <SEO
+  title={post.frontmatter.title}
+  description={post.frontmatter.description || post.excerpt}
+/>;
 
 export default BlogPostTemplate;
 

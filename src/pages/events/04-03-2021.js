@@ -8,9 +8,6 @@ import SEO from '../../components/seo';
 const March2021Event = ({location}) => {
   return (
     <Layout location={location}>
-      <SEO
-        title="4th of March 2021 - people giving value through data"
-      />
       <h1>4th of March 2021 - datavaluepeople sessions</h1>
       <h2 style={{marginBottom: '3rem'}}>people giving value through data</h2>
       <p style={{marginBottom: '6rem'}}>
@@ -63,6 +60,8 @@ const March2021Event = ({location}) => {
     </Layout>
   );
 };
+
+export const Head = () => <SEO title="4th of March 2021 - people giving value through data"/>;
 
 export default March2021Event;
 

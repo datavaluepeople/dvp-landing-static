@@ -12,7 +12,6 @@ import ClientImages from '../components/client-images/client-images.js';
 const TrackRecordPage = ({location}) => {
   return (
     <Layout location={location}>
-      <SEO title="Track Record"/>
       <h1 className={trackRecordStyles.title}>Track record</h1>
       <div className={trackRecordStyles.content}>
         <div className={sectionStyles.container}>
@@ -144,7 +143,9 @@ const TrackRecordPage = ({location}) => {
       </div>
     </Layout>
   );
-};
+}
+
+export const Head = () => <SEO title="Track Record"/>;
 
 export default TrackRecordPage;
 
