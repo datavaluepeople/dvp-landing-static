@@ -70,11 +70,15 @@ const BlogPostTemplate = ({data, location}) => {
   );
 };
 
-
-export const Head = () => <SEO
-  title={post.frontmatter.title}
-  description={post.frontmatter.description || post.excerpt}
-/>;
+export const Head = ({ data }) => {
+  const post = data.markdownRemark;
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
+  );
+};
 
 export default BlogPostTemplate;
 
