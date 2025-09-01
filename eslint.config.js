@@ -49,6 +49,8 @@ module.exports = [
       '.cache/**',
       'public/**',
       '*.json',
+      'src/templates/prism.js',
+      'src/templates/prism.css',
     ],
   },
 ];
