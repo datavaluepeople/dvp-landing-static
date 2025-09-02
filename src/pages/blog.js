@@ -4,9 +4,9 @@ import {Link, graphql} from 'gatsby';
 
 import ShortBio from '../components/blog-bio/short-bio';
 import Layout from '../components/layout/layout';
-import Seo from '../components/seo';
 
 import * as styles from './blog.module.scss';
+import SEO from '../components/seo';
 
 
 const BlogIndex = ({data, location}) => {
@@ -15,7 +15,6 @@ const BlogIndex = ({data, location}) => {
   if (posts.length === 0) {
     return (
       <Layout location={location}>
-        <Seo title='All posts' />
         <p>
           No blog posts found.
         </p>
@@ -25,7 +24,6 @@ const BlogIndex = ({data, location}) => {
 
   return (
     <Layout location={location}>
-      <Seo title='All posts' />
       <h1>Blog</h1>
       <div className={styles.content}>
         <ol style={{listStyle: `none`}}>
@@ -70,6 +68,9 @@ const BlogIndex = ({data, location}) => {
     </Layout>
   );
 };
+
+
+export const Head = () => <SEO title="All posts" />;
 
 export default BlogIndex;
 

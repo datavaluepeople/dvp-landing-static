@@ -7,11 +7,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Helmet} from 'react-helmet';
 import {useStaticQuery, graphql} from 'gatsby';
 
 const SEO = (
-    {description, lang, meta, title, ogImage, ogImageWidth, ogImageHeight},
+    {description, meta, title, ogImage, ogImageWidth, ogImageHeight},
 ) => {
   const {site} = useStaticQuery(
       graphql`
@@ -32,67 +31,33 @@ const SEO = (
   const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${siteTitle}`}
-      link={[
-        {rel: 'canonical', href: siteUrl},
-      ]}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:url`,
-          content: siteUrl,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:image`,
-          content: absoluteOgImage,
-        },
-        {
-          property: `og:image:width`,
-          content: ogImageWidth,
-        },
-        {
-          property: `og:image:height`,
-          content: ogImageHeight,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <title>{title} | {siteTitle}</title>
+      <link rel="canonical" href={siteUrl} />
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={absoluteOgImage} />
+      <meta property="og:image:width" content={ogImageWidth} />
+      <meta property="og:image:height" content={ogImageHeight} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {meta.map(({name, content, property}, i) => (
+        <meta
+          key={i}
+          name={name}
+          property={property}
+          content={content}
+        />
+      ))}
+    </>
   );
 };
 
 SEO.defaultProps = {
-  lang: `en`,
   meta: [],
   description: ``,
   ogImage: `/img/datavaluepeople-og-image.png`,
@@ -102,7 +67,6 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   ogImage: PropTypes.string,

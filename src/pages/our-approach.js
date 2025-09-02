@@ -12,7 +12,6 @@ const OurApproachPage = ({location}) => {
   const approachIconWidth = '40px';
   return (
     <Layout location={location}>
-      <SEO title="Our Approach"/>
       <h1 className={styles.title}>Our approach</h1>
       <div className={styles.content}>
         <p className={styles.pLarge}>
@@ -85,6 +84,8 @@ const OurApproachPage = ({location}) => {
     </Layout>
   );
 };
+
+export const Head = () => <SEO title="Our Approach"/>;
 
 export default OurApproachPage;
 

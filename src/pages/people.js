@@ -18,7 +18,6 @@ const PeoplePage = ({data, location}) => {
   const people = data.people.edges;
   return (
     <Layout location={location}>
-      <SEO title="People"/>
       <h1 className={styles.title}>People</h1>
       <div className={styles.content}>
         {people.map(({key, node}) => {
@@ -43,6 +42,8 @@ const PeoplePage = ({data, location}) => {
     </Layout>
   );
 };
+
+export const Head = () => <SEO title="People"/>;
 
 export default PeoplePage;
 

@@ -70,7 +70,7 @@ const HomeClientIcons = ({}) => {
   const groupedImages = imagedata.homeClientIcons.edges.reduce((acc, {node}) => {
     const baseName = node.name.replace(/_small|_large$/, '');
     const size = node.name.includes('_small') ? 'small' : 'large';
-    
+
     if (!acc[baseName]) {
       acc[baseName] = {};
     }
