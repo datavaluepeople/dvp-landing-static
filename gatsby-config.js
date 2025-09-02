@@ -11,13 +11,13 @@ require('dotenv').config({
 /**
  * Excluding the test blog posts if not development
  */
-let excludeAssets = []
-if (activeEnv != "development" && !process.env.INCLUDE_TEST_BLOG_ASSETS) {
+let excludeAssets = [];
+if (activeEnv != 'development' && !process.env.INCLUDE_TEST_BLOG_ASSETS) {
   excludeAssets = [
-    "**/blog/test/**"
-  ]
+    '**/blog/test/**',
+  ];
 }
-console.log("Excluding assets from build", excludeAssets)
+console.log('Excluding assets from build', excludeAssets);
 
 module.exports = {
   siteMetadata: {

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {graphql} from 'gatsby';
 
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
@@ -30,7 +29,7 @@ const TrackRecordPage = ({location}) => {
           </p>
           <b>Previous projects:</b>
           <ul className={sectionStyles.projectList}>
-          <li>
+            <li>
               <b>A tech startup:</b> delivered prototypes using Azure GPTs, RAG and a
               multi-agent framework, to help close an important partnership for
               the business. Read more in our <a
@@ -143,7 +142,7 @@ const TrackRecordPage = ({location}) => {
       </div>
     </Layout>
   );
-}
+};
 
 export const Head = () => <SEO title="Track Record"/>;
 

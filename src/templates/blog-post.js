@@ -14,7 +14,6 @@ import './prism.js';
 
 const BlogPostTemplate = ({data, location}) => {
   const post = data.markdownRemark;
-  const {previous, next} = data;
   const author = post.frontmatter.author;
   const avatar = (
     author.gifPlaceHolder.childImageSharp.gatsbyImageData
@@ -70,7 +69,7 @@ const BlogPostTemplate = ({data, location}) => {
   );
 };
 
-export const Head = ({ data }) => {
+export const Head = ({data}) => {
   const post = data.markdownRemark;
   return (
     <SEO
@@ -78,6 +77,18 @@ export const Head = ({ data }) => {
       description={post.frontmatter.description || post.excerpt}
     />
   );
+};
+
+Head.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+      }),
+      excerpt: PropTypes.string,
+    }),
+  }),
 };
 
 export default BlogPostTemplate;
