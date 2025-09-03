@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import {useStaticQuery, graphql} from 'gatsby';
 
 const SEO = (
-    {description, meta, title, ogImage, ogImageWidth, ogImageHeight},
+    {description, meta, title, ogImage, ogImageWidth, ogImageHeight, pathname},
 ) => {
   const {site} = useStaticQuery(
       graphql`
@@ -29,15 +29,16 @@ const SEO = (
   const {title: siteTitle, description: siteDescription, siteUrl} = site.siteMetadata;
   const metaDescription = description || siteDescription;
   const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+  const pageUrl = pathname ? `${siteUrl}${pathname}` : siteUrl;
 
   return (
     <>
       <title>{title} | {siteTitle}</title>
-      <link rel="canonical" href={siteUrl} />
+      <link rel="canonical" href={pageUrl} />
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:url" content={siteUrl} />
+      <meta property="og:url" content={pageUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={absoluteOgImage} />
       <meta property="og:image:width" content={ogImageWidth} />
@@ -63,6 +64,7 @@ SEO.defaultProps = {
   ogImage: `/img/datavaluepeople-og-image.png`,
   ogImageWidth: `1200`,
   ogImageHeight: `630`,
+  pathname: ``,
 };
 
 SEO.propTypes = {
@@ -72,6 +74,7 @@ SEO.propTypes = {
   ogImage: PropTypes.string,
   ogImageWidth: PropTypes.string,
   ogImageHeight: PropTypes.string,
+  pathname: PropTypes.string,
 };
 
 export default SEO;
