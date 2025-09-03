@@ -13,10 +13,16 @@ const NotFoundPage = ({location}) => {
   );
 };
 
-export const Head = () => <SEO title="404: Not Found" />;
+export const Head = ({location}) => <SEO title="404: Not Found" pathname={location.pathname} />;
 
 export default NotFoundPage;
 
 NotFoundPage.propTypes = {
   location: PropTypes.object,
+};
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };

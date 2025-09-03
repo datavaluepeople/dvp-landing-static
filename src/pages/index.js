@@ -27,10 +27,16 @@ const LandingPageIndex = ({location}) => {
   );
 };
 
-export const Head = () => <SEO title="We build bespoke state-of-the-art artificial intelligence systems"/>;
+export const Head = ({location}) => <SEO title="We build bespoke state-of-the-art artificial intelligence systems" pathname={location.pathname} />;
 
 export default LandingPageIndex;
 
 LandingPageIndex.propTypes = {
   location: PropTypes.object,
+};
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };

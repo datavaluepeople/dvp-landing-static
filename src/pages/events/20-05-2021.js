@@ -63,10 +63,16 @@ const May2021Event = ({location}) => {
   );
 };
 
-export const Head = () => <SEO title="20th of May 2021 - people giving value through data"/>;
+export const Head = ({location}) => <SEO title="20th of May 2021 - people giving value through data" pathname={location.pathname} />;
 
 export default May2021Event;
 
 May2021Event.propTypes = {
   location: PropTypes.object,
+};
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };

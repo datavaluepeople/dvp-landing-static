@@ -69,12 +69,13 @@ const BlogPostTemplate = ({data, location}) => {
   );
 };
 
-export const Head = ({data}) => {
+export const Head = ({data, location}) => {
   const post = data.markdownRemark;
   return (
     <SEO
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
+      pathname={location.pathname}
     />
   );
 };
@@ -88,6 +89,9 @@ Head.propTypes = {
       }),
       excerpt: PropTypes.string,
     }),
+  }),
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
   }),
 };
 

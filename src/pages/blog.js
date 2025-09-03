@@ -70,7 +70,7 @@ const BlogIndex = ({data, location}) => {
 };
 
 
-export const Head = () => <SEO title="All posts" />;
+export const Head = ({location}) => <SEO title="All posts" pathname={location.pathname} />;
 
 export default BlogIndex;
 
@@ -111,3 +111,8 @@ export const BlogIndexPageQuery = graphql`query
 }
 `;
 
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
+};

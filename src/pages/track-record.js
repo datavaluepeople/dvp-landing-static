@@ -144,10 +144,16 @@ const TrackRecordPage = ({location}) => {
   );
 };
 
-export const Head = () => <SEO title="Track Record"/>;
+export const Head = ({location}) => <SEO title="Track Record" pathname={location.pathname} />;
 
 export default TrackRecordPage;
 
 TrackRecordPage.propTypes = {
   location: PropTypes.object,
+};
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };

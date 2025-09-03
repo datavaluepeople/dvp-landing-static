@@ -43,7 +43,7 @@ const PeoplePage = ({data, location}) => {
   );
 };
 
-export const Head = () => <SEO title="People"/>;
+export const Head = ({location}) => <SEO title="People" pathname={location.pathname} />;
 
 export default PeoplePage;
 
@@ -102,3 +102,9 @@ query {
   }
 }
 `;
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
+};

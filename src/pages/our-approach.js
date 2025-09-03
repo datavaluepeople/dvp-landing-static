@@ -85,10 +85,16 @@ const OurApproachPage = ({location}) => {
   );
 };
 
-export const Head = () => <SEO title="Our Approach"/>;
+export const Head = ({location}) => <SEO title="Our Approach" pathname={location.pathname}/>;
 
 export default OurApproachPage;
 
 OurApproachPage.propTypes = {
   location: PropTypes.object,
+};
+
+Head.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };
