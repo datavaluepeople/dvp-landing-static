@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import * as logoStyles from './logo.module.scss';
 import {logoColorSrc, logoWhiteSrc} from './constants.js';
 import HypeAnimation from '../../components/hype-animation';
-import {Helmet} from 'react-helmet';
 
 const Logo = ({isHome}) => {
   const logoSrc = isHome ?
@@ -32,10 +31,6 @@ const Logo = ({isHome}) => {
       ${isHome ? logoStyles.home : ''}
       `}
     >
-      <Helmet>
-        <link rel="preload" href={logoColorSrc} as="image"/>
-        <link rel="preload" href={logoWhiteSrc} as="image"/>
-      </Helmet>
       {logoEl}
       {isHome && logoAnimation}
     </div>

@@ -6,7 +6,7 @@ import DiscussionLink from '../components/discussion-link.js';
 import ShortBio from '../components/blog-bio/short-bio';
 import Bio from '../components/blog-bio/bio';
 import Layout from '../components/layout/layout';
-import Seo from '../components/seo';
+import SEO from '../components/seo';
 
 import * as styles from './blog-post.module.scss';
 import './prism.css';
@@ -14,7 +14,6 @@ import './prism.js';
 
 const BlogPostTemplate = ({data, location}) => {
   const post = data.markdownRemark;
-  const {previous, next} = data;
   const author = post.frontmatter.author;
   const avatar = (
     author.gifPlaceHolder.childImageSharp.gatsbyImageData
@@ -22,10 +21,6 @@ const BlogPostTemplate = ({data, location}) => {
 
   return (
     <Layout location={location}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <article
         itemScope
         itemType='http://schema.org/Article'
@@ -72,6 +67,28 @@ const BlogPostTemplate = ({data, location}) => {
       </article>
     </Layout>
   );
+};
+
+export const Head = ({data}) => {
+  const post = data.markdownRemark;
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
+  );
+};
+
+Head.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+      }),
+      excerpt: PropTypes.string,
+    }),
+  }),
 };
 
 export default BlogPostTemplate;
