@@ -24,8 +24,8 @@ be invited to input and share your own experiences and opinions throughout! By t
 session, you should have a solid sense of the tooling landscape—and a clearer idea of which tools
 might be worth your time, and which to skip.
 
-
-<a href="https://docs.google.com/presentation/d/1yZnZo99yc33s27oKhHQQXEfTdk_pe3zVJupe0bVh0i0" target="_blank" rel="noopener noreferrer">Slides</a>
+<a href="https://docs.google.com/presentation/d/1yZnZo99yc33s27oKhHQQXEfTdk_pe3zVJupe0bVh0i0"
+target="_blank" rel="noopener noreferrer">Slides</a>
 
 ## Future of AI (and Humanity?)
 
@@ -38,7 +38,6 @@ This session will cut through the mysticism, equipping you to engage critically 
 with AI, machine learning, and data science. Then we'll use this knowledge to explore the future of
 AI, and its potential to be an entirely paradigm shifting technology for humanity, the possible
 benefits, but also the ethical and even existential challenges.
-
 
 Slides: <a
 href="https://docs.google.com/presentation/d/1VFLEz5KHvsildbf9TmycOiKhueVgynQphlD7naCIRPk/edit#slide=id.g16b25dee956_0_39"
@@ -66,7 +65,6 @@ with a single data scientist and scaling to a full team handling multiple projec
 on the emerging pain points, we ensure the platform remains lean, addressing only what’s needed,
 and making every investment in the platform count.
 
-
 <a href="https://docs.google.com/presentation/d/1N2Mt5-bHe3ijgFqxu0luyoFNiebXc20Ee6yIrdLKk3Q"
 target="_blank" rel="noopener noreferrer">Slides</a>, <a
 href="https://datasciencefestival.com/session/building-a-minimal-data-science-platform"
@@ -83,8 +81,8 @@ I will explain what the practice of data science is, grounded in a (hopefully) s
 intention is that you will end this talk having gained a conceptual, but usable, understanding of
 the data science process.
 
-
-<a href="https://docs.google.com/presentation/d/1VFLEz5KHvsildbf9TmycOiKhueVgynQphlD7naCIRPk" target="_blank" rel="noopener noreferrer">Slides</a>
+<a href="https://docs.google.com/presentation/d/1VFLEz5KHvsildbf9TmycOiKhueVgynQphlD7naCIRPk"
+target="_blank" rel="noopener noreferrer">Slides</a>
 
 ## sktime - Easy Benchmarking
 
@@ -99,8 +97,8 @@ to solve within sktime benchmarking specifically, and a solution that aims to us
 and APIs where possible, and be an easy to use benchmarking functionality packaged as part of
 sktime.
 
-
-<a href="https://docs.google.com/presentation/d/1ac0Cz5-_v-J9WUAaIZGobghBGtW8Fuwm4lLupPtn4os" target="_blank" rel="noopener noreferrer">Slides</a>
+<a href="https://docs.google.com/presentation/d/1ac0Cz5-_v-J9WUAaIZGobghBGtW8Fuwm4lLupPtn4os"
+target="_blank" rel="noopener noreferrer">Slides</a>
 
 ## Data science - without the hype (technical audience)
 
@@ -114,4 +112,5 @@ We present a realistic introduction as to why leveraging data is indeed so valua
 the unhelpful "hype" around the topic, and cover how to start achieving measurable business gains
 both strategically and practically.
 
-<a href="https://docs.google.com/presentation/d/1SKKZiv2pB4QAPbTxYRwWLrosaGf1ZSTUGuMp9zGXuvw" target="_blank" rel="noopener noreferrer">Slides</a>
+<a href="https://docs.google.com/presentation/d/1SKKZiv2pB4QAPbTxYRwWLrosaGf1ZSTUGuMp9zGXuvw"
+target="_blank" rel="noopener noreferrer">Slides</a>
