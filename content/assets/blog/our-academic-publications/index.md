@@ -1,6 +1,6 @@
 ---
 title: Our academic publications
-date: "2026-01-08T14:00:00.000Z"
+date: "2026-01-20T14:00:00.000Z"
 description: "Peer-reviewed research and academic publications with the datavaluepeople name on them."
 author: dan
 linkedin_link:

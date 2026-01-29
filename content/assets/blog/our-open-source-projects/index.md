@@ -1,6 +1,6 @@
 ---
 title: Our open source projects
-date: "2026-01-08T13:00:00.000Z"
+date: "2026-01-12T13:00:00.000Z"
 description: "Open source software projects we've built and maintain, from ML validation frameworks to decision-making agents and social media analysis platforms."
 author: dan
 linkedin_link:
