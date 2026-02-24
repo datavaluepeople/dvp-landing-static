@@ -11,7 +11,9 @@ One of the canonical approaches for defining data science is to describe it as a
 of theoretical skills (e.g. statistics), practical skills (e.g. programming) and domain
 knowledge (i.e. knowledge specific to the task / sector at hand). However, such a framework
 is also very much applicable to related data-driven fields such as quantitative finance. This
-blogpost draws on the experience of a datavaluepeople member working in both settings.
+blogpost draws on the experience of a datavaluepeople member working in both settings. For a
+real-world example of this kind of quantitative finance work, see our
+[portfolio management tool case study](/blog/custom-portfolio-management-tool-case-study/).
 
 ## Commodity Portfolio Management
 

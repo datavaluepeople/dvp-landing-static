@@ -8,7 +8,9 @@ hackernews_link:
 ---
 
 This case study describes a project recently carried out by a datavaluepeople member to
-build a custom portfolio management tool for a major European energy company.
+build a custom portfolio management tool for a major European energy company. For a
+discussion on how this sort of work relates to data science, see our
+[comparison of data science and quantitative finance](/blog/data-science-vs-quantitative-finance/).
 
 ## Problem Statement
 
