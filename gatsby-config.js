@@ -31,7 +31,6 @@ module.exports = {
     social: {
       twitter: `datavaluepeople`,
     },
-    hasFirebaseApp: process.env.HAS_FIREBASE_APP == 'true' ? true : false,
   },
   plugins: [
     {
@@ -144,20 +143,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-firebase`,
+    ...(process.env.GA_MEASUREMENT_ID ? [{
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        credentials: {
-          apiKey: process.env.FIREBASE_API_KEY,
-          authDomain: process.env.FIREBASE_AUTH_DOMIAN,
-          databaseURL: process.env.FIREBASE_DB_URL,
-          projectId: process.env.FIREBASE_PROJECT_ID,
-          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-          appId: process.env.FIREBASE_APP_ID,
-          measurementId: process.env.FIREBASE_MESUREMENT_ID,
+        trackingIds: [process.env.GA_MEASUREMENT_ID],
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
         },
       },
-    },
+    }] : []),
   ],
 };
