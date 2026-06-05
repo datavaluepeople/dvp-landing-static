@@ -73,4 +73,3 @@ These test pages are in the folder `/content/assets/blog/test/`. Pages in this f
 
 When developing this means that if you run `gatsby develop` the test pages will be in the website. If you use `gatsby build` they will not be included unless you set the `INCLUDE_TEST_BLOG_ASSETS` in the `.env.production` file or another environment dotfile.
 
-The default `.env.staging2` file has the `INCLUDE_TEST_BLOG_ASSETS` set. So `staging2` will have the test blog posts.
