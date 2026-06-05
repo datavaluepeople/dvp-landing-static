@@ -56,14 +56,24 @@ npx gatsby <command>
 ```
 
 ## Deployment
-Currently the repo is set up to deploy to the firebase. That was done follow this [tutorial](https://www.gatsbyjs.org/docs/deploying-to-firebase/).
+
+Deployments are handled automatically by Cloud Build triggers on push:
+
+1. Merge your PR into `staging` - Cloud Build deploys to [https://dvp-landing-staging.web.app/](https://dvp-landing-staging.web.app/)
+2. Review the change on staging
+3. Merge `staging` into `main` - Cloud Build deploys to [https://datavaluepeople.com](https://datavaluepeople.com)
+
+The Cloud Build triggers live in the `dvp-landing-266011` GCP project.
+
+<details>
+<summary>Legacy manual deployment</summary>
 
 Requirements:
 - You will need to have the `.env` files for the deploy see above
 - `firebase-cli` installed
 
-There are three environments that can be deployed to: production, staging and staging2.
-For each environments it is important to configure the firebase project that will be deployed to and the `GATSBY_ACTIVE_ENV`.
+There are two environments that can be deployed to: production and staging.
+For each environment it is important to configure the firebase project that will be deployed to and the `GATSBY_ACTIVE_ENV`.
 
 - Production:
     - gcloud and firebase project: `dvp-landing-266011`
@@ -73,23 +83,7 @@ For each environments it is important to configure the firebase project that wil
     - gcloud and firebase project: `dvp-landing-staging`
     - URL: `https://dvp-landing-staging.web.app/`
     - GATSBY_ACTIVE_ENV: `staging`
-- Staging2:
-    - gcloud and firebase project: `dvp-landing-static`
-    - URL: `https://dvp-landing-static.web.app/`
-    - GATSBY_ACTIVE_ENV: `staging2`
 
+You will need to have permission to be able to deploy to the project. You should have this if you log in with your datavaluepeople account.
 
-To deploy to `staging2` the commands are:
-```
-GATSBY_ACTIVE_ENV=staging2 npm run build
-firebase deploy --project dvp-landing-static
-```
-
-### Notes
-You will need to have permission to be able to deploy to the project as defined in `.firebaserc`. You should have this if you log in with your datavaluepeople account.
-
-## CICD testing
-You can test the CICD:
-`gcloud builds submit --config cloudbuild.yaml . --substitutions _GATSBY_ACTIVE_ENV=staging2,_TARGET_PROJECT_ID=dvp-landing-static`
-
-The substitutions above will deploy to staging2.
+</details>

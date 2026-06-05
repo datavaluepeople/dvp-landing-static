@@ -14,7 +14,6 @@ If you are adding content to the website then see the docs:
 ## Firebase links:
 - Production firebase console: [here](https://console.firebase.google.com/project/dvp-landing-266011/overview)
 - Staging firebase console: [here](https://console.firebase.google.com/project/dvp-landing-staging/overview)
-- Staging2 firebase console: [here](https://console.firebase.google.com/project/dvp-landing-static/overview)
 
 ## Analytics:
 Production analytics: [here](https://analytics.google.com/analytics/web/#/p220899285/reports/intelligenthome)
