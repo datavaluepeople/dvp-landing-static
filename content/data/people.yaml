@@ -16,6 +16,24 @@
   github: benjamincerigo
   gifPlaceHolder: ../../content/assets/people/benjamin-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/benjamin.gif
+- id: andrew
+  fullName: Andrew Sutjahjo
+  title: Partner - Data Scientist
+  bio: Brain & Cognitive Sciences, University of Amsterdam. Founder of data science volunteering foundation. Consulted for NL National Police. Built search & recommendation systems for marketplaces, media, govt. Realized 20% uplift for marketplace with millions (€) in revenue through optimisation. Amsterdam based.
+  email: andrew@datavaluepeople.com
+  linkedIn: sutjahjo
+  github: andrewsutjahjo
+  gifPlaceHolder: ../../content/assets/people/andrew-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/andrew.gif
+- id: lyudmila
+  fullName: Lyudmila Lugovskaya
+  title: Partner - Data Scientist
+  bio: PhD in Finance, University of Cambridge, awarded scholarships. MSc in Psychology. Cross-industry experience of delivering practical data projects. Led data science teams. London/Barcelona based.
+  email: lyudmila@datavaluepeople.com
+  linkedIn: lyudmila-lugovskaya-621280b
+  github: lvlugov
+  gifPlaceHolder: ../../content/assets/people/lyudmila-gif-placeholder.jpg
+  profilePictureGif: ../../content/assets/people/lyudmila.gif
 - id: ali
   fullName: Ali Teeney
   title: Machine Learning Engineer
@@ -34,15 +52,6 @@
   github: alex-hh
   gifPlaceHolder: ../../content/assets/people/alex-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/alex.gif
-- id: andrew
-  fullName: Andrew Sutjahjo
-  title: Partner - Data Scientist
-  bio: Brain & Cognitive Sciences, University of Amsterdam. Founder of data science volunteering foundation. Consulted for NL National Police. Built search & recommendation systems for marketplaces, media, govt. Realized 20% uplift for marketplace with millions (€) in revenue through optimisation. Amsterdam based.
-  email: andrew@datavaluepeople.com
-  linkedIn: sutjahjo
-  github: andrewsutjahjo
-  gifPlaceHolder: ../../content/assets/people/andrew-gif-placeholder.jpg
-  profilePictureGif: ../../content/assets/people/andrew.gif
 - id: will
   fullName: Will Underwood
   title: Data Engineer
@@ -52,15 +61,6 @@
   github: willunderwood
   gifPlaceHolder: ../../content/assets/people/will-gif-placeholder.jpg
   profilePictureGif: ../../content/assets/people/will.gif
-- id: lyudmila
-  fullName: Lyudmila Lugovskaya
-  title: Partner - Data Scientist
-  bio: PhD in Finance, University of Cambridge, awarded scholarships. MSc in Psychology. Cross-industry experience of delivering practical data projects. Led data science teams. London/Barcelona based.
-  email: lyudmila@datavaluepeople.com
-  linkedIn: lyudmila-lugovskaya-621280b
-  github: lvlugov
-  gifPlaceHolder: ../../content/assets/people/lyudmila-gif-placeholder.jpg
-  profilePictureGif: ../../content/assets/people/lyudmila.gif
 - id: alexis
   fullName: Alexis Gillett
   title: Data Scientist
