@@ -36,7 +36,7 @@
   profilePictureGif: ../../content/assets/people/alex.gif
 - id: andrew
   fullName: Andrew Sutjahjo
-  title: Data Scientist
+  title: Partner - Data Scientist
   bio: Brain & Cognitive Sciences, University of Amsterdam. Founder of data science volunteering foundation. Consulted for NL National Police. Built search & recommendation systems for marketplaces, media, govt. Realized 20% uplift for marketplace with millions (€) in revenue through optimisation. Amsterdam based.
   email: andrew@datavaluepeople.com
   linkedIn: sutjahjo
@@ -54,7 +54,7 @@
   profilePictureGif: ../../content/assets/people/will.gif
 - id: lyudmila
   fullName: Lyudmila Lugovskaya
-  title: Data Scientist
+  title: Partner - Data Scientist
   bio: PhD in Finance, University of Cambridge, awarded scholarships. MSc in Psychology. Cross-industry experience of delivering practical data projects. Led data science teams. London/Barcelona based.
   email: lyudmila@datavaluepeople.com
   linkedIn: lyudmila-lugovskaya-621280b
