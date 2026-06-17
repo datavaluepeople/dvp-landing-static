@@ -56,8 +56,8 @@ of inference optimisation you will run into. Without this knowledge you can't ev
 most important run arguments for inference engines like vLLM, so you can't expect to tune or
 manage an inference server effectively. The following
 [slide](https://docs.google.com/presentation/d/1zvlLnJrgvKCyuka3vp-hITV14-ct557ZBD91slb7etQ/edit?slide=id.g3dbddf8f736_0_65#slide=id.g3dbddf8f736_0_65)
-has some good references, chat through and get explanations from an LLM for the content, get it to
-test you.
+has some good references. Work through them with an LLM, get explanations of the content, and have
+it quiz you to check your understanding.
 
 The workshop was a 3h15m afternoon covering the decision framework for Third-party vs Self-hosted,
 applying it in some worked example LLM applications, then getting hands-on with a deployment of an
