@@ -28,7 +28,6 @@ While working on the project, the team at _datavaluepeople_ faced several signif
   formatting. All such irregularities made the data really difficult for an LLM to understand and
   process. These challenges are common for businesses transitioning to AI, where legacy data
   structures and quality issues often hinder effective model use.
-
 - **LLM hallucinations**: The most daunting challenge was the unstable performance of LLMs, which
   are notorious for being prone to hallucinations – generating plausible-sounding but incorrect
   responses to health care-related questions. In a business context, such mistakes can be very
